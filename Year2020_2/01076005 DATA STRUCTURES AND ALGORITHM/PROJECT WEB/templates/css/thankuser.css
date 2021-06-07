@@ -1,0 +1,85 @@
+/*<!---credit:https://www.youtube.com/watch?v=yiIi82xVjqo--->*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(90, 90, 90);
+}
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /*background: url("images/thankuser_BG.jpg");*/
+    background-size: cover;
+    background-position: center center;
+}
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, 1));
+    width: fit-content;
+    padding: 50px 30px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 40px #000;
+}
+h1{
+    text-align: center;
+    transform: translate(0, -10%);
+}
+h2{
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0.65em;
+}
+.input-group input{
+    width: 100%;
+    display: block;
+    padding: 0.5rem 0.7rem;
+    color: #222;
+    border: none;
+    border-bottom: 2px solid mediumseagreen;
+    outline: none;
+    margin: 0.75em 0;
+}
+.input-group span{
+    color: #000;
+    font-size: 0.95em;
+    opacity: .9;
+}
+.fa{
+    font-size: 18px;
+    color: rgb(90, 90, 90);
+}
+.list-group button{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+    cursor: pointer;
+}
+.list-group button[type="submit"]{
+    background: mediumseagreen;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+.list-group button[type="submit"]:hover{
+    background: seagreen;
+    opacity: 1;
+}

@@ -1,0 +1,140 @@
+<!--Use W3.css to develop-->
+<!DOCTYPE html>
+<html>
+  <title>INN Project | Single Room</title>
+  <!-- add icon link -->
+  <link rel="icon" href="images/icon.png" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/singleroom.css">
+<link rel="stylesheet" href="css/w3_school.css">
+<link href='https://fonts.googleapis.com/css?family=Darker Grotesque' rel='stylesheet'>
+<body>
+
+<!-- Refer layout from : https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_gourmet_catering&stacked=h -->    
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+          <!--image slider start-->
+          <div class="slider">
+            <div class="slides">
+              <!--radio buttons start-->
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+              <!--radio buttons end-->
+              <!--slide images start-->
+              <div class="slide first">
+                <img src="images/single02.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/single03.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/single04.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/single05.jpg" alt="">
+              </div>
+    
+              <!--slide images end-->
+              <!--automatic navigation start-->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+              </div>
+              <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+          </div>
+          <!--image slider end-->
+          <script type="text/javascript" src="javascript/singleroom.js"></script>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large w3-center">
+      <h1>Single Room</h1>
+      <p>Functional and comfortable.
+        Sit back and enjoy one of our brand new 240 square foot Standard Rooms.
+        Complete with courtyard views, stylish decor and natural light,
+        our Standard Rooms are the perfect combination of function and comfort.
+        Ideally suited for today’s travelers.</p>
+      <br> <br>
+      <a href="reserved.html" target="_top">BOOK NOW!</a>
+    </div>
+  </div>
+<!-- รวมเป็นอันด้านบน First Photo Grid
+
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Gallery</h1><br> 
+  </div>
+
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="junior 2.jpg" alt="Std2" style="width:100%">
+
+    </div>
+    <div class="w3-quarter">
+      <img src="junior 3.jpg" alt="Std3" style="width:100%">
+
+    </div>
+    <div class="w3-quarter">
+      <img src="junior 4.jpg" alt="Std4" style="width:100%">
+
+
+    </div>
+    <div class="w3-quarter">
+      <img src="junior 5.jpg" alt="std5" style="width:100%">
+
+    </div>
+  </div>
+-->
+
+  <!-- Amenities Section -->
+  <div class="w3-row w3-padding-64" style="margin-top: -10%;">
+    <div class="w3-col m6 w3-padding-large w3-center">
+      <h2>Room Properties</h2><br>
+      <div style="text-align: left; margin-left: 5%;">
+        <p style="display: inline;">Accommodates:</p><pre>..</pre><p style="display: inline;">2 people</p><br><br>
+        <p style="display: inline;">Size:</p><pre>..............</pre><p style="display: inline;">240 sq.ft</p><br><br>
+        <p style="display: inline;">Beds:</p><pre>.............</pre><p style="display: inline;">1 Double</p><br>
+      </div>
+    </div>
+    <div class="w3-col m6 w3-padding-large w3-center">
+      <h2>Room Amenities</h2><br>
+      <img src="images/single00.png" class="w3-image iconimg" style="display:block; margin:auto">
+    </div>
+  </div>
+</body>
+</html>
+
+
+<!--
+{% extends 'layout.html' %}
+
+{% block content%}
+    <br>
+        <h1>ตกแต่งใส่รายละเอียดรูปภาพบลาๆของห้องพัก</h1>
+    </br>
+    <br>
+        <div class="list-group">
+            <CENTER>
+                <a href="/reserved" class="list-group-item list-group-item-action">จองห้องพัก คลิ๊ก</a>
+            </CENTER>
+        </div>  
+    </br>
+{% endblock%}
+-->

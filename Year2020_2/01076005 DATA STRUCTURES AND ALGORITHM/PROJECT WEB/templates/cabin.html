@@ -1,0 +1,119 @@
+<!--Use W3.css to develop-->
+<!DOCTYPE html>
+<html>
+<title>INN Project | Cabin</title>
+<!-- add icon link -->
+<link rel="icon" href="images/icon.png" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/singleroom.css">
+<link rel="stylesheet" href="css/w3_school.css">
+<link href='https://fonts.googleapis.com/css?family=Darker Grotesque' rel='stylesheet'>
+
+<body>
+
+  <!-- Refer layout from : https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_gourmet_catering&stacked=h -->
+
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:1100px;">
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <!--image slider start-->
+        <div class="slider">
+          <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide first">
+              <img src="images/cabin02.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="images/cabin03.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="images/cabin04.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="images/cabin05.jpg" alt="">
+            </div>
+
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            <!--automatic navigation end-->
+          </div>
+          <!--manual navigation start-->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+          <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+        <script type="text/javascript" src="javascript/singleroom.js"></script>
+      </div>
+
+      <div class="w3-col m6 w3-padding-large w3-center">
+        <h1>Cabin</h1>
+        <p>Elegant simplicity.
+          Our Cabins Rooms give you the space and privacy you need to work or play on the road.
+          The spacious 340 square foot rooms include an intimate lounge area,
+          business workstation and views of the courtyard. Complete with all the regular amenities,
+          our Cabins Rooms also include a daily newspaper and water bottles.</p>
+
+        <a href="reserved.html" target="_top">BOOK NOW!</a>
+      </div>
+    </div>
+    <!-- Amenities Section -->
+    <div class="w3-row w3-padding-64" style="margin-top: -8%;">
+      <div class="w3-col m6 w3-padding-large w3-center">
+        <h2>Room Properties</h2><br>
+        <div style="text-align: left; margin-left: 5%;">
+          <p style="display: inline;">Accommodates:</p>
+          <pre>..</pre>
+          <p style="display: inline;">2 people</p><br><br>
+          <p style="display: inline;">Size:</p>
+          <pre>..............</pre>
+          <p style="display: inline;">340 sq.ft</p><br><br>
+          <p style="display: inline;">Beds:</p>
+          <pre>.............</pre>
+          <p style="display: inline;">2 King</p><br>
+        </div>
+      </div>
+      <div class="w3-col m6 w3-padding-large w3-center">
+        <h2>Room Amenities</h2><br>
+        <img src="images/cabin00.png" class="w3-image iconimg" style="display:block; margin:auto;">
+    </div>
+  </div>
+</body>
+</html>
+
+<!--
+{% extends 'layout.html' %}
+
+{% block content%}
+    <br>
+        <h1>ตกแต่งใส่รายละเอียดรูปภาพบลาๆของห้องพัก</h1>
+    </br>
+    <br>
+        <div class=" list-group">
+        <CENTER>
+          <a href="/reserved" class="list-group-item list-group-item-action">จองห้องพัก คลิ๊ก</a>
+        </CENTER>
+      </div>
+      </br>
+      {% endblock%}
+      -->

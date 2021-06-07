@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: white;
+  font-family: 'Darker Grotesque';
+  letter-spacing: 1.5px;
+  background-color: #4f4f4f;
+  margin-left: 17%;
+  margin-right: 17%;
+}
+p{
+  font-size: 21px;
+  text-align: justify;
+  margin-bottom: 5%;
+}
+pre{
+  display: inline;
+  color: transparent;
+}
+.slider {
+  width: 480px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slides {
+  width: 500%;
+  height: 300px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 480px;
+  height: 300px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+  position: absolute;
+  width: 480px;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid rgb(58, 134, 255);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: rgb(58, 134, 255);
+  /*rgb(58, 134, 255)*/
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: -20%;
+}
+
+#radio3:checked~.first {
+  margin-left: -40%;
+}
+
+#radio4:checked~.first {
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 480px;
+  justify-content: center;
+  margin-top: 270px;
+}
+
+.navigation-auto div {
+  border: 2px solid rgb(58, 134, 255);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+  background: rgb(58, 134, 255);
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+  background: rgb(58, 134, 255);
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+  background: rgb(58, 134, 255);
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+  background: rgb(58, 134, 255);
+}
+
+a {
+  /*background-color: white;*/
+  color: rgb(255, 255, 255);
+  padding: 15px 20px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /*margin-left: 36%;*/
+  font-size: 21px;
+}
+
+a:hover,a:active {
+  background-color: rgb(255, 255, 255);
+  color: #4f4f4f;
+  font-weight: bold;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: 5px;
+  display: block;
+  text-align: center;
+}
+
+.iconimg{
+  filter: invert(100%);
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #7c7c7c; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background:#cecece; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #e4e4e4; 
+  }

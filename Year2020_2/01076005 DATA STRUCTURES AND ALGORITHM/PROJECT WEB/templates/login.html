@@ -1,0 +1,76 @@
+<!---credit:https://www.youtube.com/watch?v=yiIi82xVjqo--->
+<!---hidepass https://www.youtube.com/watch?v=NomcZddqBfs-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>Innproject | Login</title>
+    <link rel="icon" href="images/icon.png">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link href='https://fonts.googleapis.com/css?family=Darker Grotesque' rel='stylesheet'>  <!-- EN -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <script src="javascript/login.js"></script>
+        <style>
+            section{
+                background: url("images/login_BG.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="form-container">
+                <h1>Login</h1>
+                <form action="login" method="post"> <!--action='inforuser.html'-->
+                    <div class="input-group_mb-3"> 
+                        <span class="input-group-text" id="basic-addon1">ชื่อผู้ใช้งาน</span>
+                        <input type="text" class="form-control" placeholder="" name ='user' aria-label="Phone" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group_mb-3">
+                        <span class="input-group-text" id="basic-addon1">รหัสผ่าน</span>
+                        <input type="password" id="password" class="form-control" placeholder="" name ='password' aria-label="Phone" aria-describedby="basic-addon1">
+                        <span class="eye" onclick="toggle()">
+                            <i class="fa fa-eye" id="toggleeye1" aria-hidden="true"></i>
+                            <i class="fa fa-eye-slash" id="toggleeye2" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="list-group">
+                        <button type="submit" class="list-group-item list-group-item-action">ล็อคอิน</button>
+                    </div>  
+                </form>
+                <div class="link">
+                    <a href="#">ไม่มีบัญชี? สมัครเลย</a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+
+<!--
+{% extends 'layout.html' %}
+
+{% block content%}
+<br>
+<form action='login' method="post">
+    {% csrf_token %}
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">ชื่อผู้ใช้งาน</span>
+        <input type="text" class="form-control" placeholder="" name ='user' aria-label="Phone" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">รหัสผ่าน</span>
+        <input type="text" class="form-control" placeholder="" name ='password' aria-label="Phone" aria-describedby="basic-addon1">
+    </div>
+    <div class="list-group" style="align-self: center; background-color: red;">
+        <button type="submit" class="list-group-item list-group-item-action">ล็อคอิน</button>
+    </div>  
+</form>
+<br>
+{% if check == 0%}
+    <h1>รหัสผิดจ้า</h1>
+{% endif %}
+
+{% endblock%}
+-->

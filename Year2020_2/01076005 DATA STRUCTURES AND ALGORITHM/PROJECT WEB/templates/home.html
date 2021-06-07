@@ -1,0 +1,79 @@
+<!-- เป็นการรวมหน้า home + layout ไว้ด้วกัน แล้วก็เพิ่มหน้าข้อมูล -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>INN Project</title>
+    <!-- add icon link -->
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <!-- Bootstrap 4 (Navbar) + Jquery-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/data.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body style="background-image: url(images/home_BG1.jpg); overflow: hidden;" >
+    <header>
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+            <!-- JavaScript -->
+            <script src="javascript/nav.js"></script>
+        </div>
+        <div class="overlay"></div>
+        <div class="container">
+            <nav>
+                <h1 class="brand"><a href="home.html">IN<span>N</span>project</a></h1>
+                <ul class="nav" role="tablist">
+                    <li><a class="nav-link" data-toggle="pill" style="margin: 18px;" href="#about"
+                            onclick="myFunction1()">About US</a></li>
+                    <li><a class="nav-link" data-toggle="pill" style="margin: 18px;" href="#rooms"
+                            onclick="myFunction2()">Rooms & Rates</a>
+                    </li>
+                    <li><a class="nav-link" data-toggle="pill" style="margin: 18px;" href="#contact"
+                            onclick="myFunction4()">Contact</a></li>
+                    <li><a class="nav-link loginnav" href="login.html">Login</a></li>
+                </ul>
+            </nav>           
+        </div>
+    </header>
+    <section>
+        <div class="tab-content">
+            <div id="about">
+                <iframe src="about.html"></iframe>
+                <iframe class="fade" src="rooms.html"></iframe>
+                <iframe class="fade" src="contact.html"></iframe>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div id="rooms">
+                <iframe class="fade" src="about.html"></iframe>
+                <iframe src="room.html"></iframe>
+                <iframe class="fade" src="contact.html"></iframe>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div id="contact">
+                <iframe class="fade" src="about.html"></iframe>
+                <iframe class="fade" src="room.html"></iframe>
+                <iframe src="contact.html"></iframe>
+            </div>
+        </div>
+        <script src="javascript/home.js"></script>
+    </section>
+    <!--
+    https://stackoverflow.com/questions/42605822/unable-to-change-background-color-of-body
+    https://www.centarahotelsresorts.com/th/centra/cmj/
+    -->
+</body>
+
+</html>

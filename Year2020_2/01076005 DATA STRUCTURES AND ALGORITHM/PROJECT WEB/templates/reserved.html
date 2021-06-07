@@ -1,0 +1,122 @@
+<!---credit:https://www.youtube.com/watch?v=yiIi82xVjqo  (เจ้าเก่าจาก login)--->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Innproject | Reservation</title>
+    <link rel="icon" href="images/icon.png">
+    <!-- CSS + JS(ไม่มี) -->
+    <link rel="stylesheet" href="css/reserved.css">
+    <link href='https://fonts.googleapis.com/css?family=Darker Grotesque' rel='stylesheet'>
+    <style>
+        section {
+            background: url("images/reserved_BG.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1>จองห้องพัก</h1>
+            <form action='addForm' method='post'> <!-- action='thankuser.html' -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">ชื่อ นามสกุล</span>
+                    <input type="text" class="form-control" placeholder="" name='username' aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">เบอร์มือถือ</span>
+                    <input type="text" class="form-control" placeholder="" name='phone' aria-label="Phone"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="amountpeopleroom">
+                        <span class="input-group-text" id="basic-addon1">จำนวนผู้เข้าพัก</span>
+                        <input type="number" id="amountpeople" class="form-control" placeholder="" name='amountpeople'
+                            aria-label="amountpeople" aria-describedby="basic-addon1" value="0" min="0" max="999">
+                    </div>
+                    <div class="amountpeopleroom">
+                        <span class="input-group-text" id="basic-addon1">จำนวนห้องพัก</span>
+                        <input type="number" id="amountroom" class="form-control" placeholder="" name='amountroom'
+                            aria-label="amountroom" aria-describedby="basic-addon1" value="0" min="0" max="999">
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="dateinput">
+                        <span class="input-group-text" id="dmycheckinout">วันเช็คอิน</span>
+                        <input type="date" id="dmycheckinout" class="form-control" aria-label="" name='dayin'>
+                    </div>
+                    <div class="dateinput">
+                        <span class="input-group-text" id="dmycheckinout">วันเช็คเอ้าท์</span>
+                        <input type="date" id="dmycheckinout" class="form-control" aria-label="" name='dayout'>
+                    </div>
+                </div>
+                <label class="input-group-text" for="inputGroupSelect01">ประเภทห้องพัก</label>
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect01" name='typeroom'>
+                        <option selected>เลือกห้องพัก</option>
+                        <option value="ห้องเดี่ยว">ห้องเดี่ยว</option>
+                        <option value="ห้องสูท">ห้องสูท</option>
+                        <option value="บ้านพัก">บ้านพัก</option>
+                    </select>
+                </div>
+                <div class="list-group">
+                    <button type="submit"
+                        class="list-group-item list-group-item-action">ยืนยันการจอง</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<!--
+{% extends 'layout.html' %}
+
+{% block content%}
+    <br>
+    <form action = 'addForm' method = 'post'>
+        {% csrf_token %}
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">ชื่อ นามสกุล</span>
+            <input type="text" class="form-control" placeholder="" name ='username' aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">เบอร์มือถือ</span>
+            <input type="text" class="form-control" placeholder="" name ='phone' aria-label="Phone" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">วันเช็คอิน</span>
+            <input type="text" class="form-control" aria-label="" name ='dayin'>
+            <span class="input-group-text">วันเช็คเอ้าท์</span>
+            <input type="text" class="form-control" aria-label="" name ='dayout'>
+            <span class="input-group-text">เดือน</span>
+            <input type="text" class="form-control" aria-label="" name ='month'>
+            <span class="input-group-text">ปี</span>
+            <input type="text" class="form-control" aria-label="" name ='year'>
+          </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">ประเภทห้องพัก</label>
+            <select class="form-select" id="inputGroupSelect01" name='typeroom'>
+              <option selected>เลือกห้องพัก</option>
+              <option value="ห้องเดี่ยว">ห้องเดี่ยว</option>
+              <option value="ห้องสูท">ห้องสูท</option>
+              <option value="บ้านพัก">บ้านพัก</option>
+            </select>
+          </div>
+        <br>
+        <div class="list-group">
+            <CENTER>
+                <button href="/thankuser" class="list-group-item list-group-item-action">ยืนยันการจอง</button>
+            </CENTER>
+        </div>  
+        
+    </form>
+    </br>
+{% endblock%}
+-->

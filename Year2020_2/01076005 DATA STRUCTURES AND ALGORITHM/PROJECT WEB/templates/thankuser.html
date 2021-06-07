@@ -1,0 +1,61 @@
+<!--- credit:https://www.youtube.com/watch?v=yiIi82xVjqo --->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Darker Grotesque' rel='stylesheet'>
+    <title>Innproject | Thank you</title>
+    <link rel="icon" href="images/icon.png">
+    <!-- CSS + JS(ไม่มี) -->
+    <link rel="stylesheet" href="css/thankuser.css">
+    <style>
+        section {
+            background: url("images/thankuser_BG.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="form-container">
+            <h1><img src="images/thankuser01.png"></h1>
+            <h2>ขอบคุณที่ใช้บริการ</h2>
+            <form action="inforuser.html" method="post"> <!--action='login'-->
+                <div class="input-group mb-3">
+                    <!-- แก้คำได้ ตรงนี้ -->
+                    <span class="input-group-text"
+                        id="basic-addon1">ท่านสามารถตรวจสอบการจองของท่านได้ที่ในหน้า...</span>
+                </div>
+                <div class="list-group">
+                    <button type="submit" class="list-group-item list-group-item-action">กลับหน้าหลัก</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<!--
+จากต้นฉบับ *ทำเป็นหน้าแยกเลยล่ะกัน
+{% extends 'layout.html' %}
+
+{% block content%}
+    <br>
+        <h1>ตกแต่งใส่รายละเอียดรูปภาพบลาๆของห้องพัก</h1>
+    </br>
+    <br>
+        <CENTER>
+            <h1>ขอบคุณสำหรับการจอง</h1>
+        </CENTER> 
+    </br>
+{% endblock%}
+
+-->

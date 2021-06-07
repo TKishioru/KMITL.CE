@@ -1,0 +1,118 @@
+/*EX font: https://www.w3schools.com/howto/howto_google_fonts.asp*/
+
+h2,h3,h4,h5,h6{
+    color: rgb(255,255,255);
+    background-color: rgb(255,255,255);
+    border: 2px solid rgb(255,255,255); /*#eee*/
+    padding: 10px;
+    width: fit-content;
+}
+p{
+    font-size: 21px;
+    font-family: 'Darker Grotesque';
+    letter-spacing: 1.5px;
+    /*
+    color: #4f4f4f;
+    background-color: white;
+    height: 1000px;
+    padding: 25px;
+    */
+}
+/*#home,#about,#rooms,#activity,#contact {
+    margin-top: 50px;    
+    color: rgb(255, 255, 255);
+    background-color: rgb(146, 45, 45);
+    font-size: 18px;
+}*/
+
+header {
+    margin: 0;
+  }
+
+section {
+    width: 100%;
+    margin: 0;
+}
+
+footer {
+    opacity: 50;
+}
+iframe{
+    border: none; 
+    position:absolute;
+    height:100%;
+    width:100%
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+.topic{
+    margin-top: 10%;
+    margin-bottom: 1%;
+    border: 5px solid rgb(255,255,255);
+    font-size: 24px;
+    text-decoration: none;
+	color: rgb(255,255,255);
+    text-decoration:none;
+    background-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    width: 200px;
+    text-align: center;
+}
+div.content{
+    /*font-family: "Roboto Cn", sans-serif;*/
+    color: rgb(255,255,255);
+    margin-left: 17%;
+    margin-right: 17%;
+    text-align: justify;
+    /*font-weight: 100;*/
+
+}
+/*https://www.w3schools.com/jquery/jquery_fade.asp*/
+.fade{
+    display: none;
+    color: transparent;
+    border: transparent;
+}
+/*color BG: #4f4f44;*/
+html{
+	font-size: 10px;
+	font-family: "Roboto Cn", sans-serif;
+}
+::-webkit-scrollbar {
+	width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #7c7c7c; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background:#cecece; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #e4e4e4; 
+  }
+.BGtxt{
+    background-color: #4f4f4f;
+    /*height: auto;
+    padding-bottom: 100%;
+    overflow: hidden;*/
+    height: 75vh;
+    margin-bottom: 0px;
+    padding-top: 1%;
+    width: 105%;
+}
+@media screen and (max-width: 780px){
+    .BGtxt{
+        height: 85vh;
+        padding-bottom: 100%
+    }
+}

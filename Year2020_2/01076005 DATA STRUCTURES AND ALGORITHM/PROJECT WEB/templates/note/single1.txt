@@ -1,0 +1,166 @@
+  <div class="main-container">
+    <div class="box" style="padding-left: 10%;">
+      <!--image slider start-->
+      <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="images/single02.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/single03.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/single04.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/single05.jpg" alt="">
+          </div>
+
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+      <script type="text/javascript" src="javascript/singleroom.js"></script>
+    </div>
+    <div class="box">
+      <h1>Single Room</h1>
+      <p>Functional and comfortable.
+        Sit back and enjoy one of our brand new 240 square foot Standard Rooms.
+        Complete with courtyard views, stylish decor and natural light,
+        our Standard Rooms are the perfect combination of function and comfort.
+        Ideally suited for today’s travelers.</p>
+      <br> <br>
+      <a href="reserved.html" target="_top">BOOK NOW!</a>
+    </div>
+    <div class="box">
+
+      <h2>Room Properties</h2>
+      <!--
+      <div>
+        <span class="text">Accommodates:</span><span class="text">2 people</span>
+      </div>
+      <div>
+        <span class="text">Size:</span><span class="text">240 sq.ft</span>
+      </div>
+      <div>
+        <span class="text">Beds:</span><span class="text">S1 Doubles</span>
+      </div>
+      -->
+      <table>
+        <tr colspan="2" style="text-align: center;">
+
+        </tr>
+        <tr>
+          <td style="padding-left: 15px;">
+            <p>Accommodates:</p>
+          </td>
+          <td style="padding-left: 15px;">
+            <p>2 people</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 15px;">
+            <p>Size:</p>
+          </td>
+          <td style="padding-left: 15px;">
+            <p>240 sq.ft</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 15px;">
+            <p>Beds:</p>
+          </td>
+          <td style="padding-left: 15px;">
+            <p>S1 Doubles</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="box">
+      <h2>Room Amenities</h2>
+      <table style="margin-left: 0%; margin-right: 0%;">
+        <tr>
+          <td>
+            <div style="display:block;">
+              <img class="Room_icon" src="images/svg/R_ac.svg">
+              <p style="padding-left: 60px; padding-top: 18px;">A/C</p>
+            </div>
+          </td>
+          <td>
+            <div style="display: block;">
+              <img class="Room_icon" src="images/svg/R_wifi.svg">
+              <p style="padding-left: 60px; padding-top: 18px;">Free Wi-Fi</p>
+            </div>
+          </td>
+          <td>
+            <div style="display: block;">
+              <img class="Room_icon" src="images/svg/R_tv.svg">
+              <p style="padding-left: 60px; padding-top: 18px;">HD TV</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:block;">
+              <img class="Room_icon" src="images/svg/R_minibar.svg">
+              <p style="padding-left: 60px; padding-top: 18px;">Minibar</p>
+            </div>
+          </td>
+          <td>
+            <div style="display: block;">
+              <img class="Room_icon" src="images/svg/R_shower.svg">
+              <p style="padding-left: 60px; padding-top: 18px;">Shower</p>
+            </div>
+          </td>
+          <td>
+            <div style="display: block;">
+              <img class="Room_icon" src="images/svg/R_phone.svg">
+              <p style="padding-left: 60px; padding-top: 18px;">Phone</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display:block;">
+              <img class="Room_icon" src="images/svg/R_kitchen.svg">
+              <p style="padding-left: 60px; padding-top: 18px;">Kitchen</p>
+            </div>
+          </td>
+          <td>
+            <div style="display: block;">
+              <img class="Room_icon" src="images/svg/R_workspace.svg">
+              <p style="padding-left: 60px; padding-top: 18px;">Work space</p>
+            </div>
+          </td>
+          <td>
+            <div style="display: block;">
+              <p></p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>

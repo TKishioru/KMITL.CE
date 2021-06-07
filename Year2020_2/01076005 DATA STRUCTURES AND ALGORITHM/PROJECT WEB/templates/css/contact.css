@@ -1,0 +1,20 @@
+img{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    filter: invert(100%);
+}
+.text{
+    margin-left: 50px;
+}
+u{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Darker Grotesque';
+    letter-spacing: 1.5px;
+}
+*{
+	margin-left: 0;
+    box-sizing: border-box;
+    padding: 0;
+}

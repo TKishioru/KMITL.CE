@@ -1,0 +1,97 @@
+/*https://www.youtube.com/watch?v=qXRYMdvq_Dc&list=PLW0whsxiBOCzYJlZCSMbVQHJgUqzL9NHO&index=23&ab_channel=CemEygiMedia*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+    
+.container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #4f4f4f;
+}
+/*min width: 1080px*/
+.card{
+    background: white;
+    width: 270px;
+    /*height: 400px;*/
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-image{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card h2{
+    padding: 10px;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card a{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+    font-size: x-large;
+}
+a:hover, a:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(68, 68, 68);;
+  }
+
+.card:hover{
+    background-color: rgb(68, 68, 68);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+  /*EX font: https://www.w3schools.com/howto/howto_google_fonts.asp*/
+/*h3{
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    width: fit-content;
+}*/
+p{
+    font-size: 21px;
+    font-family: 'Darker Grotesque';
+    letter-spacing: 1.5px;
+    text-align: justify;
+}
+p.mainroom{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+/*#home,#about,#rooms,#activity,#contact {
+    margin-top: 50px;    
+    color: rgb(255, 255, 255);
+    background-color: rgb(146, 45, 45);
+    font-size: 18px;
+}*/
+
+section {
+    width: 100%;
+    margin: 0;
+}
+@media screen and (max-width: 780px){
+    .container{
+        padding-bottom: 5%
+    }
+}

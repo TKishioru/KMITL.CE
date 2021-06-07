@@ -1,0 +1,81 @@
+<!-- ฺBackEnd : Django -->
+{% extends 'layout.html' %}
+
+{% block content%}
+    <br>
+        <h1>ข้อมูลลูกค้า</h1>
+    </br>
+    {% if press == 0 %}
+        <br>
+            ไม่มีข้อมูลลูกค้า
+        </br>
+    {% elif press == 1 %}
+        <br>
+            {{infor}}
+        </br>
+        <form action = 'inforSorted' method = 'post'>
+            {% csrf_token %}
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">เรียงวันที่</label>
+                <select class="form-select" id="inputGroupSelect01" name='sortday'>
+                  <option selected>วันเช็คอิน-วันเช็คเอ้าท์</option>
+                  <option value="sortin">วันเช็คอิน</option>
+                  <option value="sortout">วันเช็คเอ้าท์</option>
+                </select>
+                <CENTER>
+                    <button href="/inforuser" class="list-group-item list-group-item-action">ยืนยัน</button>
+                </CENTER>
+        </form>
+        <form action = 'checkout' method = 'post'>
+            {% csrf_token %}
+            <CENTER>
+                <button href="/inforuser" class="list-group-item list-group-item-action">เช็คเอ้าท์</button>
+            </CENTER>
+        </form>
+         
+    {% elif press == 2%}
+        {{fin}}
+        <form action = 'inforSorted' method = 'post'>
+            {% csrf_token %}
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">เรียงวันที่</label>
+                <select class="form-select" id="inputGroupSelect01" name='sortday'>
+                  <option selected>วันเช็คอิน-วันเช็คเอ้าท์</option>
+                  <option value="sortin">วันเช็คอิน</option>
+                  <option value="sortout">วันเช็คเอ้าท์</option>
+                </select>
+                <CENTER>
+                    <button href="/inforuser" class="list-group-item list-group-item-action">ยืนยัน</button>
+                </CENTER>
+              </div>
+        </form>
+        <form action = 'checkout' method = 'post'>
+            {% csrf_token %}
+            <CENTER>
+                <button href="/checkout" class="list-group-item list-group-item-action">เช็คเอ้าท์</button>
+            </CENTER>
+        </form>
+    {% elif press == 3%}
+        {{fin}}
+        <form action = 'inforSorted' method = 'post'>
+            {% csrf_token %}
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">เรียงวันที่</label>
+                <select class="form-select" id="inputGroupSelect01" name='sortday'>
+                <option selected>วันเช็คอิน-วันเช็คเอ้าท์</option>
+                <option value="sortin">วันเช็คอิน</option>
+                <option value="sortout">วันเช็คเอ้าท์</option>
+                </select>
+                <CENTER>
+                    <button href="/inforuser" class="list-group-item list-group-item-action">ยืนยัน</button>
+                </CENTER>
+            </div>
+        </form>
+        <form action = 'checkout' method = 'post'>
+            {% csrf_token %}
+            <CENTER>
+                <button href="/checkout" class="list-group-item list-group-item-action">เช็คเอ้าท์</button>
+            </CENTER>
+        </form>
+    {% endif %}
+{% endblock%}

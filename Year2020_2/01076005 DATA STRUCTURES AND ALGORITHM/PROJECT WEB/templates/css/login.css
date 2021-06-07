@@ -1,0 +1,105 @@
+/*<!---credit:https://www.youtube.com/watch?v=yiIi82xVjqo--->*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: rgb(90, 90, 90);
+}
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /*background: url("./img/bg.jpg");*/
+    background-size: cover;
+    background-position: center center;
+}
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, 1));
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 40px #000;
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5vh;
+}
+.input-group_mb-3 input{
+    width: 100%;
+    display: block;
+    padding: 0.5rem 0.7rem;
+    color: #222;
+    border: none;
+    border-bottom: 2px solid rgb(58, 134, 255);
+    outline: none;
+    margin: 0.75em 0;
+}
+.input-group_mb-3 input[type="text"]{
+    color: #000;
+    font-size: 0.9em;
+    opacity: .9;
+}
+.input-group_mb-3 input[type="password"]{
+    color: #000;
+    font-size: 0.9em;
+    opacity: .9;
+}
+.eye{
+    position: absolute;
+    right: 35px;
+    top: 57%;
+    cursor: pointer;
+}
+#toggleeye1{
+    display: none;
+}
+#toggleeye2{
+    display: block;
+}
+.fa{
+    font-size: 18px;
+    color: rgb(90, 90, 90);
+}
+.list-group button{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+    cursor: pointer;
+}
+.list-group button[type="submit"]{
+    background: rgb(58, 134, 255);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+.list-group button[type="submit"]:hover{
+    background: rgb(58, 134, 255);
+    opacity: 1;
+}
+.link{
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+    color: #222;
+    opacity: .7;
+    transition: opacity .3 ease;
+}
+.link a:hover{
+    opacity: 1;
+}
