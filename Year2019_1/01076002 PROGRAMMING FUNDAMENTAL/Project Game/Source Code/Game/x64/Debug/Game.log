@@ -1,0 +1,72 @@
+﻿  Collision.cpp
+  main.cpp
+E:\Project\Game\Game\main.cpp(89,29): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+E:\Project\Game\Game\main.cpp(90,28): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+E:\Project\Game\Game\main.cpp(91,28): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+E:\Project\Game\Game\main.cpp(312,61): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Project\Game\Game\main.cpp(312,61): warning C4244:         with
+E:\Project\Game\Game\main.cpp(312,61): warning C4244:         [
+E:\Project\Game\Game\main.cpp(312,61): warning C4244:             T=float
+E:\Project\Game\Game\main.cpp(312,61): warning C4244:         ]
+E:\Project\Game\Game\main.cpp(312,61): warning C4244:         and
+E:\Project\Game\Game\main.cpp(312,61): warning C4244:         [
+E:\Project\Game\Game\main.cpp(312,61): warning C4244:             T=int
+E:\Project\Game\Game\main.cpp(312,61): warning C4244:         ]
+E:\Project\Game\Game\main.cpp(313,61): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+E:\Project\Game\Game\main.cpp(313,61): warning C4244:         with
+E:\Project\Game\Game\main.cpp(313,61): warning C4244:         [
+E:\Project\Game\Game\main.cpp(313,61): warning C4244:             T=int
+E:\Project\Game\Game\main.cpp(313,61): warning C4244:         ]
+E:\Project\Game\Game\main.cpp(314,61): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+E:\Project\Game\Game\main.cpp(314,61): warning C4244:         with
+E:\Project\Game\Game\main.cpp(314,61): warning C4244:         [
+E:\Project\Game\Game\main.cpp(314,61): warning C4244:             T=int
+E:\Project\Game\Game\main.cpp(314,61): warning C4244:         ]
+E:\Project\Game\Game\main.cpp(315,61): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+E:\Project\Game\Game\main.cpp(315,61): warning C4244:         with
+E:\Project\Game\Game\main.cpp(315,61): warning C4244:         [
+E:\Project\Game\Game\main.cpp(315,61): warning C4244:             T=int
+E:\Project\Game\Game\main.cpp(315,61): warning C4244:         ]
+E:\Project\Game\Game\main.cpp(326,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+E:\Project\Game\Game\main.cpp(330,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Project\Game\Game\main.cpp(330,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Project\Game\Game\main.cpp(410,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Project\Game\Game\main.cpp(524,64): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Project\Game\Game\main.cpp(524,64): warning C4244:         with
+E:\Project\Game\Game\main.cpp(524,64): warning C4244:         [
+E:\Project\Game\Game\main.cpp(524,64): warning C4244:             T=float
+E:\Project\Game\Game\main.cpp(524,64): warning C4244:         ]
+E:\Project\Game\Game\main.cpp(524,64): warning C4244:         and
+E:\Project\Game\Game\main.cpp(524,64): warning C4244:         [
+E:\Project\Game\Game\main.cpp(524,64): warning C4244:             T=int
+E:\Project\Game\Game\main.cpp(524,64): warning C4244:         ]
+E:\Project\Game\Game\main.cpp(525,64): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+E:\Project\Game\Game\main.cpp(525,64): warning C4244:         with
+E:\Project\Game\Game\main.cpp(525,64): warning C4244:         [
+E:\Project\Game\Game\main.cpp(525,64): warning C4244:             T=int
+E:\Project\Game\Game\main.cpp(525,64): warning C4244:         ]
+E:\Project\Game\Game\main.cpp(526,64): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+E:\Project\Game\Game\main.cpp(526,64): warning C4244:         with
+E:\Project\Game\Game\main.cpp(526,64): warning C4244:         [
+E:\Project\Game\Game\main.cpp(526,64): warning C4244:             T=int
+E:\Project\Game\Game\main.cpp(526,64): warning C4244:         ]
+E:\Project\Game\Game\main.cpp(527,64): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+E:\Project\Game\Game\main.cpp(527,64): warning C4244:         with
+E:\Project\Game\Game\main.cpp(527,64): warning C4244:         [
+E:\Project\Game\Game\main.cpp(527,64): warning C4244:             T=int
+E:\Project\Game\Game\main.cpp(527,64): warning C4244:         ]
+E:\Project\Game\Game\main.cpp(546,56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Project\Game\Game\main.cpp(546,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Project\Game\Game\main.cpp(637,42): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+E:\Project\Game\Game\main.cpp(637,42): warning C4244:         with
+E:\Project\Game\Game\main.cpp(637,42): warning C4244:         [
+E:\Project\Game\Game\main.cpp(637,42): warning C4244:             T=float
+E:\Project\Game\Game\main.cpp(637,42): warning C4244:         ]
+  Generating Code...
+E:\Project\Game\Game\main.cpp(661,49): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+E:\Project\Game\Game\main.cpp(661,49): warning C4244:         with
+E:\Project\Game\Game\main.cpp(661,49): warning C4244:         [
+E:\Project\Game\Game\main.cpp(661,49): warning C4244:             T=float
+E:\Project\Game\Game\main.cpp(661,49): warning C4244:         ]
+E:\Project\Game\Game\Collision.cpp(41): warning C4715: 'Collision::collisitem': not all control paths return a value
+  Game.vcxproj -> E:\Project\Game\x64\Debug\Game.exe

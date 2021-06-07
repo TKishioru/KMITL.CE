@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="withui.HpunchController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@UI/CPP-01.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="ordertask" layoutX="324.0" layoutY="113.0" prefHeight="569.0" prefWidth="851.0" vbarPolicy="ALWAYS">
+         <content>
+            <Label fx:id="orderinfo" text="Label" />
+         </content>
+      </ScrollPane>
+      <Button layoutX="15.0" layoutY="152.0" mnemonicParsing="false" onAction="#onHome" opacity="0.0" prefHeight="30.0" prefWidth="200.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="70.0" layoutY="412.0" mnemonicParsing="false" onAction="#onHeal" opacity="0.0" prefHeight="30.0" prefWidth="200.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="70.0" layoutY="370.0" mnemonicParsing="false" onAction="#onSec" opacity="0.0" prefHeight="30.0" prefWidth="200.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="70.0" layoutY="327.0" mnemonicParsing="false" onAction="#onOrn" opacity="0.0" prefHeight="30.0" prefWidth="200.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="15.0" layoutY="283.0" mnemonicParsing="false" onAction="#onAll" opacity="0.0" prefHeight="30.0" prefWidth="200.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="15.0" layoutY="236.0" mnemonicParsing="false" onAction="#onPro" opacity="0.0" prefHeight="30.0" prefWidth="200.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="15.0" layoutY="193.0" mnemonicParsing="false" opacity="0.0" prefHeight="30.0" prefWidth="200.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="717.0" layoutY="704.0" text="Page" textFill="#42393d">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="763.0" layoutY="704.0" text="01" textAlignment="RIGHT" textFill="#42393d">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="username" layoutX="107.0" layoutY="30.0" text="username" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="99.0" layoutY="68.0" mnemonicParsing="false" onAction="#onEdit" opacity="0.0" prefHeight="26.0" prefWidth="102.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="89.0" layoutY="701.0" mnemonicParsing="false" onAction="#onLogout" opacity="0.0" prefHeight="42.0" prefWidth="120.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="607.0" layoutY="695.0" mnemonicParsing="false" opacity="0.0" prefHeight="42.0" prefWidth="89.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="801.0" layoutY="691.0" mnemonicParsing="false" opacity="0.0" prefHeight="49.0" prefWidth="90.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

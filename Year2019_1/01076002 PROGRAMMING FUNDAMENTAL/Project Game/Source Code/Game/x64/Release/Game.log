@@ -1,0 +1,6 @@
+﻿  Generating code
+  Previous IPDB not found, fall back to full compilation.
+E:\Project\Game\Game\Collision.cpp(41): warning C4715: 'Collision::collisitem': not all control paths return a value
+  All 701 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Game.vcxproj -> E:\Project\Game\x64\Release\Game.exe

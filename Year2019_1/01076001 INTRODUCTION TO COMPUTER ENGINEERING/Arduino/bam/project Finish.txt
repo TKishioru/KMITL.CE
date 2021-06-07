@@ -1,0 +1,141 @@
+//เสร็จสมบูรณ์
+#include <SPI.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#define SCREEN_WIDTH 128 
+#define SCREEN_HEIGHT 64 
+#define OLED_RESET     4
+#include <Servo.h> 
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+int PLAYE = 9; 
+int s1 = A0; 
+int s2 = A1; 
+int aX; 
+int bY; 
+int sensorxOrigin; 
+int sensoryOrigin;
+char p = 65;
+int speakerPin = 9; 
+int length = 28;
+char notes[] = "GGAGcB GGAGdc GGxecBA yyecdc"; 
+int beats[] = { 2, 2, 8, 8, 8, 16, 1, 2, 2, 8, 8, 8, 16, 1, 2, 2, 8, 8, 8, 8, 16, 1, 2, 2, 8, 8, 8, 16 }; 
+int tempo = 150; 
+
+Servo myservo; 
+Servo myservo1; 
+ 
+void playTone(int tone, int duration) { 
+  for (long i = 0; i < duration * 1000L; i += tone * 2) { 
+    digitalWrite(speakerPin, HIGH); 
+    delayMicroseconds(tone); 
+    digitalWrite(speakerPin, LOW); 
+    delayMicroseconds(tone); 
+  } 
+} 
+void playNote(char note, int duration) { 
+  char names[] = {'C', 'D', 'E', 'F', 'G', 'A', 'B', 
+                  'c', 'd', 'e', 'f', 'g', 'a', 'b', 
+                  'x', 'y' 
+                 }; 
+  int tones[] = { 1915, 1700, 1519, 1432, 1275, 1136, 1014, 
+                  956,  834,  765,  593,  468,  346,  224, 
+                  655 , 715 
+                }; 
+  int SPEE = 5; 
+  for (int i = 0; i < 17; i++) 
+    if (names[i] == note) { 
+      int newduration = duration / SPEE; 
+      playTone(tones[i], newduration); 
+    } 
+} 
+ 
+ 
+void setup() 
+{ 
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+  myservo1.attach(6); 
+  myservo.attach(8); 
+  Serial.begin(9600); 
+  aX = analogRead(s1); 
+  bY = analogRead(s2); 
+  pinMode(speakerPin, OUTPUT);
+  display.display();
+  delay(2000); 
+  display.clearDisplay(); 
+} 
+ 
+void loop() 
+{ 
+  display.clearDisplay();
+  display.setTextSize(2);             
+  display.setTextColor(WHITE);        
+  display.setCursor(0,0);             
+  display.print(" ");
+  display.println("BED BABY");
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.print(" ");
+  display.println("A-Z");
+  display.println("");
+  display.setCursor(50,40);   
+  display.setTextSize(3);
+  display.print(p);  
+  display.println(" ");  
+  display.display();
+
+  delay(2000);  
+  p++;
+   if(p == 91)
+  {
+    p=65;
+  } 
+  int a = analogRead(s1); 
+  int b = analogRead(s2); 
+  Serial.print("Sensorx = "); 
+  Serial.print(a); 
+  delay(500); 
+  Serial.print("      "); 
+  Serial.print("Sensory = "); 
+  Serial.println(b); 
+  delay(500); 
+  sensorxOrigin = aX; 
+  sensoryOrigin = bY; 
+  for (int degree1 =  0; degree1 <= 180; degree1++) 
+  { 
+    myservo1.write(degree1); 
+    delay(5); 
+  } 
+    for (int degree =  0; degree <= 360; degree++) 
+  { 
+    myservo.write(degree); 
+    delay(5); 
+  } 
+  for (int degree1 =  180; degree1 >= 0; degree1--) 
+  { 
+    myservo1.write(degree1); 
+    delay(5); 
+  } 
+ 
+  for (int degree =  360; degree >= 0; degree--) 
+  { 
+    myservo.write(degree); 
+    delay(5); 
+  } 
+ 
+  if ((sensorxOrigin - a >= 30) || (sensoryOrigin - b >= 30) || (sensorxOrigin - a <= -30) || (sensoryOrigin - b <= -30)) 
+  { 
+    for (int i = 0; i < length; i++) { 
+      if (notes[i] == ' ') { 
+        delay(100); 
+        //delay(beats[i] * tempo); // rest 
+      } else { 
+        playNote(notes[i], beats[i] * tempo); 
+      } 
+      // pause between notes 
+      delay(tempo); 
+    } 
+    aX = a; 
+    bY = b; 
+  } 
+}

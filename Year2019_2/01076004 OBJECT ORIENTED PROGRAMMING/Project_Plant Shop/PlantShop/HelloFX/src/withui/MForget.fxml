@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="withui.MForgetController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@UI/ui12-01.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="user_fg" layoutX="410.0" layoutY="275.0" prefHeight="38.0" prefWidth="376.0" promptText="Enter Username" style="-fx-background-color: #cfcdcc;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email_fg" layoutX="410.0" layoutY="366.0" prefHeight="38.0" prefWidth="376.0" promptText="Enter Email" style="-fx-background-color: #cfcdcc;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="checkbtt" layoutX="540.0" layoutY="460.0" mnemonicParsing="false" onAction="#onCheck" opacity="0.0" prefHeight="54.0" prefWidth="272.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backbtt" layoutX="410.0" layoutY="460.0" mnemonicParsing="false" onAction="#onBack" opacity="0.0" prefHeight="54.0" prefWidth="123.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

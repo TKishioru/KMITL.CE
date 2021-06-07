@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="withui.MaddAccN2Controller">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@UI/Uui2-01.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="name_sur" layoutX="410.0" layoutY="275.0" prefHeight="38.0" prefWidth="376.0" promptText="Enter Name - Surname" style="-fx-background-color: #cfcdcc;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phone" layoutX="410.0" layoutY="365.0" prefHeight="38.0" prefWidth="376.0" promptText="Enter Phone Number" style="-fx-background-color: #cfcdcc;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="address" layoutX="410.0" layoutY="456.0" prefHeight="100.0" prefWidth="376.0" promptText="Enter Address" style="-fx-background-color: #cfcdcc;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="create_ac" layoutX="467.0" layoutY="596.0" mnemonicParsing="false" onAction="#onCreate" opacity="0.0" prefHeight="48.0" prefWidth="266.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="back_p1" layoutX="584.0" layoutY="654.0" onMouseClicked="#back_page1" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

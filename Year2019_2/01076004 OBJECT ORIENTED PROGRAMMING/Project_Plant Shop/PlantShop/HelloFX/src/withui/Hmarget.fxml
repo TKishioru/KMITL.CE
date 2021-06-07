@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="withui.HmargetController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@UI/ui16-01.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="384.0" layoutY="32.0" mnemonicParsing="false" opacity="0.0" prefHeight="34.0" prefWidth="78.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="610.0" layoutY="680.0" mnemonicParsing="false" opacity="0.0" prefHeight="47.0" prefWidth="226.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Pane layoutX="382.0" layoutY="92.0" prefHeight="90.0" prefWidth="432.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-05.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="24.0" layoutX="99.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-10.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="78.0" layoutX="353.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-09.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="103.0" layoutY="3.0" prefHeight="32.0" prefWidth="204.0" style="-fx-background-color: 625c5b;" text="Name Plant" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="103.0" layoutY="35.0" prefHeight="17.0" prefWidth="196.0" style="-fx-background-color: 625c5b;" text="kind" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="325.0" layoutY="3.0" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: 625c5b;" text="0.00" textAlignment="RIGHT">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="409.0" layoutY="3.0" style="-fx-background-color: 625c5b;" text="฿">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="385.0" layoutY="65.0" style="-fx-background-color: 625c5b;" text="00" />
+            <Button layoutX="97.0" layoutY="60.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="30.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="362.0" layoutY="60.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="13.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="399.0" layoutY="62.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="13.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="808.0" layoutY="626.0" style="-fx-background-color: 625c5b;" text="฿">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Pane layoutX="382.0" layoutY="190.0" prefHeight="90.0" prefWidth="432.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-05.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="24.0" layoutX="99.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-10.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="78.0" layoutX="353.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-09.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="103.0" layoutY="3.0" prefHeight="32.0" prefWidth="204.0" style="-fx-background-color: 625c5b;" text="Name Plant" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="103.0" layoutY="35.0" prefHeight="17.0" prefWidth="196.0" style="-fx-background-color: 625c5b;" text="kind" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="325.0" layoutY="3.0" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: 625c5b;" text="0.00" textAlignment="RIGHT">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="409.0" layoutY="3.0" style="-fx-background-color: 625c5b;" text="฿">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="385.0" layoutY="65.0" style="-fx-background-color: 625c5b;" text="00" />
+            <Button layoutX="97.0" layoutY="60.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="30.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="362.0" layoutY="60.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="13.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="399.0" layoutY="62.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="13.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="382.0" layoutY="287.0" prefHeight="90.0" prefWidth="432.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-05.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="24.0" layoutX="99.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-10.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="78.0" layoutX="353.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-09.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="103.0" layoutY="3.0" prefHeight="32.0" prefWidth="204.0" style="-fx-background-color: 625c5b;" text="Name Plant" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="103.0" layoutY="35.0" prefHeight="17.0" prefWidth="196.0" style="-fx-background-color: 625c5b;" text="kind" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="325.0" layoutY="3.0" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: 625c5b;" text="0.00" textAlignment="RIGHT">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="409.0" layoutY="3.0" style="-fx-background-color: 625c5b;" text="฿">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="385.0" layoutY="65.0" style="-fx-background-color: 625c5b;" text="00" />
+            <Button layoutX="97.0" layoutY="60.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="30.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="362.0" layoutY="60.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="13.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="399.0" layoutY="62.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="13.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="382.0" layoutY="384.0" prefHeight="90.0" prefWidth="432.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-05.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="24.0" layoutX="99.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-10.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="78.0" layoutX="353.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-09.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="103.0" layoutY="3.0" prefHeight="32.0" prefWidth="204.0" style="-fx-background-color: 625c5b;" text="Name Plant" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="103.0" layoutY="35.0" prefHeight="17.0" prefWidth="196.0" style="-fx-background-color: 625c5b;" text="kind" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="325.0" layoutY="3.0" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: 625c5b;" text="0.00" textAlignment="RIGHT">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="409.0" layoutY="3.0" style="-fx-background-color: 625c5b;" text="฿">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="385.0" layoutY="65.0" style="-fx-background-color: 625c5b;" text="00" />
+            <Button layoutX="97.0" layoutY="60.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="30.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="362.0" layoutY="60.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="13.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="399.0" layoutY="62.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="13.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="382.0" layoutY="482.0" prefHeight="90.0" prefWidth="432.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-05.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="24.0" layoutX="99.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-10.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="78.0" layoutX="353.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-09.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="103.0" layoutY="3.0" prefHeight="32.0" prefWidth="204.0" style="-fx-background-color: 625c5b;" text="Name Plant" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="103.0" layoutY="35.0" prefHeight="17.0" prefWidth="196.0" style="-fx-background-color: 625c5b;" text="kind" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="325.0" layoutY="3.0" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: 625c5b;" text="0.00" textAlignment="RIGHT">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="409.0" layoutY="3.0" style="-fx-background-color: 625c5b;" text="฿">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="385.0" layoutY="65.0" style="-fx-background-color: 625c5b;" text="00" />
+            <Button layoutX="97.0" layoutY="60.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="30.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="362.0" layoutY="60.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="13.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="399.0" layoutY="62.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="13.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="374.0" layoutY="584.0" prefHeight="34.0" prefWidth="452.0">
+         <children>
+            <CheckBox layoutX="9.0" layoutY="6.0" mnemonicParsing="false" />
+            <Label layoutX="433.0" layoutY="3.0" style="-fx-background-color: 625c5b;" text="฿">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="332.0" layoutY="4.0" prefHeight="27.0" prefWidth="98.0" text="0.00" textAlignment="RIGHT">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="37.0" layoutY="3.0" promptText="Key Code Reward Point" style="-fx-background-color: e9e7e5;" />
+         </children>
+      </Pane>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="709.0" layoutY="629.0" prefHeight="27.0" prefWidth="98.0" text="0.00" textAlignment="RIGHT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

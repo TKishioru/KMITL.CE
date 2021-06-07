@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="withui.HplantController_6">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@UI/ui4-01.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="product_img" fitHeight="250.0" fitWidth="320.0" layoutX="434.0" layoutY="77.0" pickOnBounds="true">
+         <image>
+            <Image url="file:/D:/HelloFX/Product/Spotted%20betel.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="name_plant" layoutX="389.0" layoutY="362.0" text="Name Plant" textFill="#625c5b">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="type" layoutX="423.0" layoutY="412.0" text="Kind" textFill="WHITE" />
+      <Label layoutX="394.0" layoutY="507.0" text="20 cm" textFill="#625c5b">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="755.0" layoutY="506.0" text="Normal" textFill="#625c5b">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="664.0" layoutY="507.0" text="Normal" textFill="#625c5b">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="576.0" layoutY="506.0" text="Normal" textFill="#625c5b">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="483.0" layoutY="506.0" text="Low" textFill="#625c5b">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="amount" alignment="CENTER_RIGHT" layoutX="430.0" layoutY="552.0" text="00">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="price" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="617.0" layoutY="546.0" prefHeight="26.0" prefWidth="164.0" text="0.00" textAlignment="RIGHT" textFill="#625c5b">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="information" layoutX="396.0" layoutY="618.0" prefHeight="26.0" prefWidth="411.0" text="About About About About About About About About About About About" textOverrun="WORD_ELLIPSIS" />
+      <Button fx:id="Back" layoutX="384.0" layoutY="32.0" mnemonicParsing="false" onAction="#onBack" opacity="0.0" prefHeight="34.0" prefWidth="78.0" text="Button" />
+      <Button fx:id="addcart" layoutX="610.0" layoutY="680.0" mnemonicParsing="false" onAction="#onAdd" opacity="0.0" prefHeight="47.0" prefWidth="226.0" text="Button" />
+      <Button fx:id="reducebtt" layoutX="397.0" layoutY="549.0" mnemonicParsing="false" onAction="#onDecress" opacity="0.0" prefHeight="26.0" prefWidth="31.0" text="Button" />
+      <Button fx:id="incress" layoutX="449.0" layoutY="549.0" mnemonicParsing="false" onAction="#onIncress" opacity="0.0" prefHeight="26.0" prefWidth="31.0" text="Button" />
+   </children>
+</AnchorPane>
