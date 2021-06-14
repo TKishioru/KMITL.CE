@@ -1,15 +1,6 @@
 # Operating System
-1. [Introduction](#Introduction)
-2. [Kernel](#Kernel)
-3. [Structure](#Structure)
-4. [Concurrency](#Concurrency)
-5. [Synchronization + Advance Synchronization](#synchronization--advance-synchronization)
-6. [Scheduling](#Scheduling)
-7. [Address Translation](#address-translation)
-8. [Caching + Virtual Memory](#caching--virtual-memory)
-
 <details>
-<summary><h1>Operating System</h1></summary>
+<summary><b>Table of Contents</b> (click to open)</summary>
 <!-- MarkdownTOC -->
 
 1. [Introduction](#Introduction)
@@ -66,10 +57,13 @@ What’s an Operating System?
 - รัน 1 application ต่อ 1 หน่วยเวลา
 - Batch system
 - Computer แพง
+
 > Time-sharing operating system
 - เริ่มให้หลาย user ทำงานพร้อมกันในช่วงเวลานึงได้ (multiprocessing)
 - ราคาเริ่มถูกลง
+
 > TODAY’s computer is cheap
+
 > Tomorrow
 - data center ใหญ่ขึ้นต้องรองรับให้ได้
 
@@ -79,6 +73,170 @@ What’s an Operating System?
 
 ## Concurrency
 
+<details>
+<summary>Experiment #1</summary>
+
+```C#
+// simple thread - test order
+using System;
+using System.Threading;
+
+namespace Lab_OS_Concurrency
+{
+    class Program
+    {
+        static void TestThread1()
+        {
+            for(int i = 0; i < 100; i++)
+                Console.WriteLine("Thread# 1 i = {0}",i);
+        }
+        static void TestThread2()
+        {
+            for(int i = 0; i < 100; i++)
+                Console.WriteLine("Thread# 2 i = {0}",i);
+        }
+        static void Main(string[] args)
+        {
+            Thread th1 = new Thread(TestThread1);
+            Thread th2 = new Thread(TestThread2);
+            th1.Start();
+            th2.Start();
+        }
+    }
+}
+```
+</details>
+
+
+<details>
+<summary>Experiment #2</summary>
+
+```C#
+// test resource sharing
+using System;
+using System.Threading;
+
+namespace Lab_OS_Concurrency01
+{
+    class Program
+    {
+        static int resource = 10000;
+        static void TestThread1()
+        {
+            Console.WriteLine("Thread# 1 i = {0}",resource);
+        }
+        static void TestThread2()
+        {
+            Console.WriteLine("Thread# 2 i = {0}",resource);
+        }
+        static void Main(string[] args)
+        {
+            Thread th1 = new Thread(TestThread1);
+            Thread th2 = new Thread(TestThread2);
+            th1.Start();
+            th2.Start();
+        }
+    }
+}
+```
+</details>
+
+
+<details>
+<summary>Experiment #3</summary>
+
+```C#
+// test pause a thread
+using System;
+using System.Threading;
+
+namespace Lab_OS_Concurrency02
+{
+    class Program
+    {
+        static int resource = 10000;
+        static void TestThread1()
+        {
+            resource = 55555;
+        }
+        static void Main(string[] args)
+        {
+            Thread th1 = new Thread(TestThread1);
+            th1.Start();
+            //Thread.Sleep(10);
+            Console.WriteLine("resource = {0}",resource);
+        }
+    }
+}
+```
+    
+
+```C#
+// test pause 2
+using System;
+using System.Threading;
+
+namespace Lab_OS_Concurrency01
+{
+    class Program
+    {
+        static int resource = 10000;
+        static void TestThread1()
+        {
+            for(int i = 0; i < 45555; i++)
+            {
+                resource++;
+                Console.Write(".");
+            }
+        }
+        static void Main(string[] args)
+        {
+            Thread th1 = new Thread(TestThread1);
+            th1.Start();
+            Thread.Sleep(10);
+            Console.WriteLine("resource = {0}",resource);
+        }
+    }
+}
+```
+    
+</details>
+
+
+<details>
+<summary>Experiment #4</summary>
+
+```C#
+// test pause 2
+using System;
+using System.Threading;
+
+namespace Lab_OS_Concurrency01
+{
+    class Program
+    {
+        static int resource = 10000;
+        static void TestThread1()
+        {
+            for(int i = 0; i < 45555; i++)
+            {
+                resource++;
+                Console.Write(".");
+            }
+        }
+        static void Main(string[] args)
+        {
+            Thread th1 = new Thread(TestThread1);
+            th1.Start();
+            //Thread.Sleep(10);
+            th1.Join();
+            Console.WriteLine("resource = {0}",resource);
+        }
+    }
+}
+```
+</details>
+    
 ## Synchronization + Advance Synchronization
 
 ## Scheduling
@@ -86,4 +244,3 @@ What’s an Operating System?
 ## Address Translation
 
 ## Caching + Virtual Memory
-
