@@ -1,0 +1,46 @@
+Operating System
+
+Introduction
+What’s an Operating System?
+เป็น software ที่ใช้ในการจัดการ resource ต่างๆภายในคอมพิวเตอร์ ซึ่ง resource เป็นพวก Hardware ต่างๆ เช่น CPU , mouse , keyboard , RAM
+Roles
+1.Referee
+- กรรมการที่คอยตัดสินใจว่าใครจะได้ใช้ resource ใด? เมื่อไร?
+- ต้องมีความ Isolation
+- Communication
+2.illusionist
+- สร้าง illusion ขึ้นมาว่า program ที่กำลัง run อยู่สามารถใช้งานได้เต็มกำลัง ใช้ได้ทั้งเครื่อง
+3.Glue เชื่อม library เข้าด้วยกัน (ระหว่าง interface, Libraries)
+
+Challenges
+1.	Reliability : ต้องมีความเสถียร
+2.	Availability :ต้องพร้อมใช้งานตลอดเวลา
+3.	Security :ป้องกันพวกไวรัส
+4.	Privacy:แบ่งแยกไฟล์ของแต่ละ ex.ไฟล์ของ application ใดก็มีแต่ app นั้นๆที่สามารถเข้าถึงได้
+5.	Portability : สามารถเคลื่อนย้ายโปรแกรมได้
+-For programs ต้องพิจารณา API,Abstraction virtual machine
+-For OS “hardware abstraction layer” เป็นการสร้าง Abstraction ที่ใช้ในการอ้างอิงระหว่างฝั่ง hardware กับฝั่งที่เป็นคนเขียน operating system
+6.	Performance
+-Latency:ความเร็วในส่วนของ response
+-Throughput:จำนวนงานที่ทำได้ per time unit
+-Overhead: ให้ overhead น้อย
+-Fairness:ความ fair ของการใช้งานของแต่ละ program
+-Predictability:
+Early operating system
+-รัน 1 application ต่อ 1 หน่วยเวลา
+-Batch system
+Computer แพง
+Time-sharing operating system
+-เริ่มให้หลาย user ทำงานพร้อมกันในช่วงเวลานึงได้ (multiprocessing) ราคาเริ่มถูกลง
+TODAY’s computer is cheap
+Tomorrow
+-data center ใหญ่ขึ้นต้องรองรับให้ได้
+
+Kernel
+Structure
+Concurrency
+Synchronization + Advance Synchronization
+Scheduling
+Address Translation
+Caching + Virtual Memory
+
