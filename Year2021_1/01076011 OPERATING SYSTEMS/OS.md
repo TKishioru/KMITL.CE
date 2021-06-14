@@ -1,23 +1,18 @@
-# Operating System 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+
+# Operating System : 𝕆𝕊
 <details>
 <summary><b>Table of Contents</b> (click to open)</summary>
 <!-- MarkdownTOC -->
-
-⌦ [Introduction](#Introduction)
     
-⌦ [Kernel](#Kernel)
-    
-⌦ [Structure](#Structure)
-    
-⌦ [Concurrency](#Concurrency)
-    
-⌦ [Synchronization + Advance Synchronization](#synchronization--advance-synchronization)
-    
-⌦ [Scheduling](#Scheduling)
-    
-⌦ [Address Translation](#address-translation)
-    
-⌦ [Caching + Virtual Memory](#caching--virtual-memory)
+1. [Introduction](#Introduction)
+2. [Kernel](#Kernel)
+3. [Structure](#Structure)
+4. [Concurrency](#Concurrency)
+5. [Synchronization + Advance Synchronization](#synchronization--advance-synchronization)
+6. [Scheduling](#Scheduling)
+7. [Address Translation](#address-translation)  
+8. [Caching + Virtual Memory](#caching--virtual-memory)
 
 <!-- /MarkdownTOC -->
 </details>
@@ -64,19 +59,27 @@ Operating System Evaluation
     - Fairness : ความ fair ของการใช้งานของแต่ละ program
     - Predictability
 
-> Early operating system
-- รัน 1 application ต่อ 1 หน่วยเวลา
-- Batch system
-- Computer แพง
+```
+Design Tradeoffs
+```
 
-> Time-sharing operating system
-- เริ่มให้หลาย user ทำงานพร้อมกันในช่วงเวลานึงได้ (multiprocessing)
-- ราคาเริ่มถูกลง
+```
+Technology development from the past to the future
+```
 
-> TODAY’s computer is cheap
+- Early operating system
+> รัน 1 application ต่อ 1 หน่วยเวลา
+> Batch system
+> Computer แพง
 
-> Tomorrow
-- data center ใหญ่ขึ้นต้องรองรับให้ได้
+- Time-sharing operating system
+> เริ่มให้หลาย user ทำงานพร้อมกันในช่วงเวลานึงได้ (multiprocessing)
+> ราคาเริ่มถูกลง
+
+- TODAY’s computer is cheap
+
+- Tomorrow
+> data center ใหญ่ขึ้นต้องรองรับให้ได้
 
 ## Kernel
 
