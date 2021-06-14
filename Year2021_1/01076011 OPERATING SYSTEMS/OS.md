@@ -1,16 +1,23 @@
-# Operating System
+# Operating System 
 <details>
 <summary><b>Table of Contents</b> (click to open)</summary>
 <!-- MarkdownTOC -->
 
-1. [Introduction](#Introduction)
-2. [Kernel](#Kernel)
-3. [Structure](#Structure)
-4. [Concurrency](#Concurrency)
-5. [Synchronization + Advance Synchronization](#synchronization--advance-synchronization)
-6. [Scheduling](#Scheduling)
-7. [Address Translation](#address-translation)
-8. [Caching + Virtual Memory](#caching--virtual-memory)
+⌦ [Introduction](#Introduction)
+    
+⌦ [Kernel](#Kernel)
+    
+⌦ [Structure](#Structure)
+    
+⌦ [Concurrency](#Concurrency)
+    
+⌦ [Synchronization + Advance Synchronization](#synchronization--advance-synchronization)
+    
+⌦ [Scheduling](#Scheduling)
+    
+⌦ [Address Translation](#address-translation)
+    
+⌦ [Caching + Virtual Memory](#caching--virtual-memory)
 
 <!-- /MarkdownTOC -->
 </details>
@@ -23,7 +30,9 @@ What’s an Operating System?
 
 เป็น software ที่ใช้ในการจัดการ resource ต่างๆภายในคอมพิวเตอร์ ซึ่ง resource เป็นพวก Hardware ต่างๆ เช่น CPU , mouse , keyboard , RAM
 
-**Roles**
+```
+Roles of the Operating System
+```
 
 1. Referee
     - กรรมการที่คอยตัดสินใจว่าใครจะได้ใช้ resource ใด? เมื่อไร?
@@ -33,7 +42,9 @@ What’s an Operating System?
     - สร้าง illusion ขึ้นมาว่า program ที่กำลัง run อยู่สามารถใช้งานได้เต็มกำลัง ใช้ได้ทั้งเครื่อง
 3. Glue เชื่อม library เข้าด้วยกัน (ระหว่าง interface, Libraries)
 
-**Challenges**
+```
+Operating System Evaluation
+```
 
 1.	Reliability : ต้องมีความเสถียร
 2.	Availability : ต้องพร้อมใช้งานตลอดเวลา
