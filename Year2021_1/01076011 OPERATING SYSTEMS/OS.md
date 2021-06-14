@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
 
 # Operating System : 𝕆𝕊
-<details>
+<details style="color:blue;">
 <summary><b>Table of Contents</b> (click to open)</summary>
 <!-- MarkdownTOC -->
     
