@@ -1,7 +1,5 @@
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
-
 # Operating System : 𝕆𝕊
-<details style="color:blue;">
+<details>
 <summary><b>Table of Contents</b> (click to open)</summary>
 <!-- MarkdownTOC -->
     
@@ -46,10 +44,11 @@ Operating System Evaluation
 3.	Security : ป้องกันพวกไวรัส
 4.	Privacy : แบ่งแยกไฟล์ของแต่ละ ex.ไฟล์ของ application ใดก็มีแต่ app นั้นๆที่สามารถเข้าถึงได้
 5.	Portability : สามารถเคลื่อนย้ายโปรแกรมได้
-    - For programs
+    - **For programs**
     
        ต้องพิจารณา API,Abstraction virtual machine
-    - For OS    ``` “hardware abstraction layer” ```
+       
+    - **For OS**    ``` “ hardware abstraction layer ” ```
     
        เป็นการสร้าง Abstraction ที่ใช้ในการอ้างอิงระหว่างฝั่ง hardware กับฝั่งที่เป็นคนเขียน operating system
 6.	Performance
@@ -68,21 +67,21 @@ Technology development from the past to the future
 ```
 
 - Early operating system
-    > - รัน 1 application ต่อ 1 หน่วยเวลา
+    > ➊ รัน 1 application ต่อ 1 หน่วยเวลา
     > 
-    > - Batch system
+    > ➋ Batch system
     > 
-    > - Computer แพง
+    > ➌ Computer แพง
 
 - Time-sharing operating system
-    > - เริ่มให้หลาย user ทำงานพร้อมกันในช่วงเวลานึงได้ (multiprocessing)
+    > ➊ เริ่มให้หลาย user ทำงานพร้อมกันในช่วงเวลานึงได้ (multiprocessing)
     >
-    > - ราคาเริ่มถูกลง
+    > ➋ ราคาเริ่มถูกลง
 
 - TODAY’s computer is cheap
 
 - Tomorrow
-    > - data center ใหญ่ขึ้นต้องรองรับให้ได้
+    > ➊ data center ใหญ่ขึ้นต้องรองรับให้ได้
 
 ## Kernel
 
@@ -256,6 +255,17 @@ namespace Lab_OS_Concurrency01
     
 ## Synchronization + Advance Synchronization
 
+```flow
+st=>start: Login
+op=>operation: Login operation
+cond=>condition: Successful Yes or No?
+e=>end: To admin
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
+    
 ## Scheduling
 
 ## Address Translation
