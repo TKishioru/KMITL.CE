@@ -1,11 +1,9 @@
-# KMITL
+# 𝕂𝕄𝕀𝕋𝕃
 
 Study at King Mongkut's Institute of Technology Ladkrabang
 
-Computer Engineering (CE58)
-
-
-## Year 2019
+<details>
+<summary><b>Year 2019</b></summary>
 
 ```
   Term 1
@@ -17,8 +15,10 @@ Computer Engineering (CE58)
 
 > 01076001 INTRODUCTION TO COMPUTER ENGINEERING
 
-study about the basics of Arduino.
-
+study about the basics of Arduino. 
+[« ᴄᴏᴅᴇ »](https://github.com/TKishioru/KMITL/tree/main/Year2019_1/01076001%20INTRODUCTION%20TO%20COMPUTER%20ENGINEERING "Arduino")
+<!-- [ʙᴏᴏᴋ](#) -->
+  
 > 01076002 PROGRAMMING FUNDAMENTAL
   
 study about the basics of C language & making game.
@@ -37,8 +37,11 @@ study about the basics of Java language.
 
 > 01076012 DISCRETE STRUCTURE
 
+</details>
 
-## Year 2020
+
+<details>
+<summary><b>Year 2020</b></summary>
 
 ```  
   Term 1
@@ -70,8 +73,10 @@ study about the basics of Assembly language.
 
 > 01076253 PROBABILITY AND STATISTICS
 
+</details>
 
-## Year 2021
+<details>
+<summary><b>Year 2021</b></summary>
 
 ```  
   Term 1
@@ -92,3 +97,5 @@ study about the basics of Web language. (HTML + CSS + Javascript + Other.)
 > 01076013 THEORY OF COMPUTATION
 
 > 01076014 COMPUTER ENGINEERING PROJECT PREPARATION
+
+</details>
