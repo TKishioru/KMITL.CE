@@ -71,7 +71,7 @@ Year 2020
 
   01076005 DATA STRUCTURES AND ALGORITHM**
 
-study about the basics of Python language. << 𝒟𝑅𝒪𝒫 >>
+study about the basics of Python language. 《 ᴅʀᴏᴘ 》
 
 ..
 
@@ -89,7 +89,7 @@ study about the basics of Python language. << 𝒟𝑅𝒪𝒫 >>
 
   01076005 DATA STRUCTURES AND ALGORITHM
 
-<< 𝒮𝒯𝒰𝒟𝒴 𝒜𝒢𝒜𝐼𝒩 >>
+《 sᴛᴜᴅʏ ᴀɢᴀɪɴ 》
 
 ..
 
