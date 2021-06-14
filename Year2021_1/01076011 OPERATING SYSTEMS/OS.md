@@ -68,18 +68,21 @@ Technology development from the past to the future
 ```
 
 - Early operating system
-> รัน 1 application ต่อ 1 หน่วยเวลา
-> Batch system
-> Computer แพง
+    > - รัน 1 application ต่อ 1 หน่วยเวลา
+    > 
+    > - Batch system
+    > 
+    > - Computer แพง
 
 - Time-sharing operating system
-> เริ่มให้หลาย user ทำงานพร้อมกันในช่วงเวลานึงได้ (multiprocessing)
-> ราคาเริ่มถูกลง
+    > - เริ่มให้หลาย user ทำงานพร้อมกันในช่วงเวลานึงได้ (multiprocessing)
+    >
+    > - ราคาเริ่มถูกลง
 
 - TODAY’s computer is cheap
 
 - Tomorrow
-> data center ใหญ่ขึ้นต้องรองรับให้ได้
+    > - data center ใหญ่ขึ้นต้องรองรับให้ได้
 
 ## Kernel
 
