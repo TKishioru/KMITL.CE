@@ -3,10 +3,10 @@
 2. [Kernel](#Kernel)
 3. [Structure](#Structure)
 4. [Concurrency](#Concurrency)
-5. [Synchronization + Advance Synchronization](#Synchronization_Advance_Synchronization)
+5. [Synchronization + Advance Synchronization](#Synchronization + Advance Synchronization)
 6. [Scheduling](#Scheduling)
-7. [Address Translation](#Address_Translation)
-8. [Caching + Virtual Memory](#Caching_and_Virtual_Memory)
+7. [Address Translation](#Address Translation)
+8. [Caching + Virtual Memory](#Caching + Virtual Memory)
 
 ## Introduction
 
