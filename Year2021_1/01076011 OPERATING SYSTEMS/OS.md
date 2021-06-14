@@ -1,18 +1,32 @@
-#Operating System
+# Operating System
+1. [Introduction](#Introduction)
+2. [Kernel](#Kernel)
+3. [Structure](#Structure)
+4. [Concurrency](#Concurrency)
+5. [Synchronization + Advance Synchronization](#Synchronization_Advance_Synchronization)
+6. [Scheduling](#Scheduling)
+7. [Address Translation](#Address_Translation)
+8. [Caching + Virtual Memory](#Caching_and_Virtual_Memory)
 
-##Introduction
+## Introduction
+
+```
 What’s an Operating System?
-เป็น software ที่ใช้ในการจัดการ resource ต่างๆภายในคอมพิวเตอร์ ซึ่ง resource เป็นพวก Hardware ต่างๆ เช่น CPU , mouse , keyboard , RAM
-Roles
-1.Referee
-- กรรมการที่คอยตัดสินใจว่าใครจะได้ใช้ resource ใด? เมื่อไร?
-- ต้องมีความ Isolation
-- Communication
-2.illusionist
-- สร้าง illusion ขึ้นมาว่า program ที่กำลัง run อยู่สามารถใช้งานได้เต็มกำลัง ใช้ได้ทั้งเครื่อง
-3.Glue เชื่อม library เข้าด้วยกัน (ระหว่าง interface, Libraries)
+```
 
-Challenges
+เป็น software ที่ใช้ในการจัดการ resource ต่างๆภายในคอมพิวเตอร์ ซึ่ง resource เป็นพวก Hardware ต่างๆ เช่น CPU , mouse , keyboard , RAM
+
+**Roles**
+
+1. Referee
+    - กรรมการที่คอยตัดสินใจว่าใครจะได้ใช้ resource ใด? เมื่อไร?
+    - ต้องมีความ Isolation
+    - Communication
+2. illusionist
+  - สร้าง illusion ขึ้นมาว่า program ที่กำลัง run อยู่สามารถใช้งานได้เต็มกำลัง ใช้ได้ทั้งเครื่อง
+3. Glue เชื่อม library เข้าด้วยกัน (ระหว่าง interface, Libraries)
+
+**Challenges**
 1.	Reliability : ต้องมีความเสถียร
 2.	Availability :ต้องพร้อมใช้งานตลอดเวลา
 3.	Security :ป้องกันพวกไวรัส
@@ -36,17 +50,17 @@ TODAY’s computer is cheap
 Tomorrow
 -data center ใหญ่ขึ้นต้องรองรับให้ได้
 
-##Kernel
+## Kernel
 
-##Structure
+## Structure
 
-##Concurrency
+## Concurrency
 
-##Synchronization + Advance Synchronization
+## Synchronization + Advance Synchronization
 
-##Scheduling
+## Scheduling
 
-##Address Translation
+## Address Translation
 
-##Caching + Virtual Memory
+## Caching + Virtual Memory
 
