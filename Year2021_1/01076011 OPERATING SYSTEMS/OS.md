@@ -1,6 +1,6 @@
-Operating System
+#Operating System
 
-Introduction
+##Introduction
 What’s an Operating System?
 เป็น software ที่ใช้ในการจัดการ resource ต่างๆภายในคอมพิวเตอร์ ซึ่ง resource เป็นพวก Hardware ต่างๆ เช่น CPU , mouse , keyboard , RAM
 Roles
@@ -36,11 +36,17 @@ TODAY’s computer is cheap
 Tomorrow
 -data center ใหญ่ขึ้นต้องรองรับให้ได้
 
-Kernel
-Structure
-Concurrency
-Synchronization + Advance Synchronization
-Scheduling
-Address Translation
-Caching + Virtual Memory
+##Kernel
+
+##Structure
+
+##Concurrency
+
+##Synchronization + Advance Synchronization
+
+##Scheduling
+
+##Address Translation
+
+##Caching + Virtual Memory
 
