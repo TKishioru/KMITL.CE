@@ -1,18 +1,21 @@
-# Operating System
+# Operating System : 𝕆𝕊
 <details>
 <summary><b>Table of Contents</b> (click to open)</summary>
 <!-- MarkdownTOC -->
-
+    
 1. [Introduction](#Introduction)
 2. [Kernel](#Kernel)
 3. [Structure](#Structure)
 4. [Concurrency](#Concurrency)
 5. [Synchronization + Advance Synchronization](#synchronization--advance-synchronization)
 6. [Scheduling](#Scheduling)
-7. [Address Translation](#address-translation)
+7. [Address Translation](#address-translation)  
 8. [Caching + Virtual Memory](#caching--virtual-memory)
 
 <!-- /MarkdownTOC -->
+<<<<<<< HEAD
+</details>
+=======
 </details>
 
 ## Introduction
@@ -23,7 +26,9 @@ What’s an Operating System?
 
 เป็น software ที่ใช้ในการจัดการ resource ต่างๆภายในคอมพิวเตอร์ ซึ่ง resource เป็นพวก Hardware ต่างๆ เช่น CPU , mouse , keyboard , RAM
 
-**Roles**
+```
+Roles of the Operating System
+```
 
 1. Referee
     - กรรมการที่คอยตัดสินใจว่าใครจะได้ใช้ resource ใด? เมื่อไร?
@@ -33,17 +38,20 @@ What’s an Operating System?
     - สร้าง illusion ขึ้นมาว่า program ที่กำลัง run อยู่สามารถใช้งานได้เต็มกำลัง ใช้ได้ทั้งเครื่อง
 3. Glue เชื่อม library เข้าด้วยกัน (ระหว่าง interface, Libraries)
 
-**Challenges**
+```
+Operating System Evaluation
+```
 
 1.	Reliability : ต้องมีความเสถียร
 2.	Availability : ต้องพร้อมใช้งานตลอดเวลา
 3.	Security : ป้องกันพวกไวรัส
 4.	Privacy : แบ่งแยกไฟล์ของแต่ละ ex.ไฟล์ของ application ใดก็มีแต่ app นั้นๆที่สามารถเข้าถึงได้
 5.	Portability : สามารถเคลื่อนย้ายโปรแกรมได้
-    - For programs
+    - **For programs**
     
        ต้องพิจารณา API,Abstraction virtual machine
-    - For OS    ``` “hardware abstraction layer” ```
+       
+    - **For OS**    ``` “ hardware abstraction layer ” ```
     
        เป็นการสร้าง Abstraction ที่ใช้ในการอ้างอิงระหว่างฝั่ง hardware กับฝั่งที่เป็นคนเขียน operating system
 6.	Performance
@@ -53,19 +61,30 @@ What’s an Operating System?
     - Fairness : ความ fair ของการใช้งานของแต่ละ program
     - Predictability
 
-> Early operating system
-- รัน 1 application ต่อ 1 หน่วยเวลา
-- Batch system
-- Computer แพง
+```
+Design Tradeoffs
+```
 
-> Time-sharing operating system
-- เริ่มให้หลาย user ทำงานพร้อมกันในช่วงเวลานึงได้ (multiprocessing)
-- ราคาเริ่มถูกลง
+```
+Technology development from the past to the future
+```
 
-> TODAY’s computer is cheap
+- Early operating system
+    > ➊ รัน 1 application ต่อ 1 หน่วยเวลา
+    > 
+    > ➋ Batch system
+    > 
+    > ➌ Computer แพง
 
-> Tomorrow
-- data center ใหญ่ขึ้นต้องรองรับให้ได้
+- Time-sharing operating system
+    > ➊ เริ่มให้หลาย user ทำงานพร้อมกันในช่วงเวลานึงได้ (multiprocessing)
+    >
+    > ➋ ราคาเริ่มถูกลง
+
+- TODAY’s computer is cheap
+
+- Tomorrow
+    > ➊ data center ใหญ่ขึ้นต้องรองรับให้ได้
 
 ## Kernel
 
@@ -238,9 +257,10 @@ namespace Lab_OS_Concurrency01
 </details>
     
 ## Synchronization + Advance Synchronization
-
+    
 ## Scheduling
 
 ## Address Translation
 
 ## Caching + Virtual Memory
+>>>>>>> 4c25b3443e93452ea1bf44ec9c84ce255705cd2f
