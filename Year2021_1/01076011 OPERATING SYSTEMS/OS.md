@@ -13,9 +13,6 @@
 8. [Caching + Virtual Memory](#caching--virtual-memory)
 
 <!-- /MarkdownTOC -->
-<<<<<<< HEAD
-</details>
-=======
 </details>
 
 ## Introduction
