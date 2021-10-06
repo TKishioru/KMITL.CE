@@ -2,45 +2,45 @@
 ## ช่องทางการติดต่อ
 
 **อาจารย์**
+|        ชื่อ - นามสกุล        |    ห้องพัก    |         เบอร์โทรศัพท์        |                        E-Mail                       |
+|:-------------------------:|:-----------:|:-------------------------:|:---------------------------------------------------:|
+| อ.วิบูลย์ พร้อมพานิชย์          |   ECC 916   | 02-329-8341-2             | kpwiboon@kmitl.ac.th, kpwiboon@hotmail.com          |
+| รศ.ดร.บุญธีร์ เครือตราชู       |   ECC 913   | 02-7392400~2 ต่อ 125       | kkboonte@kmitl.ac.th                                |
+| รศ.ดร.ศักดิ์ชัย ทิพย์จักษุรัตน์     |   ECC 907   | 02-329-8341               | sakchai.th@kmitl.ac.th                              |
+| รศ.ดร.ศุภมิตร จิตตะยโศธร     |   ECC 909   | 02-3298341 ต่อ 115         | suphamit@kmitl.ac.th                                |
+| รศ.ดร.สมศักดิ์ มิตะถา         |   ECC 907   | 02-7392400~2 ต่อ 110       | kmsomsak@kmitl.ac.th                                |
+| รศ.ดร.อรฉัตร จิตต์โสภักตร์     |   ECC 915   | 02-7392400~2 ต่อ 129       | orachatc@yahoo.com                                  |
+| รศ.ดร.เกียรติกูล เจียรนัยธนะกิจ |   ECC 910   | 02-329-8341 ต่อ 118        | kietikul.je@kmitl.ac.th, kietikul@yahoo.com         |
+| รศ.ดร.เจริญ วงษ์ชุ่มเย็น       |   ECC 915   | 02-329-8341               | charoen.vo@kmitl.ac.th                              |
+| รศ.กฤตวัน ศิริบูรณ์            |   ECC 913   | 02-7392400~2 ต่อ 125       | kritawan@ce.kmitl.ac.th                             |
+| ผศ.ดร.ชุติเมษฏ์ ศรีนิลทา       |   ECC 914   | 02-3298341~2 ต่อ 127       | kschutim@kmitl.ac.th                                |
+| ผศ.ดร.ธนัญชัย ตรีภาค         |   ECC 701   | -                         | thanunchai.th@kmitl.ac.th                           |
+| ผศ.ดร.ปกรณ์ วัฒนจตุรพร       |   ECC 504   | +66 2 329 8341 , 122      | pakorn.wa@KMITL.ac.th                               |
+| ผศ.ดร.รัฐชัย ชาวอุทัย         |   ECC 909   | -                         | rathachai.ch@kmitl.ac.th                            |
+| ผศ.ดร.วิศิษฏ์ หิรัญกิตติ         |   ECC 910   | 02-329-8341               | khvisit@kmitl.ac.th, v_hirankitti@yahoo.com         |
+| ผศ.ดร.สมศักดิ์ วลัยรัชต์        |   ECC 912   | 0-2739-2400~2 ต่อ 123      | kwsomsak@kmitl.ac.th                                |
+| ผศ.ดร.สุรินทร์ กิตติธรกุล       |   ECC 907   | 0-2739-2400~2 ต่อ 109      | kksurin@gmail.com                                   |
+| ผศ.ดร.อรัญญา วลัยรัชต์        |   ECC 912   | 02-7392400~2 ต่อ 123       | kwaranya@kmitl.ac.th                                |
+| ผศ.ดร.อำนาจ ขาวเน         |   ECC 914   | 02-7392400~2 ต่อ 126       | amnach.kh@kmitl.ac.th                               |
+| ผศ.ธนา หงษ์สุวรรณ           |   ECC 911   | 02-7392400~2 ต่อ 121       | khthana@kmitl.ac.th, khthana@hotmail.com            |
+| ผศ.บัณฑิต พัสยา              |   ECC 913   | 02-3298341-2, 0815517235  | bundit.pa@kmitl.ac.th,bunditpp98@gmail.com          |
+| ผศ.อัครเดช วัชระภูพงษ์        |   ECC 701   | -                         | kwakkrad@kmitl.ac.th                                |
+| ดร.ชมพูนุท จินจาคาม          | ECC 909,504 | 02-7392400~2 ต่อ 167       | kjchompo@gmail.com, chompoonuch.ji@kmitl.ac.th      |
+| ดร.วัชระ ฉัตรวิริยะ           |   ECC 908   | 02-7392400~2 ต่อ 111       | kcwatcha@kmitl.ac.th                                |
+| ดร.อรทัย สังข์เพ็ชร           |   ECC 901   | -                         | kuoratha@kmitl.ac.th                                |
+| ดร.อักฤทธิ์ สังข์เพ็ชร          |   ECC 901   | -                         | akkarit.sa@kmitl.ac.th, akkarit@soup.ce.kmitl.ac.th |
+| อ.คณัฐ ตังติสาานนท์           |   ECC 916   | 0-27392400 ต่อ 131         | ktkanut@kmitl.ac.th                                 |
+| อ.ประสาร ดังติสานนท์         |   ECC 916   | 02-7392400~2 ต่อ 130       | prasarn@ce.kmitl.ac.th                              |
+| อ.วัจนพงศ์ เกษมศิริ           |   ECC 915   | +66 2 329 8341            | kkwatjan@kmitl.ac.th                                |
+| อ.สรยุทธ กลมกล่อม           |   ECC 901   | 02-329-8341               | sorayut.gl@kmitl.ac.th                              |
+| อ.เกียรติณรงค์ ทองประเสริฐ    |   ECC 901   | 02-7392400~2 ต่อ 107       | ktkiatna@kmitl.ac.th                                |
+| อ.จิระศักดิ์ สิทธิกร            | ECC-908,508 | +66 2 329 8341 - 2 ต่อ 113 | ksjirasa@gmail.com                                  |
 
-| ชื่อ - นามสกุล   	|      ห้องพัก      |  เบอร์โทรศัพท์ |	E-Mail	 |
-|----------|:-------------:|------:|
-|อ.วิบูลย์ พร้อมพานิชย์ |  		ECC 916 | 	02-329-8341-2 |		kpwiboon@kmitl.ac.th, kpwiboon@hotmail.com	|
-|รศ. ดร.บุญธีร์ เครือตราชู |    		ECC 913   |   	02-7392400~2 ต่อ 125 | 	kkboonte@kmitl.ac.th | 
-|รศ. ดร.ศักดิ์ชัย ทิพย์จักษุรัตน์		ECC 907		0-2329-8341		sakchai.th@kmitl.ac.th
-|รศ. ดร.ศุภมิตร จิตตะยโศธร		ECC 909		02-3298341ต่อ 115		suphamit@kmitl.ac.th
-|รศ. ดร.สมศักดิ์ มิตะถา		ECC 907		02-7392400~2 ต่อ 110	kmsomsak@kmitl.ac.th
-|รศ. ดร.อรฉัตร จิตต์โสภักตร์		ECC 915		02-7392400~2 ต่อ 129	orachatc@yahoo.com
-|รศ. ดร.เกียรติกูล เจียรนัยธนะกิจ	ECC-910		02-329-8341 Ext. 118	kietikul.je@kmitl.ac.th, kietikul@yahoo.com
-|รศ. ดร.เจริญ วงษ์ชุ่มเย็น		ECC 915		02-329-8341		charoen.vo@kmitl.ac.th
-|รศ.กฤตวัน ศิริบูรณ์		ECC 913		02-7392400~2 ต่อ 125	kritawan@ce.kmitl.ac.th
-|ผศ. ดร.ชุติเมษฏ์ ศรีนิลทา		ECC 914		02-329-8341~2 ต่อ 127	kschutim@kmitl.ac.th
-|ผศ. ดร.ธนัญชัย ตรีภาค		ECC-701		-			thanunchai.th@kmitl.ac.th
-|ผศ. ดร.ปกรณ์ วัฒนจตุรพร		ECC504		+66 2 329 8341 , 122	pakorn.wa@KMITL.ac.th
-|ผศ. ดร.รัฐชัย ชาวอุทัย		ECC-909		-			rathachai.ch@kmitl.ac.th
-|ผศ. ดร.วิศิษฏ์ หิรัญกิตติ		ECC 910		02-329-8341		khvisit@kmitl.ac.th; v_hirankitti@yahoo.com
-|ผศ. ดร.สมศักดิ์ วลัยรัชต์		ECC 912		0-2739-2400~2 ต่อ 123	kwsomsak@kmitl.ac.th
-|ผศ. ดร.สุรินทร์ กิตติธรกุล		ECC 907		0-2739-2400~2 ต่อ 109	kksurin@gmail.com
-|ผศ. ดร.อรัญญา วลัยรัชต์		ECC 912		02-7392400~2 ต่อ 123	kwaranya@kmitl.ac.th
-|ผศ. ดร.อำนาจ ขาวเน		ECC-914		02-7392400~2 ต่อ 126	amnach.kh@kmitl.ac.th
-|ผศ.ธนา หงษ์สุวรรณ		ECC 911		02-7392400~2 ต่อ 121	khthana@kmitl.ac.th, khthana@hotmail.com
-|ผศ.บัณฑิต พัสยา		ECC 913		02-3298341-2,0815517235	bundit.pa@kmitl.ac.th,bunditpp98@gmail.com
-|ผศ.อัครเดช วัชระภูพงษ์		ECC-701		-			kwakkrad@kmitl.ac.th
-|ดร.ชมพูนุท จินจาคาม		ECC-909,504	02-739-2400 - 2 ต่อ 167	kjchompo@gmail.com, chompoonuch.ji@kmitl.ac.th
-|ดร.วัชระ ฉัตรวิริยะ		ECC 908		02-7392400~2 ต่อ 111	kcwatcha@kmitl.ac.th
-|ดร.อรทัย สังข์เพ็ชร		ECC 901		-			kuoratha@kmitl.ac.th
-|ดร.อักฤทธิ์ สังข์เพ็ชร		ECC 901		-			akkarit.sa@kmitl.ac.th; akkarit@soup.ce.kmitl.ac.th
-|อ.คณัฐ ตังติสาานนท์		ECC 916		0-2739-2400 ต่อ 131	ktkanut@kmitl.ac.th
-|อ.ประสาร ดังติสานนท์		ECC 916		02-7392400~2 ต่อ 130	prasarn@ce.kmitl.ac.th
-|อ.วัจนพงศ์ เกษมศิริ		ECC-915		+66 2 329 8341		kkwatjan@kmitl.ac.th
-|อ.สรยุทธ กลมกล่อม		ECC-901		02-329-8341		sorayut.gl@kmitl.ac.th
-|อ.เกียรติณรงค์ ทองประเสริฐ		ECC 901		02-7392400~2 ต่อ 107	ktkiatna@kmitl.ac.th
-|อ.จิระศักดิ์ สิทธิกร		ECC-908,508	+66 2 329 8341 - 2 ต่อ 113	ksjirasa@gmail.com
 
 **เจ้าหน้าที่**
 
-| ชื่อ - นามสกุล   |      ห้องพัก      |  เบอร์โทรศัพท์ |	E-Mail	 |
-|----------|:-------------:|------:|
-|นายอมต หลวงพล		ECC 602		02-7373000 ต่อ 3910	lotus2475@hotmail.com
-|นางสาวอวยพร นิ่งน้อย		-		02-3298341-2		uayphorn.ni@kmitl.ac.th
-|นางกนกทิพย์ มิตะถา		-		02-3298341-2 ต่อ 102	kmkanokt@kmitl.ac.th
+|        ชื่อ - นามสกุล        |    ห้องพัก    |         เบอร์โทรศัพท์        |                        E-Mail                       |
+|:-------------------------:|:-----------:|:-------------------------:|:---------------------------------------------------:|
+| นายอมต หลวงพล             |   ECC 602   | 02-7373000 ต่อ 3910        | lotus2475@hotmail.com                               |
+| นางสาวอวยพร นิ่งน้อย         | -           | 02-3298341-2              | uayphorn.ni@kmitl.ac.th                             |
+| นางกนกทิพย์ มิตะถา           | -           | 02-3298341-2 ต่อ 102       | kmkanokt@kmitl.ac.th                                |
