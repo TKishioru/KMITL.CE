@@ -65,7 +65,7 @@ namespace Problem01
         static void sum2()
         {
             int G_index = 1;
-            for (int i = 0; i < 166666666; i++)
+            for (int i = 0; i < 166666667; i++)
             {
                 if (Data_Global[G_index] % 2 == 0)
                 {
@@ -90,7 +90,7 @@ namespace Problem01
         static void sum3()
         {
             int G_index = 2;
-            for (int i = 0; i < 166666666; i++)
+            for (int i = 0; i < 166666667; i++)
             {
                 if (Data_Global[G_index] % 2 == 0)
                 {
@@ -115,7 +115,7 @@ namespace Problem01
         static void sum4()
         {
             int G_index = 3;
-            for (int i = 0; i < 166666666; i++)
+            for (int i = 0; i < 166666667; i++)
             {
                 if (Data_Global[G_index] % 2 == 0)
                 {
