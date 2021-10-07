@@ -171,7 +171,6 @@ namespace Problem01
             Console.WriteLine("Done.");
 
             /* Result */
-            //For 6 Core
             Console.WriteLine("Summation result: {0}", Sum_Global1 + Sum_Global2 + Sum_Global3 + Sum_Global4);
             Console.WriteLine("Time used: " + sw.ElapsedMilliseconds.ToString() + "ms");
         }
