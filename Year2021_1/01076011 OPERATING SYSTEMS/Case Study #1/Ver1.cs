@@ -1,3 +1,5 @@
+//MultiThread 2 Core
+
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -114,7 +116,7 @@ namespace Problem01
             Console.WriteLine("Done.");
 
             /* Result */
-            Console.WriteLine("Summation result: {0}", Sum_Global1+Sum_Global2);            
+            Console.WriteLine("Summation result: {0}", Sum_Global1 + Sum_Global2);            
             Console.WriteLine("Time used: " + sw.ElapsedMilliseconds.ToString() + "ms");
         }
     }
