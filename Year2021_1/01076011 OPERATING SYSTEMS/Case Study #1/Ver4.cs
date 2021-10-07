@@ -11,7 +11,7 @@ namespace Problem01
 {
     class Program
     {
-        static byte[] Data_Global = new byte[1000000000]
+        static byte[] Data_Global = new byte[1000000000];
         static long Sum_Global1 = 0, Sum_Global2 = 0, Sum_Global3 = 0, Sum_Global4 = 0, Sum_Global5 = 0, Sum_Global6 = 0, Sum_Global7 = 0, Sum_Global8 = 0;
 
         static int ReadData()
