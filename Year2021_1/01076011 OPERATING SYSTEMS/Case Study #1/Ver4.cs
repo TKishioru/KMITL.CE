@@ -39,7 +39,7 @@ namespace Problem01
         static void sum1()
         {
             int G_index = 0;
-            for (int i = 0; i < (10000000 / 8); i++)
+            for (int i = 0; i < 125000000; i++)
             {
                 if (Data_Global[G_index] % 2 == 0)
                 {
@@ -65,7 +65,7 @@ namespace Problem01
         static void sum2()
         {
             int G_index = 1;
-            for (int i = 0; i < (10000000 / 8); i++)
+            for (int i = 0; i < 125000000; i++)
             {
                 if (Data_Global[G_index] % 2 == 0)
                 {
@@ -90,7 +90,7 @@ namespace Problem01
         static void sum3()
         {
             int G_index = 2;
-            for (int i = 0; i < (10000000 / 8); i++)
+            for (int i = 0; i < 125000000; i++)
             {
                 if (Data_Global[G_index] % 2 == 0)
                 {
@@ -115,7 +115,7 @@ namespace Problem01
         static void sum4()
         {
             int G_index = 3;
-            for (int i = 0; i < (10000000 / 8); i++)
+            for (int i = 0; i < 125000000; i++)
             {
                 if (Data_Global[G_index] % 2 == 0)
                 {
@@ -140,7 +140,7 @@ namespace Problem01
         static void sum5()
         {
             int G_index = 4;
-            for (int i = 0; i < (10000000 / 8); i++)
+            for (int i = 0; i < 125000000; i++)
             {
                 if (Data_Global[G_index] % 2 == 0)
                 {
@@ -165,7 +165,7 @@ namespace Problem01
         static void sum6()
         {
             int G_index = 5;
-            for (int i = 0; i < (10000000 / 8); i++)
+            for (int i = 0; i < 125000000; i++)
             {
                 if (Data_Global[G_index] % 2 == 0)
                 {
@@ -191,7 +191,7 @@ namespace Problem01
         static void sum7()
         {
             int G_index = 6;
-            for (int i = 0; i < (10000000 / 8); i++)
+            for (int i = 0; i < 125000000; i++)
             {
                 if (Data_Global[G_index] % 2 == 0)
                 {
@@ -217,7 +217,7 @@ namespace Problem01
         static void sum8()
         {
             int G_index = 7;
-            for (int i = 0; i < (10000000 / 8); i++)
+            for (int i = 0; i < 125000000; i++)
             {
                 if (Data_Global[G_index] % 2 == 0)
                 {
