@@ -28,8 +28,8 @@ namespace Problem01
             /* Read data from file */
             Console.Write("Data read...");
             y = ReadData();
-            if (y == 0){Console.WriteLine("Complete.");}
-            else{ Console.WriteLine("Read Failed!");}
+            if (y == 0) { Console.WriteLine("Complete."); }
+            else { Console.WriteLine("Read Failed!"); }
 
             /* Start */
             Console.Write("\n\nWorking...");
@@ -53,26 +53,25 @@ namespace Problem01
 
         public static void sum()
         {
-            int i;
-            for (i = 0; i < 1000000000/4; i++){
+            for (; G_index < 1000000000; G_index++)
+            {
                 if (Data_Global[G_index] % 2 == 0)
-                    {
-                        Sum_Global -= Data_Global[G_index];
-                    }
-                    else if (Data_Global[G_index] % 3 == 0)
-                    {
-                        Sum_Global += (Data_Global[G_index]*2);
-                    }
-                    else if (Data_Global[G_index] % 5 == 0)
-                    {
-                        Sum_Global += (Data_Global[G_index] / 2);
-                    }
-                    else if (Data_Global[G_index] %7 == 0)
-                    {
-                        Sum_Global += (Data_Global[G_index] / 3);
-                    }
-                    Data_Global[G_index] = 0;
-                    G_index++;
+                {
+                    Sum_Global -= Data_Global[G_index];
+                }
+                else if (Data_Global[G_index] % 3 == 0)
+                {
+                    Sum_Global += (Data_Global[G_index] * 2);
+                }
+                else if (Data_Global[G_index] % 5 == 0)
+                {
+                    Sum_Global += (Data_Global[G_index] / 2);
+                }
+                else if (Data_Global[G_index] % 7 == 0)
+                {
+                    Sum_Global += (Data_Global[G_index] / 3);
+                }
+                Data_Global[G_index] = 0;
             }
         }
 
@@ -81,9 +80,9 @@ namespace Problem01
             int returnData = 0;
             FileStream fs = new FileStream("Problem01.dat", FileMode.Open);
             BinaryFormatter bf = new BinaryFormatter();
-            try 
+            try
             {
-                Data_Global = (byte[]) bf.Deserialize(fs);
+                Data_Global = (byte[])bf.Deserialize(fs);
             }
             catch (SerializationException se)
             {
