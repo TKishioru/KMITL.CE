@@ -11,8 +11,7 @@ namespace Problem01
     {
         static byte[] Data_Global = new byte[1000000000];
         static long Sum_Global = 0;
-        static int G_index = 0;
-
+        
         static int ReadData()
         {
             int returnData = 0;
@@ -37,7 +36,7 @@ namespace Problem01
         }
         static void sum()
         {
-            for (int i = 0; i < 1000000000; i++)
+            for (int G_index = 0; G_index < 1000000000;  G_index++)
             {
                 if (Data_Global[G_index] % 2 == 0)
                 {
@@ -56,7 +55,6 @@ namespace Problem01
                     Sum_Global += (Data_Global[G_index] / 3);
                 }
                 Data_Global[G_index] = 0;
-                G_index++;
             }
         }
         static void Main(string[] args)
