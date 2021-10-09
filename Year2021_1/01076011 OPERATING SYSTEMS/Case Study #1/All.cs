@@ -1,5 +1,3 @@
-//MultiThread 8 Core
-
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -11,8 +9,7 @@ namespace Problem01
 {
     class Program
     {
-        //แก้จำนวน my_threads ก่อนรัน
-        static int my_threads = 14;
+        static int my_threads = 14;         //แก้จำนวน thread ที่นี่
         static byte[] Data_Global = new byte[1000000000];
         static long Sum_Global1 = 0, Sum_Global2 = 0, Sum_Global3 = 0, Sum_Global4 = 0, Sum_Global5 = 0, Sum_Global6 = 0, Sum_Global7 = 0, Sum_Global8 = 0,Sum_Global9 = 0;
         static long Sum_Global10 = 0,Sum_Global11 = 0, Sum_Global12 = 0, Sum_Global13 = 0, Sum_Global14 = 0, Sum_Global15 = 0, Sum_Global16 = 0;
@@ -173,7 +170,7 @@ namespace Problem01
             }
             else if(my_threads == 12){ 
                 sw.Start();
-                                th1.Start();
+                th1.Start();
                 th2.Start();
                 th3.Start();
                 th4.Start();
@@ -232,7 +229,6 @@ namespace Problem01
                 th12.Join();
                 th13.Join();
                 th14.Join();
-                th15.Join();
                 sw.Stop();
                 my_result = Sum_Global1 + Sum_Global2 + Sum_Global3 + Sum_Global4 + Sum_Global5 + Sum_Global6 + Sum_Global7 + Sum_Global8 + Sum_Global9 + Sum_Global10 + Sum_Global11 + Sum_Global12 + Sum_Global13 + Sum_Global14;
             }
@@ -697,7 +693,7 @@ namespace Problem01
             int returnData = 0;
             FileStream fs = new FileStream("Problem01.dat", FileMode.Open);
             BinaryFormatter bf = new BinaryFormatter();
-            int my_threads = 10;
+            // int my_threads = 10;
 
             try
             {
