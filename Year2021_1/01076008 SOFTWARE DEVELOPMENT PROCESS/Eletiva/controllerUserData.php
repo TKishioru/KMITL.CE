@@ -29,7 +29,7 @@ $email = '';
         }
         
         // บันทึกข้อมูล
-        $user_check_query = "SELECT * FROM users WHERE email = '$email' LIMIT 1";
+        $user_check_query = "SELECT email FROM users WHERE email = '$email' LIMIT 1";
         $query = mysqli_query($connect, $user_check_query);
         $result = mysqli_fetch_assoc($query);
 
@@ -42,11 +42,15 @@ $email = '';
 
         if (count($errors) == 0) {
             $password = md5($password_1);
+            $interest = '{"elective_eng1":0,"elective_hu":0,"elective_so1":0,"elective_sci":0,"elective_free":0,"elective_life":0,"elective_so2":0,"elective_think":0,"elective_manage":0,"elective_eng2":0,"elective_21":0,"elective_carrer":0,"elective_eng3":0}';
+            //array('elective_eng1'=>0,'elective_hu'=>0,'elective_so1'=>0,'elective_sci'=>0,'elective_free'=>0,'elective_life'=>0,'elective_so2'=>0,'elective_think'=>0,'elective_manage'=>0,'elective_eng2'=>0,'elective_21'=>0,'elective_carrer'=>0,'elective_eng3'=>0);
 
-            $sql = "INSERT INTO users(email,password,status) VALUES('$email','$password','$status')";
+            $sql = "INSERT INTO users(email,password,status,interest) VALUES('$email','$password','$status','$interest')";
             mysqli_query($connect,$sql); // สั่งรันคำสั่ง sql
 
             $_SESSION['email'] = $email;
+            $_SESSION['status'] = $status;
+            $_SESSION['password'] = $password;
             $_SESSION['success'] = "You are now logged in";
 
             header('location: index.php');
@@ -71,21 +75,24 @@ $email = '';
 
         if (count($errors) == 0) {
             $password = md5($password);
-            $query = "SELECT * FROM users WHERE email = '$email' AND password = '$password' ";
+
+            $query = "SELECT status FROM users WHERE email = '$email' AND password = '$password' ";
             $result = mysqli_query($connect, $query);
+            $row = mysqli_fetch_assoc($result);
 
             if (mysqli_num_rows($result) == 1) {
                 $_SESSION['email'] = $email;
-                $_SESSION['success'] = "Your are now logged in";
+                $_SESSION['password'] = $password;
+                $_SESSION['status'] = $row['status'];
+                
                 header("location: index.php");
+                
             } else {
-                array_push($errors, "Wrong Email or Password");
-                $_SESSION['error'] = "Wrong Email or Password!";
+                array_push($errors, "Wrong Email or Password");                
                 header("location: login-user.php");
             }
         } else {
-            array_push($errors, "Email & Password is required");
-            $_SESSION['error'] = "Email & Password is required";
+            array_push($errors, "Email & Password is required");            
             header("location: login-user.php");
         }
     }
@@ -93,7 +100,7 @@ $email = '';
     //if user click continue button in forgot password form
     if(isset($_POST['check-email'])){
         $email = mysqli_real_escape_string($connect, $_POST['email']);
-        $check_email = "SELECT * FROM users WHERE email='$email'";
+        $check_email = "SELECT email FROM users WHERE email='$email'";
         $run_sql = mysqli_query($connect, $check_email);
         if(mysqli_num_rows($run_sql) > 0){
             $code = rand(999999, 111111);
@@ -125,8 +132,6 @@ $email = '';
                 //"Reset Password : http://127.0.0.1/eletiva/id=$email&id2=".$code
 
                 if($mail->send()) {
-                    $info = "We've sent a passwrod reset otp to your email - $email";
-                    $_SESSION['info'] = $info;
                     $_SESSION['email'] = $email;
                     header('location: reset-code.php');
                     exit();
@@ -144,16 +149,13 @@ $email = '';
 
     //if user click check reset otp button
     if(isset($_POST['check-reset-otp'])){
-        $_SESSION['info'] = "";
         $otp_code = mysqli_real_escape_string($connect, $_POST['otp']);
-        $check_code = "SELECT * FROM users WHERE code = $otp_code";
+        $check_code = "SELECT email FROM users WHERE code = $otp_code";
         $code_res = mysqli_query($connect, $check_code);
-        if(mysqli_num_rows($code_res) > 0){
+        if(mysqli_num_rows($code_res) == 1){
             $fetch_data = mysqli_fetch_assoc($code_res);
             $email = $fetch_data['email'];
             $_SESSION['email'] = $email;
-            $info = "Please create a new password that you don't use on any other site.";
-            $_SESSION['info'] = $info;
             header('location: new-password.php');
             exit();
         }else{
@@ -163,7 +165,6 @@ $email = '';
 
     //if user click change password button
     if(isset($_POST['change-password'])){
-        $_SESSION['info'] = "";
         
         $password = mysqli_real_escape_string($connect, $_POST['password']);
         $cpassword = mysqli_real_escape_string($connect, $_POST['cpassword']);
@@ -177,8 +178,6 @@ $email = '';
             $update_pass = "UPDATE users SET code = NULL, password = '$encpass' WHERE email = '$email'";
             $run_query = mysqli_query($connect, $update_pass);
             if($run_query){
-                $info = "Your password changed. Now you can login with your new password.";
-                $_SESSION['info'] = $info;
                 header('Location: password-changed.php');
             }else{
                 $errors['db-error'] = "Failed to change your password!";

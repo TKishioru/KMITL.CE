@@ -24,29 +24,7 @@ if($email == false){
         <div class="row">
             <div class="col-md-4 offset-md-4 form">
                 <form action="new-password.php" method="POST" autocomplete="off">
-                    <h2 class="text-center">New Password</h2>
-                    <?php 
-                    if(isset($_SESSION['info'])){
-                        ?>
-                        <div class="alert alert-success text-center">
-                            <?php echo $_SESSION['info']; ?>
-                        </div>
-                        <?php
-                    }
-                    ?>
-                    <?php
-                    if(count($errors) > 0){
-                        ?>
-                        <div class="alert alert-danger text-center">
-                            <?php
-                            foreach($errors as $showerror){
-                                echo $showerror;
-                            }
-                            ?>
-                        </div>
-                        <?php
-                    }
-                    ?>
+                    <h2 class="text-center">New Password</h2>  
                     <div class="form-group">
                         <input class="form-control" type="password" name="password" placeholder="Create new password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                     </div>
