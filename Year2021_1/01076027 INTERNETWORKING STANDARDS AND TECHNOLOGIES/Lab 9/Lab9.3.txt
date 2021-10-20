@@ -1,0 +1,92 @@
+PC[A] => 192.168.12.11 255.255.255.0 192.168.12.254
+PC[B] => 192.168.12.12 255.255.255.0 192.168.12.254
+
+===========Switch_A===========
+enable
+configure terminal
+hostname Switch_A
+enable secret class
+end
+conf t
+line vty 0 15
+password Cisco
+login
+end
+conf t
+interface vlan 1
+ip address 192.168.12.1 255.255.255.0
+no shutdown
+exit
+in rang f 0/2-3
+switchport mode access
+switchport access vlan 1
+exit
+vlan 10
+name NetworkLab
+exit
+in rang f 0/4-6
+switchport mode access
+switchport access vlan 10
+exit
+vlan 20
+name IsagLab
+exit
+in rang f 0/7-9
+switchport mode access
+switchport access vlan 20
+exit
+vlan 30
+name HwLab 
+exit
+in rang f 0/10-12
+switchport mode access
+switchport access vlan 30
+exit
+interface f 0/1
+switchport mode trunk
+end
+
+===========Switch_B===========
+enable
+configure terminal
+hostname Switch_B
+enable secret class
+end
+conf t
+line vty 0 15
+password Cisco
+login
+end
+conf t
+interface vlan 1
+ip address 192.168.12.2 255.255.255.0
+no shutdown
+exit
+in rang f 0/2-3
+switchport mode access
+switchport access vlan 1
+exit
+vlan 10
+name NetworkLab
+exit
+in rang f 0/4-6
+switchport mode access
+switchport access vlan 10
+exit
+vlan 20
+name IsagLab
+exit
+in rang f 0/7-9
+switchport mode access
+switchport access vlan 20
+exit
+vlan 30
+name HwLab 
+exit
+in rang f 0/10-12
+switchport mode access
+switchport access vlan 30
+exit
+interface f 0/1
+switchport mode trunk
+end

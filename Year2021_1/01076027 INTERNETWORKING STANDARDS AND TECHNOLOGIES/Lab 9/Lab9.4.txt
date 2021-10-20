@@ -1,0 +1,49 @@
+PC[A] => 192.168.1.2 255.255.255.0 192.168.1.254
+PC[B] => 192.168.2.2 255.255.255.0 192.168.2.254
+
+============Switch_A============
+enable
+configure terminal
+hostname Switch_A
+interface vlan 1
+ip address 192.168.12.1 255.255.255.0
+no shutdown
+exit
+vlan 10
+name NetworkLab
+exit
+vlan 20
+name IsagLab
+exit
+interface rang fast 0/1-2
+switchport mode access
+switchport access vlan 10
+exit
+interface rang fast 0/3-4
+switchport mode access
+switchport access vlan 20
+exit
+interface f 0/15
+switchport mode trunk
+end
+
+============Router_B============
+enable
+erase startup-config
+reload
+no
+
+enable
+configure terminal
+interface fastethernet 0/0
+no shutdown
+interface fastethernet 0/0.10
+description vlan 10
+encapsulation dot1q 10
+ip address 192.168.1.254 255.255.255.0
+exit
+interface fastethernet 0/0.20
+description vlan 20
+encapsulation dot1q 20
+ip address 192.168.2.254 255.255.255.0
+exit
