@@ -1,10 +1,10 @@
 fifteen 	DCD		15
-thirty	    DCD		30
+thirty	  	DCD		30
 
 
 main	LDR		R1,=fifteen
-		LDR		R1,[R1]
+	LDR		R1,[R1]
     	LDR		R2,=thirty
-	    LDR		R2,[R2]
-		ADD		R0,R1,R2
+	LDR		R2,[R2]
+	ADD		R0,R1,R2
 		
