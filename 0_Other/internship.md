@@ -13,7 +13,7 @@
     - CV หรือ Portfolio
     - Transcript
     - เอกสารแบบฟอร์มแสดงความจำนงค์เสนอชื่อฝึกงาน **
-    - แบบตอบรับ ในกรณีที่ทางบริษัทไม่มีแบบฟอร์ม ** [คลิก](https://github.com/TKishioru/KMITL/blob/main/0_Other/Document/%E0%B8%9D%E0%B8%B6%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%95%E0%B8%AD%E0%B8%9A%E0%B8%A3%E0%B8%B1%E0%B8%9A.docx)
+    - แบบตอบรับ ในกรณีที่ทางบริษัทไม่มีแบบฟอร์ม ** [คลิก](https://github.com/TKishioru/KMITL/blob/main/0_Other/Document/%E0%B8%9D%E0%B8%B6%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%95%E0%B8%AD%E0%B8%9A%E0%B8%A3%E0%B8%B1%E0%B8%9A.docx) พร้อมกับเอกสารที่คณะส่งมาพร้อมกัน [คลิก](https://github.com/TKishioru/KMITL/blob/main/0_Other/Document/%E0%B8%9D%E0%B8%B6%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%95%E0%B8%AD%E0%B8%9A%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%9D%E0%B8%B6%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99(%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%82%E0%B8%AD%E0%B9%80%E0%B8%AD%E0%B8%87).pdf)
     - อื่นๆ
 5. จะยืนยันอีกครั้ง เมื่อไม่มีการปฏิเสธจากบริษัท
 6. *ข้ามขั้นตอนก่อนหน้านี้ได้* ถ้าบริษัทตอบรับแล้ว ในส่งเอกสารที่ อ.จิระศักดิ์ และ อ.บัณฑิต จะลงชื่อให้ใน [คลิก](http://www.ce.kmitl.ac.th/InternSummary.html)
