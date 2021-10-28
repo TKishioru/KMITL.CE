@@ -9,13 +9,19 @@ namespace OS_Sync_05
 		private static string x = "";
 		private static int exitflag = 0;
 		private static int updateFlag = 0;
+		private static Object _Lock = new object();
+
 		static void ThReadX(object i)
 		{
-			while (exitflag == 0) {
-				if (x != "exit") {
-					Console.WriteLine("***Thread {0} : x = {1}***",i,x);
+			while (exitflag == 0)
+				lock (_Lock)
+				{
+					if (x != "exit" && updateFlag == 1)
+					{
+						Console.WriteLine("***Thread {0} : x = {1}***", i, x);
+					}
+					updateFlag = 0;
 				}
-			}
 			Console.WriteLine("---Thread {0} exit---", i);
 		}
 
@@ -23,25 +29,27 @@ namespace OS_Sync_05
 		{
 			string xx;
 			while (exitflag == 0)
-			{
-				Console.WriteLine("Input: ");
+				lock (_Lock)
+				{
+				Console.Write("Input: ");
 				xx = Console.ReadLine();
 				if (xx == "exit")
 					exitflag = 1;
-					x = xx;
+				x = xx;
+				updateFlag = 1;
 			}
 		}
-			static void Main(string[] args)
-			{
-				Thread A = new Thread(ThWriteX);
-				Thread B = new Thread(ThReadX);
-				Thread C = new Thread(ThReadX);
-				Thread D = new Thread(ThReadX);
+		static void Main(string[] args)
+		{
+			Thread A = new Thread(ThWriteX);
+			Thread B = new Thread(ThReadX);
+			Thread C = new Thread(ThReadX);
+			Thread D = new Thread(ThReadX);
 
-				A.Start();
-				B.Start(1);
-				C.Start(2);
-				D.Start(3);
-		}
+			A.Start();
+			B.Start(1);
+			C.Start(2);
+			D.Start(3);
 		}
 	}
+}
