@@ -6,14 +6,14 @@
 นักศึกษาต้องได้รับการตอบรับการเข้ารับการฝึกงานให้เรียบร้อยก่อนวันที่ 30 มีนาคม
 
 **« วิธีการทำเรื่องการฝึกงานกับบริษัท + มหาลัย »**
-1. เมื่อได้บริษัทที่ต้องการแล้ว (กรณีที่ได้จากความสนใจ) "ให้ส่งอีเมลติดต่อไป" ดังรูป [คลิก](https://github.com/TKishioru/KMITL/blob/main/0_Other/Document/%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%AD%E0%B8%B5%E0%B9%80%E0%B8%A1%E0%B8%A5.jpg)
-2. เมื่อติดต่อและทางบริษัทยินยอมแล้ว ให้ทำเรื่องไปอาจารย์ประจำภาค โดยใช้แบบฟอร์มแสดงความจำนงค์เสนอชื่อฝึกงาน ดังกล่าว [คลิก](https://github.com/TKishioru/KMITL/blob/main/0_Other/Document/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%88%E0%B8%B3%E0%B8%99%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B8%AD%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%9D%E0%B8%B6%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99.doc) ซึ่งใช้เมื่อบริษัทต้องการยืนยันว่า "เป็นนักศึกษาที่นี่หรือไม่?"
+1. เมื่อได้บริษัทที่ต้องการแล้ว (กรณีที่ได้จากความสนใจ) "ให้ส่งอีเมลติดต่อไป" ดังรูป [คลิก](https://github.com/TKishioru/KMITL/blob/main/0_Other/Document/%E0%B8%9D%E0%B8%B6%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99/%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%AD%E0%B8%B5%E0%B9%80%E0%B8%A1%E0%B8%A5.jpg)
+2. เมื่อติดต่อและทางบริษัทยินยอมแล้ว ให้ทำเรื่องไปอาจารย์ประจำภาค โดยใช้แบบฟอร์มแสดงความจำนงค์เสนอชื่อฝึกงาน ดังกล่าว [คลิก](https://github.com/TKishioru/KMITL/blob/main/0_Other/Document/%E0%B8%9D%E0%B8%B6%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%88%E0%B8%B3%E0%B8%99%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B8%AD%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%9D%E0%B8%B6%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99.doc) ซึ่งใช้เมื่อบริษัทต้องการยืนยันว่า "เป็นนักศึกษาที่นี่หรือไม่?"
 3. หากอาจารย์ประจำภาคเซ็นยิมยอมแล้ว นำหนังสือส่งไปที่ acharee.pa@kmitl.ac.th คุณอัชรี หรือแผนกกิจกรรมนักศึกษา ชั้น 1 อาคาร 6 ชั้น (ตึก A)
 4. ถ้าได้เอกสารจากคณะกลับมาแล้ว ให้ส่งอีเมลไปที่บริษัทอีกครั้ง โดยเอกสารจะประกอบดังนี้
     - CV หรือ Portfolio
     - Transcript
     - เอกสารแบบฟอร์มแสดงความจำนงค์เสนอชื่อฝึกงาน **
-    - แบบตอบรับ ในกรณีที่ทางบริษัทไม่มีแบบฟอร์ม ** [คลิก](https://github.com/TKishioru/KMITL/blob/main/0_Other/Document/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%95%E0%B8%AD%E0%B8%9A%E0%B8%A3%E0%B8%B1%E0%B8%9A.docx)
+    - แบบตอบรับ ในกรณีที่ทางบริษัทไม่มีแบบฟอร์ม ** [คลิก](https://github.com/TKishioru/KMITL/blob/main/0_Other/Document/%E0%B8%9D%E0%B8%B6%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%95%E0%B8%AD%E0%B8%9A%E0%B8%A3%E0%B8%B1%E0%B8%9A.docx)
     - อื่นๆ
 5. จะยืนยันอีกครั้ง เมื่อไม่มีการปฏิเสธจากบริษัท
 6. *ข้ามขั้นตอนก่อนหน้านี้ได้* ถ้าบริษัทตอบรับแล้ว ในส่งเอกสารที่ อ.จิระศักดิ์ และ อ.บัณฑิต จะลงชื่อให้ใน [คลิก](http://www.ce.kmitl.ac.th/InternSummary.html)
@@ -34,8 +34,8 @@
 **Download**
 - สำหรับนักศึกษา
   - แบบฟอร์มแสดงความจำนงเสนอชื่อหน่วยงานที่จะไปฝึกงาน [คลิก](https://drive.google.com/file/d/1VAk8_UAhd6AV7yMHqZboj-9D0pK1EOZk/view)
-  - coop101 แบบขอเข้าร่วมโครงการสหกิจศึกษา [คลิก](https://drive.google.com/file/d/11oTfZnaghYP1A9_ug3dn0ZtsYzbU0Wpb/view)
-  - coop102 ใบสมัครงานสหกิจศึกษา [คลิก](https://drive.google.com/file/d/1rJSAxwLau2FR2I-YGjPlJY2frog2LsvZ/view)
+  - coop101 แบบขอเข้าร่วมโครงการสหกิจศึกษา [คลิก](https://github.com/TKishioru/KMITL/blob/main/0_Other/Document/%E0%B8%AA%E0%B8%AB%E0%B8%81%E0%B8%B4%E0%B8%88/coop.101%E0%B9%83%E0%B8%9A%E0%B8%82%E0%B8%AD%E0%B8%A3%E0%B9%88%E0%B8%A7%E0%B8%A1%E0%B8%A3%E0%B9%88%E0%B8%A7%E0%B8%A1.pdf)
+  - coop102 ใบสมัครงานสหกิจศึกษา [คลิก](https://github.com/TKishioru/KMITL/blob/main/0_Other/Document/%E0%B8%AA%E0%B8%AB%E0%B8%81%E0%B8%B4%E0%B8%88/coop.102%E0%B9%83%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%AB%E0%B8%81%E0%B8%B4%E0%B8%88.pdf)
 - สำหรับบริษัท *>> บริษัทต้องการคนมาฝึก*
   - แบบแสดงความจํานงรับนักศึกษาเข้าฝึกงาน-งานสหกิจศึกษา [คลิก](https://drive.google.com/file/d/1rKcwT6tFSbPEj4VImBDL1DCfzqnuwUkL/view)
   - coop301แบบเสนองานสหกิจศึกษา [คลิก](https://drive.google.com/file/d/1UkZmKkyC_iTqPrTTp5QOW-F3506LZRQ4/view)
@@ -60,7 +60,7 @@
 
 **« วิธีการทำเรื่องสหกิจกับบริษัท + มหาลัย »**
 1. ต้องหาอาจารย์นิเทศสหกิจก่อน! จะได้หรือไม่ได้ขึ้นกับอาจารย์ที่เราไปคุย
-2. หากได้อาจารย์นิเทศแล้ว ให้เขียนใบ coop101 [คลิก](https://drive.google.com/file/d/1-CMpPuTsiCrUUav6SAoICx2udpDFc62I/view) + coop102 [คลิก](https://drive.google.com/file/d/1-CMpPuTsiCrUUav6SAoICx2udpDFc62I/view) พร้อมแนบใบ Transcript ไปด้วย
+2. หากได้อาจารย์นิเทศแล้ว ให้เขียนใบ coop101 [คลิก](https://github.com/TKishioru/KMITL/blob/main/0_Other/Document/%E0%B8%AA%E0%B8%AB%E0%B8%81%E0%B8%B4%E0%B8%88/coop.101%E0%B9%83%E0%B8%9A%E0%B8%82%E0%B8%AD%E0%B8%A3%E0%B9%88%E0%B8%A7%E0%B8%A1%E0%B8%A3%E0%B9%88%E0%B8%A7%E0%B8%A1.pdf) + coop102 [คลิก](https://github.com/TKishioru/KMITL/blob/main/0_Other/Document/%E0%B8%AA%E0%B8%AB%E0%B8%81%E0%B8%B4%E0%B8%88/coop.102%E0%B9%83%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%AB%E0%B8%81%E0%B8%B4%E0%B8%88.pdf) พร้อมแนบใบ Transcript ไปด้วย
 3. นำใบเอกสารที่เขียนในข้อ 2 ไปส่งให้อาจารย์นิเทศที่เราติดต่อได้ เซ็นลายชื่อแล้วให้อาจารย์ส่งให้กับอ.บัณฑิต + อ.จิระศักดิ์
 
 **หลังจากทำเรื่องเอกสารเสร็จแล้ว**
