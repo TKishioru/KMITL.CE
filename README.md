@@ -90,6 +90,10 @@ study about the basics of Web language. (HTML + CSS + Javascript + Other.)
 
 > 01076263 DATABASE SYSTEMS
 
+> 01076027 INTERNETWORKING STANDARDS AND TECHNOLOGIES (IST)
+  
+> 01076582 ARTIFICIAL INTELLIGENCE (AI)
+  
 ```  
   Term 2
 ```  
