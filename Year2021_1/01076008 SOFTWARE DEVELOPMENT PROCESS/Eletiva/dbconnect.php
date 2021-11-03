@@ -1,6 +1,6 @@
 <?php
 
-    $servername = "127.0.0.1"; //$servername = "localhost";
+    $servername = "localhost";
     $username = "root";
     $password = "";
     $dbname = "db_eletiva";

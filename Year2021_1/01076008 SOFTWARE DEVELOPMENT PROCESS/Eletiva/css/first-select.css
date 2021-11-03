@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400&display=swap');
+*
+{
+    margin: 0; /*ระยะขอบ ผลักอัตโนมัติ*/
+    padding: 0; /*ขยายขอบด้านใน*/
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    
+}
+section
+{
+    position: relative;
+    min-height: 100vh;
+    background-image: url("https://e-file.huawei.com/-/media/EBG/Images/case-study/cases_study_banner/How%20Did%20Huawei%20Build%20the%20100G%20SDN%20Campus%20Network%20for%20KMITL%20of%20Thailand-revised-banner-mobile.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+   
+}
+section .container
+{
+    position: relative;
+    width: 1000px;
+    height: 530px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+    overflow: auto;
+    border-radius: 6px;
+}
+section .container h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    color: #FAB23D;
+}
+section .container .finish a
+{
+     text-decoration: none;
+     color: #FAB23D;
+     display: block;
+     text-align: right;
+     margin: 0 20px;
+     font-size: 20px;
+     font-weight: 500;
+}
+section .container .skip a
+{
+     text-decoration: none;
+     color: #fff;
+     display: block;
+     text-align: right;
+     margin: 0 20px;
+     font-size: 14px;
+     font-weight: 500;
+}
+.fas
+{
+    font-size: 50px;
+    color: #FAB23D;
+    cursor: pointer;
+    margin: 5px;
+}
+.io 
+{
+    text-align: left;
+    font-size: 14px;
+}
+section .container input[type="checkbox"][id^="myCheckbox"]
+{
+    display: none;
+}
+section .container label 
+{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 8px 5px;
+    width: 150px;
+} 
+section .container label a
+{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 0 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+:checked + label 
+{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    width: 150px;
+}
+
+section .container ul 
+{
+    margin: 0px;
+    padding: 10px 5px;
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+}
+section .container ul li 
+{
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 7px;
+    display: inline-block;
+}
+.container{
+    overflow: scroll;
+}
+
+@media (max-width: 700px)
+{
+    section .container
+    {
+        max-width: 500px;
+    }
+    section .container ul
+    {
+        width: 100%;
+    }
+    /* section .container ul li a
+    {
+        font-size: 14px;
+        margin: 2px 3px;
+    } */
+    section .container .elective
+    {
+        padding: 20px 0;
+        margin-top: 3px;
+        margin-right: 70px;
+        width: 90px;
+    }
+    section .container .elective:hover
+    {
+        border-radius: 100px;
+    }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+.sub{
+    color:#ffffff;
+    font-size: 14px;
+
+}
+label, input{
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.finish{
+    margin-top: -20px;
+}
+/*
+a:link , a:visited {
+  color: red;
+}
+
+
+a:hover , a:active {
+  color: hotpink;
+}
+*/

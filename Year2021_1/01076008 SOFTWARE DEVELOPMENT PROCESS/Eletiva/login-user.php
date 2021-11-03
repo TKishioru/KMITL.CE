@@ -6,8 +6,8 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ELETIVA</title>
-  <link rel="stylesheet" type="text/css" href="css/index.css"> 
+  <title>Eletiva | Login & Regieter</title>
+  <link rel="stylesheet" type="text/css" href="css/login-user.css"> 
 
   <!-- add icon link -->
   <link rel="icon" href="images/icon.jpg" type="image/x-icon">
@@ -37,7 +37,18 @@
         <div class="user singupBx">
           <div class="formBx">
             <form action="controllerUserData.php" method="post" name="R_form" autocomplete="">
-              <h2>ลงทะเบียน</h2>                         
+              <h2>ลงทะเบียน</h2>
+              <?php include('errors.php'); ?>
+              <?php if (isset($_SESSION['error'])) : ?>
+                <div class="error">
+                  <h3>
+                      <?php 
+                        echo $_SESSION['error'];
+                        unset($_SESSION['error']);
+                      ?>
+                  </h3>
+                </div>
+               <?php endif ?>
               <input class="form-control" type="email" placeholder="อีเมล" name="email">
               <input class="form-control" type="password" placeholder="รหัสผ่าน" name="First_password" id="First_password" onChange="onChange()" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
               <input class="form-control" type="password" placeholder="ยืนยันรหัสผ่าน" name="confirm_password" id="confirm_password" onChange="onChange()">
