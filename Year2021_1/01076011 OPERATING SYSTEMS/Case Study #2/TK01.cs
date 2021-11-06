@@ -70,7 +70,7 @@ namespace OS_Problem_02
            lock (_Lock)
                 if (updateFlag == 1 && Count != 0)
                 {*/
-                    for (int i = 0; i < 60;)
+                    for (int i = 0; i < 60; i++)
                     {
                 if (Count > 0)
                 {
@@ -78,9 +78,14 @@ namespace OS_Problem_02
                     Console.Write("--- {0}", Count);
                     Console.WriteLine("j={0}, thread:{1}", j, t);
                     Thread.Sleep(100);
-                    i++;
                 }
-                Console.WriteLine("Wait");
+                else
+                {
+                    Console.WriteLine("--- Loss {0}", i);
+                    //Console.WriteLine("Wait");
+                    //i--;
+                }
+                
             }
                 /*    updateFlag = 0;
                 }*/
@@ -90,13 +95,13 @@ namespace OS_Problem_02
             Thread t1 = new Thread(th01);
             //Thread t11 = new Thread(th011);
             Thread t2 = new Thread(th02);
-            Thread t21 = new Thread(th02);
+            //Thread t21 = new Thread(th02);
             //Thread t22 = new Thread(th02);
 
             t1.Start();
             //t11.Start();
             t2.Start(1);
-            t21.Start(2);
+            //t21.Start(2);
             //t22.Start(3);
         }
     }
