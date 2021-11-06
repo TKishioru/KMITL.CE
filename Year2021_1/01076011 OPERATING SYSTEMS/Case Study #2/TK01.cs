@@ -25,7 +25,7 @@ namespace OS_Problem_02
                 Back++;
                 Back %= 10;
                 Count += 1;
-                Console.WriteLine("At count {0} [Data real : {1}]", Count, eq);
+                //Console.WriteLine("At count {0} [Data real : {1}]", Count, eq);
             }
         }
 
