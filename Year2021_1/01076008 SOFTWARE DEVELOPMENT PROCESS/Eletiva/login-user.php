@@ -68,7 +68,6 @@
                 </div>
               </label>
 
-
               <input type="submit" name="reg_user" value="ลงทะเบียน">
               <p class="singup" align ='center'>เป็นสมาชิกแล้ว? <a href="#" onclick="toggleForm();">คลิกเพื่อเข้าสู่ระบบ</a></p>
             </form>

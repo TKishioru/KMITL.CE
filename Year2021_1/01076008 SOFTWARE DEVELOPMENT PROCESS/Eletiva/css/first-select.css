@@ -41,7 +41,7 @@ section .container h2
     letter-spacing: 2px;
     text-align: center;
     width: 100%;
-    color: #FAB23D;
+    color: #FAB23D; 
 }
 section .container .finish a
 {
@@ -75,7 +75,7 @@ section .container .skip a
     text-align: left;
     font-size: 14px;
 }
-section .container input[type="checkbox"][id^="myCheckbox"]
+section .container input.selectS[type="checkbox"][id^="myCheckbox"]
 {
     display: none;
 }
@@ -176,13 +176,30 @@ background: #555;
     font-size: 14px;
 
 }
-label, input{
+label, input.selectS{
     width: 200px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 20px;   
 }
+
 .finish{
-    margin-top: -20px;
+    margin-top: -25px;
+    padding-right: 20px;
+    width: 100%;
+    color: #FAB23D;
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+    background-color:transparent;
+    border:transparent;
+    box-shadow:none;
+    /* ถ้าจะใช้ active ให้ใช้ margin% แทน width% */
+}
+
+.finish:hover , .finish:active{
+    color: white;
+    cursor: pointer;
 }
 /*
 a:link , a:visited {

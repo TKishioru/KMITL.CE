@@ -49,9 +49,10 @@ $email = '';
             mysqli_query($connect,$sql); // สั่งรันคำสั่ง sql
 
             $_SESSION['email'] = $email;
+            $_SESSION['password'] = $password;
+            $_SESSION['status'] = $status;
             $_SESSION['success'] = "You are now logged in";
-            $_SESSION['check'] = "first login";
-
+    
             header('location: first-select.php');
         } else {
             header("location: login-user.php");
@@ -81,6 +82,7 @@ $email = '';
 
             if (mysqli_num_rows($result) == 1) {
                 $_SESSION['email'] = $email;
+                $_SESSION['password'] = $password;
                 $_SESSION['status'] = $row['status'];
                 $_SESSION['success'] = "Your are now logged in";
                 if($_SESSION['status'] == 2){

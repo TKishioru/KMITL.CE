@@ -49,7 +49,8 @@ $introduce = $row["introduce"];
         <input type="checkbox" name="elective_eng2"> <label> 10. elective_eng2</label><br>
         <input type="checkbox" name="elective_21"> <label> 11. elective_21</label><br>
         <input type="checkbox" name="elective_carrer"> <label> 12. elective_carrer</label><br>
-        <input type="checkbox" name="elective_eng3"> <label> 13. elective_eng3</label><br>
+        <input type="checkbox" name="elective_leader"> <label> 13</label><br>
+        <input type="checkbox" name="elective_eng3"> <label> 14. elective_eng3</label><br>
 
         <input type="submit" name="change_info">
     </form>

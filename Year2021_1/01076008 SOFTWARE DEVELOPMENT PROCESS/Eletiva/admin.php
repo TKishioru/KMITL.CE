@@ -4,8 +4,8 @@ require "dbconnect.php";
 session_start();
 
 if(!isset($_SESSION["email"])){
-    $_SESSION['msg'] = "You must log in first";
-    header('location: login-user.php');
+    //$_SESSION['msg'] = "You must log in first";
+    header('location: index.php');
 }
 
 if($_SESSION["status"] != 2){
@@ -16,41 +16,36 @@ if(isset($_GET["logout"])){
     session_destroy();
     unset($_SESSION["email"]);
     unset($_SESSION["status"]);
-    header('location: login-user.php');
+    header('location: index.php');
   }
 ?>
-admin page
-<div>
-    <!-- logged in user information -->
-    <?php if(isset($_SESSION["email"])) : ?>
-        <p>Welcome <strong><?php echo $_SESSION["email"]; ?></strong></p>
-        <p>status : 
-            <?php 
-                if($_SESSION["status"] == 0){
-                    echo "student"; 
-                }
-                else if ($_SESSION["status"] == 1){
-                    echo "teacher";
-                }
-                else if ($_SESSION["status"] == 2){
-                    echo "admin";
-                }
-            ?>
-        </p>
-        <p><a href="index.php">index page</a></p>
-        <p><a href="logout.php">Logout</a></p>
+<!DOCTYPE html>
+<html lang="en">
 
-    <?php endif ?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletiva | Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/home_index.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
 
-    <?php
-    $sql = "SELECT * FROM users WHERE status = 2";
-    $query = mysqli_query($connect, $sql);
-    $result = mysqli_fetch_assoc($query);
-    
-    if ($result) { // if user exists
-        $user = json_decode($result['interest']);
-        echo "<p>name: $user->name</p>","<p>age: $user->age</p>";
-    }
-//https://www.imooh.com/%E0%B8%9F%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B9%8C%E0%B8%8A%E0%B8%B1%E0%B8%99-json_encode-%E0%B8%82%E0%B8%AD%E0%B8%87-php
-    ?>
-</div>
+    <!-- add icon link -->
+    <link rel="icon" href="images/icon.jpg" type="image/x-icon">
+    <!-- specifying a webpage icon for web clip -->
+    <link rel="apple-touch-icon" href="images/icon.jpg" />
+
+</head>
+<nav> <!--id="navbar"-->
+    <ul class="menu">
+    <li class="logo"><a class="logonav" href="index.php">ELETIVA</a></li>
+    <li class="item"><a href="logout.php" title="Logout"><i class="iconnav fas fa-sign-out-alt"><span class="navTitle">Log Out</span></i></a></li>
+    <li class="toggle"><a class="icontog" href="#"><i class="icontog fas fa-bars"></i></a></li>
+    </ul>
+</nav>
+ADmin Page
+
+<script src="javascript/navbar.js"></script>
