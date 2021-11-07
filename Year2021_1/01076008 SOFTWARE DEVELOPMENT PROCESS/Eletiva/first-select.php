@@ -29,7 +29,7 @@ if(isset($_GET["logout"])){
   <body>
     <section>
         <div class="container">
-            <h2>เลือกหมวดหมู่วิชาเลือกที่คุณสนใจ</h2>
+            <h2>เลือกกลุ่มวิชาเลือกที่คุณสนใจ</h2>
             <p class="skip"><a href="index.php">ข้าม>></a></p>
             <form action="editprofile.php" method="post">
             <ul>
@@ -37,37 +37,37 @@ if(isset($_GET["logout"])){
                     <input type="checkbox" class="selectS" id="myCheckbox1" name="elective_eng1">
                     <label for="myCheckbox1">
                         <i class="fas fa-language"></i>
-                        <p class="sub">หมวดภาษา</p>
+                        <p class="sub">กลุ่มภาษา</p>
                     </label>
                     <input type="checkbox" class="selectS" id="myCheckbox2" name="elective_hu">
                     <label for="myCheckbox2">
                         <i class="fas fa-users"></i>
-                        <p class="sub">หมวดมนุษย์ศาสตร์</p>
+                        <p class="sub">กลุ่มมนุษย์ศาสตร์</p>
                     </label>
                     <input type="checkbox" class="selectS" id="myCheckbox3" name="elective_so1">
                     <label for="myCheckbox3">
                         <i class="fas fa-globe"></i>
-                        <p class="sub">หมวดสังคมศาสตร์</p>
+                        <p class="sub">กลุ่มสังคมศาสตร์</p>
                     </label>
                     <input type="checkbox" class="selectS" id="myCheckbox4" name="elective_sci">
                     <label for="myCheckbox4">
                         <i class="fas fa-atom"></i>
-                        <p class="sub">หมวดวิทยาศาสตร์ฯ</p>
+                        <p class="sub">กลุ่มวิทยาศาสตร์ฯ</p>
                     </label>
                     <input type="checkbox" class="selectS" id="myCheckbox5" name="elective_free">
                     <label for="myCheckbox5">
                         <i class="fas fa-dove"></i>
-                        <p class="sub">หมวดวิชาเลือกเสรี</p>
+                        <p class="sub">กลุ่มวิชาเลือกเสรี</p>
                     </label>
                     <input type="checkbox" class="selectS" id="myCheckbox6" name="elective_life">
                     <label for="myCheckbox6">
                         <i class="fas fa-hand-holding-heart"></i>
-                        <p class="sub">หมวดคุณค่าแห่งชีวิต</p>
+                        <p class="sub">กลุ่มคุณค่าแห่งชีวิต</p>
                     </label>
                     <input type="checkbox" class="selectS" id="myCheckbox7" name="elective_so2">
                     <label for="myCheckbox7">
                         <i class="fas fa-icons"></i>
-                        <p class="sub">หมวดวิถีแห่งสังคม</p>
+                        <p class="sub">กลุ่มวิถีแห่งสังคม</p>
                     </label>                   
                     <input type="checkbox" class="selectS" id="myCheckbox8" name="elective_think">
                     <label for="myCheckbox8">
@@ -79,7 +79,7 @@ if(isset($_GET["logout"])){
                         <i class="fas fa-chart-line"></i>
                         <p class="sub">ศิลปแห่งการจัดการ</p>
                     </label> 
-                    <input type="checkbox" class="selectS" id="myCheckbox10" name=""elective_eng2>
+                    <input type="checkbox" class="selectS" id="myCheckbox10" name="elective_eng2">
                     <label for="myCheckbox10">
                         <i class="fas fa-comments"></i>
                         <p class="sub">ภาษาและการสื่อสาร</p>
@@ -87,7 +87,7 @@ if(isset($_GET["logout"])){
                     <input type="checkbox" class="selectS" id="myCheckbox11" name="elective_21">
                     <label for="myCheckbox11">
                         <i class="fas fa-vr-cardboard"></i>
-                        <p class="sub">หมวดทักษะที่จำเป็นในศตวรรษที่ 21</p>
+                        <p class="sub">กลุ่มทักษะที่จำเป็นในศตวรรษที่ 21</p>
                     </label>
                     <input type="checkbox" class="selectS" id="myCheckbox12" name="elective_carrer">
                     <label for="myCheckbox12">
@@ -102,7 +102,7 @@ if(isset($_GET["logout"])){
                     <input type="checkbox" class="selectS" id="myCheckbox14" name="elective_eng3">
                     <label for="myCheckbox14">
                         <i class="fas fa-globe-americas"></i>
-                        <p class="sub">หมวดทักษะด้านภาษาและการสื่อสาร</p>
+                        <p class="sub">กลุ่มทักษะด้านภาษาและการสื่อสาร</p>
                     </label>
                 </li>
             </ul>

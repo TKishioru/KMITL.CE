@@ -17,6 +17,7 @@
     background: #222;
     padding-left: 15px;
     margin-bottom: -18px;
+    position: sticky;
   }
   a {
     color: #FAB23D;

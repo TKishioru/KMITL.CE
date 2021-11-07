@@ -8,6 +8,7 @@
 .inf{
   padding: 0 20px;
   margin-bottom: 20px;
+  width: 100%;
 }
 section .posttext {
     position: relative;
@@ -80,7 +81,7 @@ a.Content:hover,.post_btn:hover{
   color: white;
 }
 .commentN{
-  position: relative;
+  /*position: relative;*/
   margin-top: -15px;
   margin-left: 45px;
   width: fit-content;

@@ -43,6 +43,8 @@ for (let item of items) {
 }
 document.addEventListener("click", closeSubmenu, false);
 
+////////////////////////////////////////////////////////////
+
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");

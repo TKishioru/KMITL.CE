@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400&display=swap');
+*
+{
+    margin: 0; /*ระยะขอบ ผลักอัตโนมัติ*/
+    padding: 0; /*ขยายขอบด้านใน*/
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    
+}
+/* section
+{
+    position: relative;
+    min-height: 200vh;
+    background-color: #fff;
+    display: block;
+} */
+header .navbar
+{
+    background-color: #FAB23D;
+    display: flex;
+    top: 0;
+    left: 0;
+    padding: 6px 3px;
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+header .navbar .logo 
+{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+header .navbar .logo a 
+{
+    text-transform: uppercase;
+    color: #3B3F46;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 20px;
+    margin-left: 10px;
+}
+header .navbar .logout .fas
+{
+    color: #fff;
+    font-size: 35px;
+    /* margin: 8px 8px; */
+    margin-top: 8px;
+    margin-right: 20px;
+    display: inline;
+    cursor: pointer;
+}
+
+header .navbar .logout .fas:hover 
+{
+    color: #000;
+}
+
+section .banner {
+    width: 100%;
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    resize: horizontal;
+}
+
+section .report 
+{
+    position: relative;
+    top: 40vw;
+    left: 40;
+    margin-right: 5px;
+    margin-top: 20px;
+    display: table;
+}
+
+section .report .fas 
+{
+    color: #3B3F46;
+    font-size: 35px;
+    /* margin: 8px 8px; */
+    margin-top: 8px;
+    margin-left: 40px;
+    display: inline;
+}
+
+section .report p 
+{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: start;
+    margin-top: 8px;
+    margin-left: 15px;
+    display: inline;
+    color: #000;
+}
+
+section .postList 
+{
+    position: relative;
+    height: 100px;
+    left: 80px;
+    top: 40vw;
+    display: block;
+    cursor: pointer;
+    background-color: #FAB23D;
+    color: white;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 86%;
+    padding: 15px;
+}
+
+section .postList .fas 
+{
+    color: white;
+    display: inline;
+    font-size: 25px;
+    margin: 0px 10px 0px 10px;
+}
+
+section .postList a 
+{
+    color: white;
+    text-decoration: none;
+    text-align: inherit;
+    font-size: 22px;
+    display: inline;
+}
+
+section .postList h1 
+{
+    color: #746143;
+    font-size: 12px;
+    position: absolute;
+    left: 70px;
+    margin-top: 10px;
+    top: 38px;
+    font-weight: 100;
+}
+
+section .postList p 
+{
+    color: #3B3F46;
+    font-size: 14px;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    font-weight: 600;
+}
+
+section .postList .comment .fas 
+{
+    color: white;
+    font-size: 30px;
+    position:absolute;
+    right: 30px;
+    top: 40px;
+}
+
+section .postList .comment h3 
+{
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    font-weight: 200;
+}

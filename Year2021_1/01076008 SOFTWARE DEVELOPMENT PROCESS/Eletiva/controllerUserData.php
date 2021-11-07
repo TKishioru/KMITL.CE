@@ -86,7 +86,7 @@ $email = '';
                 $_SESSION['status'] = $row['status'];
                 $_SESSION['success'] = "Your are now logged in";
                 if($_SESSION['status'] == 2){
-                    header("location: admin.php");
+                    header("location: admin-home.php");
                 }
                 else{
                     header("location: index.php");
