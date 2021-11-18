@@ -1,0 +1,245 @@
+body {
+    font-family: 'prompt', sans-serif;
+    font-weight: 300;
+}
+.text-orange{
+    color: #FAB23D;
+}
+.imgProfile{
+    max-width: 100%;
+    width:240px;
+    height:240px;
+    object-fit: cover;
+    margin: 0 auto 10px;
+}
+.bg-darkGray{
+    background: #3B3F46;
+}
+.bg-mediumGray{
+    background: #9d9fa2;
+}
+.navbar-brand img{
+    height:50px;
+}
+/*-----------------------------------------
+    Nav
+-------------------------------------------*/
+.navbar-expand-sm .navbar-nav .nav-link{
+    text-align: center;
+    font-size: 12px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,.75);
+}
+#collapsibleNavbar img{
+    width:20px;
+    margin:0 auto 2px;
+}
+#collapsibleNavbar .dropdown-toggle{
+    font-size: 16px;
+}
+#accountNav .nav-link{
+    color: #000;
+    border-left: 4px solid #FAB23D;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #000;
+}
+.borderAccNav{
+    border-right: 1px solid #000;
+}
+/*-----------------------------------------
+    Card
+-------------------------------------------*/
+.card-dark .card-header{
+    background: #3B3F46;
+    color: #FAB23D;
+    font-size: 20px;
+}
+.card-dark .card-body{
+    background: rgba(59,63,70,.5);
+}
+.bg-gray{
+    background-color: #c4c4c4;
+}
+.bg-lightGray{
+    background: #DCDCDC;
+}
+/*-----------------------------------------
+    Button
+-------------------------------------------*/
+.btn-orange{
+    color: #fff;
+    background-color: #FAB23D;
+}
+.btn-orange:hover{
+    color: #fff;
+    background-color: #DF9721;
+}
+/*-----------------------------------------
+    Form
+-------------------------------------------*/
+input.form-control{
+    background:#fff;
+    border-radius: 0;
+}
+.form-select{
+    background-color:#fff;
+    border-radius: 0;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23fab23d' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e")
+}
+textarea.form-control{
+    background:#fff;
+    border-radius: 0;
+}
+.box-browse{
+    position: relative;
+}
+.inputfile {
+    max-width: 100%;
+    height: 50px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+.inputfile + label {
+    color: #fff;
+    background: transparent;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.inputfile:focus + label, .inputfile.has-focus + label, .inputfile + label:hover {
+    background-color: rgba(59,63,70,.2);
+}
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1rem;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+}
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+.form-check {
+    display: block;
+    min-height: 1.75rem;
+    padding-left: 2.5em;
+    margin-bottom: 0.125rem;
+    align-items: center;
+    align-self: center;
+}
+.form-check .form-check-input {
+    float: left;
+    margin-left: -2em;
+}
+.form-check-input {
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 0em;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0,0,0,.25);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+}
+.form-check-input:checked {
+    background-color: #fab23d;
+    border-color: #fab23d;
+}
+/*-----------------------------------------
+    Tab
+-------------------------------------------*/
+#tabHistory .nav-link{
+    color: #fff;
+    background: #3B3F46;
+    border-radius: 0;
+    font-weight: 300;
+    padding: 1rem 1rem;
+}
+#tabHistory .nav-link:hover{
+    background: #2a2d34;
+}
+#tabHistory .nav-link.active{
+    color: #fab23d;
+}
+#tabHistory-Content{
+    background: rgba(59,63,70,.5);
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.8rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid rgba(0,0,0,.125);
+}
+#tabHistory-Content .list-group-item a{
+    text-decoration: none;
+    color: #000;
+}
+#tabHistory-Content .list-group-item:hover{
+    background: rgba(59,63,70,.2);
+}
+#tabHistory-Content .list-group-item:hover a{
+    color: #fab23d;
+}
+/*-----------------------------------------
+    RESPONSIVE
+-------------------------------------------*/
+@media screen and (min-width:320px) and (max-width:374px){
+
+}
+@media screen and (min-width:375px) and (max-width:413px){
+
+}
+@media screen and (min-width:414px) and (max-width:424px){
+
+}
+@media screen and (min-width:425px) and (max-width:767px){
+
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+
+}
+@media screen and (min-width:1024px) and (max-width:1279px){
+
+}
+@media screen and (min-width:1280px) and (max-width:1359px){
+
+}
+@media screen and (min-width:1360px) and (max-width:1439px){
+
+}
+@media screen and (min-width:1440px) and (max-width:1599px){
+
+}
+@media screen and (min-width:1600px) and (max-width:1919px){
+
+}
+@media screen and (min-width:1920px) and (max-width:2559px){
+
+}
+@media screen and (min-width:2560px) {
+
+}

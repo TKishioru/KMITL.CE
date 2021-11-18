@@ -74,7 +74,6 @@ html * {
 
 
 a {
-  color: #35a785;
   text-decoration: none;
 }
 
@@ -147,6 +146,7 @@ header h1 {
 .cd-popup-notify {
   display: block;
   width: 180px;
+  height: 50px;
   line-height: 50px;
   margin: 3em auto;
   text-align: center;
@@ -155,12 +155,11 @@ header h1 {
   font-size: 0.875rem;
   font-weight: bold;
   text-transform: uppercase;
-/*   border-radius: 50em; */
   background: #FAB23D;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.07);
 }
 .cd-popup-notify:hover {
-  background: #fab13db4;
+  background-color: #fab13db4;
 }
 .cd-popup-delete {
   display: block;
@@ -177,10 +176,9 @@ header h1 {
   background: #FAB23D;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.07);
 }
-.cd-popup-delete:hover {
-  background: #fab13db4;
+.cd-popup-delete:hover{
+  background-color: #fab13db4;
 }
-  
 @media only screen and (min-width: 1170px) {
   .cd-popup-trigger {
     margin: 6em auto;
@@ -270,6 +268,7 @@ xpopup
   -webkit-transition: background-color 0.2s;
   -moz-transition: background-color 0.2s;
   transition: background-color 0.2s;
+  text-decoration: none;
 }
 .cd-popup-container .cd-buttons li:first-child a {
   background: #FAB23D;
@@ -277,6 +276,7 @@ xpopup
 }
 .cd-popup-container .cd-buttons li:first-child a:hover {
   background-color: #fab13db4;
+  
 }
 .cd-popup-container .cd-buttons li:last-child a {
   background: #3B3F46;

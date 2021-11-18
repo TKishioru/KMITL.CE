@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400&display=swap');
-*
-{
-    margin: 0; /*ระยะขอบ ผลักอัตโนมัติ*/
-    padding: 0; /*ขยายขอบด้านใน*/
+* {
+    margin: 0;
+    /*ระยะขอบ ผลักอัตโนมัติ*/
+    padding: 0;
+    /*ขยายขอบด้านใน*/
     box-sizing: border-box;
     font-family: 'IBM Plex Sans Thai', sans-serif;
-    
 }
+
+
 /* section
 {
     position: relative;
@@ -14,7 +16,9 @@
     background-color: #fff;
     display: block;
 } */
-header .navbar
+
+
+/* header .navbar
 {
     background-color: #FAB23D;
     display: flex;
@@ -49,7 +53,6 @@ header .navbar .logout .fas
 {
     color: #fff;
     font-size: 35px;
-    /* margin: 8px 8px; */
     margin-top: 8px;
     margin-right: 20px;
     display: inline;
@@ -67,20 +70,18 @@ section .banner {
     top: 85px;
     left: 0px;
     resize: horizontal;
-}
+} */
 
-section .report 
-{
+section .report {
     position: relative;
-    top: 40vw;
+    top: 3vw;
     left: 40;
     margin-right: 5px;
     margin-top: 20px;
     display: table;
 }
 
-section .report .fas 
-{
+section .report .fas {
     color: #3B3F46;
     font-size: 35px;
     /* margin: 8px 8px; */
@@ -89,8 +90,7 @@ section .report .fas
     display: inline;
 }
 
-section .report p 
-{
+section .report p {
     font-size: 25px;
     font-weight: bold;
     text-align: start;
@@ -100,12 +100,11 @@ section .report p
     color: #000;
 }
 
-section .postList 
-{
+section .postList {
     position: relative;
     height: 100px;
     left: 80px;
-    top: 40vw;
+    top: 4vw;
     display: block;
     cursor: pointer;
     background-color: #FAB23D;
@@ -117,16 +116,14 @@ section .postList
     padding: 15px;
 }
 
-section .postList .fas 
-{
+section .postList .fas {
     color: white;
     display: inline;
     font-size: 25px;
     margin: 0px 10px 0px 10px;
 }
 
-section .postList a 
-{
+section .postList a {
     color: white;
     text-decoration: none;
     text-align: inherit;
@@ -134,8 +131,7 @@ section .postList a
     display: inline;
 }
 
-section .postList h1 
-{
+section .postList h1 {
     color: #746143;
     font-size: 12px;
     position: absolute;
@@ -145,8 +141,7 @@ section .postList h1
     font-weight: 100;
 }
 
-section .postList p 
-{
+section .postList p {
     color: #3B3F46;
     font-size: 14px;
     position: absolute;
@@ -155,21 +150,25 @@ section .postList p
     font-weight: 600;
 }
 
-section .postList .comment .fas 
-{
+section .postList .comment .fas {
     color: white;
     font-size: 30px;
-    position:absolute;
+    position: absolute;
     right: 30px;
     top: 40px;
 }
 
-section .postList .comment h3 
-{
+section .postList .comment h3 {
     color: white;
     font-size: 10px;
     position: absolute;
     right: 25px;
     bottom: 20px;
     font-weight: 200;
+}
+
+a.Content {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: crimson;
 }

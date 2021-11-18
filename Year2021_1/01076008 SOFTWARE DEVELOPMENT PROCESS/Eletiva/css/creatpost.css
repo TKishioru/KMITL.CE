@@ -16,10 +16,10 @@ body {
     margin-right: 20px;
     margin-left: 20px;
     background-color: #e9e9e9;
+    /*background-color: #b9b9b9;*/
 }
 
 form {
-    
     padding: 10px 70px;
 }
 
@@ -64,7 +64,56 @@ input[type=text]:focus {}
         max-width: 290px;
     }
 }
+
 select{
     width: 100%;
     margin-bottom: 5px;
+}
+.form-check-label {
+    margin-right: 30px;
+}
+
+.fa-poll {
+    color: #FAB23D;
+    font-size: 25px;
+    position: absolute;
+    top: 48px;
+    left: 8px;
+}
+
+.details {
+    position: relative;
+}
+
+.post-check {
+    margin: 10px 0;
+}
+
+input[type=radio] {
+    outline: none;
+    border: none;
+}
+
+input[type=radio]:checked {
+    background-color: #FAB23D;
+}
+
+.details textarea {
+    padding-top: 35px;
+    padding-left: 10px;
+    letter-spacing: 0.8px;
+    font-size: 15px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px #686b70;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #FAB23D;
 }

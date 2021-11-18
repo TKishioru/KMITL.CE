@@ -4,6 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 
 session_start();
 require "dbconnect.php";
+ 
 $errors = array();
 $email = '';
 
@@ -32,9 +33,7 @@ $email = '';
         $user_check_query = "SELECT * FROM users WHERE email = '$email' LIMIT 1";
         $query = mysqli_query($connect, $user_check_query);
         $result = mysqli_fetch_assoc($query);
-        //$interest = array('elective_eng1'=>0,'elective_hu'=>0,'elective_so1'=>0,'elective_sci'=>0,'elective_free'=>0,'elective_life'=>0,'elective_so2'=>0,'elective_think'=>0,'elective_manage'=>0,'elective_eng2'=>0,'elective_21'=>0,'elective_carrer'=>0,'elective_eng3'=>0);
-        //{"elective_eng1":0,"elective_hu":0,"elective_so1":0,"elective_sci":0,"elective_free":0,"elective_life":0,"elective_so2":0,"elective_think":0,"elective_manage":0,"elective_eng2":0,"elective_21":0,"elective_carrer":0,"elective_eng3":0}
-
+    
         if ($result) { // if user exists
             if ($result['email'] === $email) {
                 array_push($errors, "email already exists");
@@ -44,14 +43,16 @@ $email = '';
 
         if (count($errors) == 0) {
             $password = md5($password_1);
+            $x = explode("@", $email);
+            $name = $x[0];
 
-            $sql = "INSERT INTO users(email,password,status) VALUES('$email','$password','$status')";
+            $sql = "INSERT INTO users(email,password,status,name) VALUES('$email','$password','$status','$name')";
             mysqli_query($connect,$sql); // สั่งรันคำสั่ง sql
 
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
             $_SESSION['status'] = $status;
-            $_SESSION['success'] = "You are now logged in";
+            $_SESSION['success'] = "You are now First logged in";
     
             header('location: first-select.php');
         } else {
@@ -84,12 +85,90 @@ $email = '';
                 $_SESSION['email'] = $email;
                 $_SESSION['password'] = $password;
                 $_SESSION['status'] = $row['status'];
+                $_SESSION['ID'] = $row['ID'];
+
+                    $ID = $_SESSION["ID"];
+                    $elective_eng1 = NULL;    
+                    $elective_hu = NULL;    
+                    $elective_so1 = NULL;   
+                    $elective_sci = NULL;    
+                    $elective_free = NULL;     
+                    $elective_life = NULL;    
+                    $elective_so2 = NULL;   
+                    $elective_think = NULL;   
+                    $elective_manage = NULL;    
+                    $elective_eng2 = NULL;  
+                    $elective_21 = NULL;     
+                    $elective_carrer = NULL;    
+                    $elective_leader = NULL;    
+                    $elective_eng3 = NULL;   
+                
+
+                $query3 = "SELECT Group_subject FROM interest WHERE ID = '$ID'";
+                $result3 = mysqli_query($connect, $query3);   
+                
+                while($row3_Resuut = mysqli_fetch_assoc($result3))
+                {
+                  if($row3_Resuut["Group_subject"]==0){
+                    $elective_eng1 = "on";    
+                  }
+                  if($row3_Resuut["Group_subject"]==1){
+                    $elective_hu = "on";    
+                  }
+                  if($row3_Resuut["Group_subject"]==2){  
+                    $elective_so1 = "on";   
+                  }
+                  if($row3_Resuut["Group_subject"]==3){  
+                    $elective_sci = "on";    
+                  }
+                  if($row3_Resuut["Group_subject"]==4){ 
+                    $elective_free = "on";     
+                  }
+                  if($row3_Resuut["Group_subject"]==5){
+                    $elective_life = "on";    
+                  }
+                  if($row3_Resuut["Group_subject"]==6){ 
+                    $elective_so2 = "on";   
+                  }
+                  if($row3_Resuut["Group_subject"]==7){  
+                    $elective_think = "on";   
+                  }
+                  if($row3_Resuut["Group_subject"]==8){ 
+                    $elective_manage = "on";    
+                  }
+                  if($row3_Resuut["Group_subject"]==9){ 
+                    $elective_eng2 = "on";  
+                  }
+                  if($row3_Resuut["Group_subject"]==10){
+                    $elective_21 = "on";    
+                  }
+                  if($row3_Resuut["Group_subject"]==11){  
+                    $elective_carrer = "on";    
+                  }
+                  if($row3_Resuut["Group_subject"]==12){
+                    $elective_leader = "on";    
+                  }
+                  if($row3_Resuut["Group_subject"]==13){ 
+                    $elective_eng3 = "on";    
+                  }                        
+                }
+                
+                echo "กลุ่มภาษา : $elective_eng1 <br>กลุ่มมนุษย์ศาสตร์ : $elective_hu <br>กลุ่มสังคมศาสตร์ : $elective_so1 <br>กลุ่มวิทยาศาสตร์ฯ : $elective_sci <br>กลุ่มวิชาเลือกเสรี : $elective_free <br>กลุ่มคุณค่าแห่งชีวิต : $elective_life <br>กลุ่มวิถีแห่งสังคม : $elective_so2 <br>";
+                echo "ศาสตร์แห่งการคิด : $elective_think <br>ศิลปแห่งการจัดการ : $elective_manage <br>ภาษาและการสื่อสาร : $elective_eng2 <br>กลุ่มทักษะที่จำเป็นในศตวรรษที่ 21 : $elective_21 <br>ทักษะด้านบุคคลและทักษะส่งเสริมวิชาชีพ : $elective_carrer <br>ทักษะด้านการจัดการและภาวะความเป็นผู้นำ : $elective_leader <br>กลุ่มทักษะด้านภาษาและการสื่อสาร : $elective_eng3 <br>";
+                 
+
+
                 $_SESSION['success'] = "Your are now logged in";
-                if($_SESSION['status'] == 2){
+                if($_SESSION['status'] == 3){
                     header("location: admin-home.php");
                 }
                 else{
-                    header("location: index.php");
+                    if($elective_eng1 == NULL  && $elective_hu == NULL && $elective_so1 == NULL && $elective_sci == NULL && $elective_free == NULL && $elective_life == NULL && $elective_so2 == NULL && $elective_think == NULL && $elective_manage == NULL && $elective_eng2 == NULL && $elective_21 == NULL && $elective_carrer == NULL && $elective_leader == NULL && $elective_eng3 == NULL){
+                        header("location: first-select.php");
+                    }
+                    else{
+                        header("location: index.php");
+                    }
                 }
             } else {
                 array_push($errors, "Wrong Email or Password");
@@ -157,7 +236,7 @@ $email = '';
 
     //if user click check reset otp button
     if(isset($_POST['check-reset-otp'])){
-        $_SESSION['info'] = "";
+        $_SESSION['info'] = NULL;
         $otp_code = mysqli_real_escape_string($connect, $_POST['otp']);
         $check_code = "SELECT * FROM users WHERE code = $otp_code";
         $code_res = mysqli_query($connect, $check_code);
@@ -176,7 +255,7 @@ $email = '';
 
     //if user click change password button
     if(isset($_POST['change-password'])){
-        $_SESSION['info'] = "";
+        $_SESSION['info'] = NULL;
         
         $password = mysqli_real_escape_string($connect, $_POST['password']);
         $cpassword = mysqli_real_escape_string($connect, $_POST['cpassword']);
@@ -203,4 +282,6 @@ $email = '';
     if(isset($_POST['login-now'])){
         header('Location: login-user.php');
     }
+
+    
 ?>

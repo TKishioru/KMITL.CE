@@ -49,21 +49,21 @@
                   </h3>
                 </div>
                <?php endif ?>
-              <input class="form-control" type="email" placeholder="อีเมล" name="email">
+              <input class="form-control" type="email" placeholder="อีเมล" name="email" title="Must be a university email address only." required>
               <input class="form-control" type="password" placeholder="รหัสผ่าน" name="First_password" id="First_password" onChange="onChange()" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-              <input class="form-control" type="password" placeholder="ยืนยันรหัสผ่าน" name="confirm_password" id="confirm_password" onChange="onChange()">
+              <input class="form-control" type="password" placeholder="ยืนยันรหัสผ่าน" name="confirm_password" id="confirm_password" onChange="onChange()" required>
               
               <!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required -->
               <p class="I_status">สถานะ</p>
               <label class="container">
                 <div class="student">นักเรียน
-                  <input type="radio" checked="checked" value="0" name="status">
+                  <input type="radio" checked="checked" value="1" name="status">
                   <span class="checkmark"></span>
                 </div>
               </label>
               <label class="container">
                 <div class="teacher">อาจารย์
-                  <input type="radio" value="1" name="status">
+                  <input type="radio" value="2" name="status">
                   <span class="checkmark"></span>
                 </div>
               </label>

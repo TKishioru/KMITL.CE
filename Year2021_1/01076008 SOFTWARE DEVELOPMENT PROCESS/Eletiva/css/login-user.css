@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400&display=swap');
-*
-{
-    margin: 0; /*ระยะขอบ ผลักอัตโนมัติ*/
-    padding: 0; /*ขยายขอบด้านใน*/
+* {
+    margin: 0;
+    /*ระยะขอบ ผลักอัตโนมัติ*/
+    padding: 0;
+    /*ขยายขอบด้านใน*/
     box-sizing: border-box;
     font-family: 'IBM Plex Sans Thai', sans-serif;
-    
 }
 
+
 /* login & register */
-section
-{
+
+section {
     position: relative;
     min-height: 100vh;
     background: #b4c1e1;
@@ -21,22 +22,20 @@ section
     transition: 0.5s;
 }
 
-section.active
-{
+section.active {
     background: #e0c7d5;
 }
 
-section .container
-{
+section .container {
     position: relative;
     width: 800px;
     height: 500px;
     background: #fff;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
-section .container .user
-{
+
+section .container .user {
     position: absolute;
     top: 0;
     left: 0;
@@ -44,15 +43,15 @@ section .container .user
     height: 100%;
     display: flex;
 }
-section .container .user .imgBx
-{
+
+section .container .user .imgBx {
     position: relative;
     width: 50%;
     height: 100%;
     transition: 0.5s;
 }
-section .container .user .imgBx img
-{
+
+section .container .user .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -60,8 +59,8 @@ section .container .user .imgBx img
     height: 100%;
     object-fit: cover;
 }
-section .container .user .formBx
-{
+
+section .container .user .formBx {
     position: relative;
     width: 50%;
     height: 100%;
@@ -72,8 +71,8 @@ section .container .user .formBx
     padding: 40px;
     transition: 0.5s;
 }
-section .container .user .formBx h2
-{
+
+section .container .user .formBx h2 {
     font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
@@ -82,10 +81,9 @@ section .container .user .formBx h2
     width: 100%;
     margin-bottom: 5px;
     color: #FAB23D;
-
 }
-section .container .user .formBx input
-{
+
+section .container .user .formBx input {
     width: 100%;
     padding: 10px;
     background: #ffffff;
@@ -99,14 +97,14 @@ section .container .user .formBx input
     font-weight: 300;
 }
 
-input[type="text"]:focus ,input[type="email"]:focus ,input[type="password"]:focus 
-{
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
     outline: 2px solid rgb(238, 238, 238);
     box-shadow: 0 4px 8px 0 rgba(230, 230, 230, 0.2), 0 6px 20px 0 rgba(230, 230, 230, 0.19);
 }
 
-section .container .user .formBx input[type="submit"]
-{
+section .container .user .formBx input[type="submit"] {
     max-width: 100px;
     background: #FAB23D;
     color: #fff;
@@ -115,19 +113,22 @@ section .container .user .formBx input[type="submit"]
     font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 10px;
-    transition: 0.5s;  
+    transition: 0.5s;
 }
-input[type=submit]:hover{
+
+input[type=submit]:hover {
     border: 2px solid rgb(202, 202, 202);
     box-shadow: 0 4px 8px 0 rgba(230, 230, 230, 0.2), 0 6px 20px 0 rgba(230, 230, 230, 0.19);
 }
+
+
 /*
 section .container .user .singupBx .formBx input[type="submit"]
 {
     background: #e73e49;
 }*/
-section .container .user .formBx .singup
-{
+
+section .container .user .formBx .singup {
     position: relative;
     margin-top: 20px;
     font-size: 12px;
@@ -136,58 +137,59 @@ section .container .user .formBx .singup
     text-transform: uppercase;
     font-weight: 300;
 }
-section .container .user .formBx .singup a
-{
+
+section .container .user .formBx .singup a {
     font-weight: 600;
     text-decoration: none;
     color: #FAB23D;
 }
-section .container .singupBx 
-{
+
+section .container .singupBx {
     pointer-events: none;
 }
-section .container.active .singupBx 
-{
+
+section .container.active .singupBx {
     pointer-events: initial;
 }
-section .container .singupBx .formBx
-{
+
+section .container .singupBx .formBx {
     top: 100%;
 }
-section .container.active .singupBx .formBx
-{
+
+section .container.active .singupBx .formBx {
     top: 0;
 }
-section .container .singupBx .imgBx
-{
+
+section .container .singupBx .imgBx {
     top: -100%;
     transition: 0.5s;
 }
-section .container.active .singupBx .imgBx
-{
+
+section .container.active .singupBx .imgBx {
     top: 0;
 }
-section .container .singinBx .formBx
-{
+
+section .container .singinBx .formBx {
     top: 0;
 }
-section .container.active .singinBx .formBx
-{
+
+section .container.active .singinBx .formBx {
     top: 100%;
 }
-section .container .singinBx .imgBx
-{
+
+section .container .singinBx .imgBx {
     top: 0;
     transition: 0.5s;
 }
-section .container.active .singinBx .imgBx
-{
+
+section .container.active .singinBx .imgBx {
     top: -100%;
 }
 
+
 /* checkbox - checkmark */
-section .container .singupBx .formBx .I_status
-{
+
+section .container .singupBx .formBx .I_status {
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
@@ -197,8 +199,8 @@ section .container .singupBx .formBx .I_status
     margin-bottom: 0px;
     color: #6B5C44;
 }
-section .container .student  
-{
+
+section .container .student {
     display: block;
     position: relative;
     padding-left: 25px;
@@ -212,8 +214,8 @@ section .container .student
     -ms-user-select: none;
     user-select: none;
 }
-section .container .teacher  
-{
+
+section .container .teacher {
     display: block;
     position: relative;
     padding-left: 25px;
@@ -227,20 +229,20 @@ section .container .teacher
     -ms-user-select: none;
     user-select: none;
 }
-section .container .student input 
-{
+
+section .container .student input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
-section .container .teacher input 
-{
+
+section .container .teacher input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
-section .container .student .checkmark 
-{
+
+section .container .student .checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -249,8 +251,8 @@ section .container .student .checkmark
     background-color: #E0E0E0;
     border-radius: 50%;
 }
-section .container .teacher .checkmark 
-{
+
+section .container .teacher .checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -259,34 +261,24 @@ section .container .teacher .checkmark
     background-color: #E0E0E0;
     border-radius: 50%;
 }
-section .container:hover .student input ~ .checkmark 
-{
+
+section .container:hover .student input~.checkmark {
     background-color: #fadaa7;
 }
-section .container:hover .teacher input ~ .checkmark 
-{
+
+section .container:hover .teacher input~.checkmark {
     background-color: #fadaa7;
 }
-section .container .student input:checked ~ .checkmark 
-{
+
+section .container .student input:checked~.checkmark {
     background-color: #FAB23D;
 }
-section .container .teacher input:checked ~ .checkmark 
-{
+
+section .container .teacher input:checked~.checkmark {
     background-color: #FAB23D;
 }
-section .container .student input:checked ~ .checkmark:after 
-{
-    content: "";
-    position: absolute;
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    transition: 240s;
-}
-section .container .teacher input:checked ~ .checkmark:after 
-{
+
+section .container .student input:checked~.checkmark:after {
     content: "";
     position: absolute;
     display: block;
@@ -296,37 +288,46 @@ section .container .teacher input:checked ~ .checkmark:after
     transition: 240s;
 }
 
+section .container .teacher input:checked~.checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: 240s;
+}
+
+
 /* picture */
-@media (max-width: 991px)
-{
-    section .container
-    {
+
+@media (max-width: 991px) {
+    section .container {
         max-width: 400px;
     }
-    section .container .imgBx
-    {
+    section .container .imgBx {
         display: none;
     }
-    section .container .user .formBx
-    {
-       width: 100%;
+    section .container .user .formBx {
+        width: 100%;
     }
-    section .container.active .singinBx .formBx
-    {
+    section .container.active .singinBx .formBx {
         top: -100%;
     }
 }
 
-.I_status{
+.I_status {
     margin-left: 10px;
 }
 
-a.forget , a.forget:visited{
+a.forget,
+a.forget:visited {
     text-decoration: none;
     margin-left: 67%;
     font-size: small;
     color: rgb(202, 202, 202);
 }
-a.forget:hover{
+
+a.forget:hover {
     color: #FAB23D;
 }

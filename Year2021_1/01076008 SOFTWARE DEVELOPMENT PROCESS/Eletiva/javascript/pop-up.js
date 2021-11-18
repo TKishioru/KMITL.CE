@@ -20,4 +20,18 @@ jQuery(document).ready(function($){
             $(this).removeClass('is-visible');
         }
     });
+    $('#notnotify').on('click', function(event){
+            event.preventDefault();
+            $('#notifyConfirm').removeClass('visible');
+            $('#deleteConfirm').removeClass('visible');
+            $(this).removeClass('is-visible');
+            $('.cd-popup').removeClass('is-visible');
+    });
+    $('#notdel').on('click', function(event){
+            event.preventDefault();
+            $('#notifyConfirm').removeClass('visible');
+            $('#deleteConfirm').removeClass('visible');
+            $(this).removeClass('is-visible');
+            $('.cd-popup').removeClass('is-visible');
+    });
 });

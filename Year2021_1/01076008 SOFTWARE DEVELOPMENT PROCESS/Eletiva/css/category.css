@@ -1,5 +1,6 @@
 .btn,.btn_L {
     border: 2px solid #666 ;
+    /*box-shadow: 2px 2px 1px rgb(177, 177, 177);*/
     outline: none;
     padding: 12px 16px;
     background-color: #f1f1f1;
