@@ -14,21 +14,66 @@ training_data = [[0, 0], [0, 1], [1, 0], [1, 1]]
 
 # expected output
 target_data = [[0], [1], [1], [0]]
+
 training_data = np.array(training_data)
 target_data = np.array(target_data)
+
 print(training_data.shape)
 print(target_data.shape)
 
+#--------------------------------------------------------------------------------------------------------------------------
 # Train model #1
-* Dense ชั้นแรก: input_shape=2 เพราะ input มีทั้งหมด 2 gate
-* Dense ชั้นสอง: output 2 แบบ ใช้ output 1 node
-* activation function = sigmoid
--------------------------------------------------------------
-- learning rate = 0.1
-- optimizer = SGD
-- epochs = 15,000
-- loss = 0.0099 (loss เริ่มน้อยกว่า 0.01 ประมาณ epoch ที่ 13,500)
-- training time = 7 min
+#--------------------------------------------------------------------------------------------------------------------------
+model_sgd = Sequential()
+model_sgd.add(Dense(32, input_shape=(2,), activation='sigmoid'))
+model_sgd.add(Dense(1, activation='sigmoid'))
 
-(optimizer)
-* SGD (Stochastic gradient descent) เป็น algorithm ที่ update ค่า parameters ต่าง ๆ ในทุกชุดข้อมูลที่ train โดย upadate 1 ครั้ง/epoch ทุกครั้งที่มีการ update จะทำให้ค่า parameter มีความแปรปรวนสูงและส่งผลต่อค่า loss
+optimizer_sgd = SGD(learning_rate=0.1)
+
+model_sgd.compile(loss='binary_crossentropy',
+              optimizer=optimizer_sgd,
+              metrics=['accuracy'])
+
+epochs = 15000
+batch_size = 4
+
+history_sgd = model_sgd.fit(training_data, target_data, epochs=epochs, batch_size=batch_size)
+
+predict = model_sgd.predict(training_data)
+print(np.round(predict))
+
+model_sgd.summary()
+
+# plot model: loss
+plt.plot(history_sgd.history['loss'])
+plt.ylabel('loss')
+plt.xlabel('epochs')
+plt.show()
+
+#--------------------------------------------------------------------------------------------------------------------------
+# Train model #2
+#--------------------------------------------------------------------------------------------------------------------------
+model_adam = Sequential()
+model_adam.add(Dense(32, input_shape=(2,), activation='sigmoid'))
+model_adam.add(Dense(1, activation='sigmoid'))
+
+optimizer_adam = Adam(learning_rate=0.1)
+
+model_adam.compile(loss='binary_crossentropy',
+              optimizer=optimizer_adam,
+              metrics=['accuracy'])
+
+epochs = 150
+batch_size = 4
+
+history_adam = model_adam.fit(training_data, target_data, epochs=epochs, batch_size=batch_size)
+
+predict = model_adam.predict(training_data)
+print(np.round(predict))
+
+# plot model: loss
+plt.plot(history_adam.history['loss'])
+plt.ylabel('loss')
+plt.xlabel('epochs')
+plt.show()
+model_adam.summary()
