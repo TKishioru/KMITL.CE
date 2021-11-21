@@ -1,0 +1,40 @@
+```
+Static Routing & Dynamic Routing Protocol
+```
+**ลักษณะเฉพาะ**
+1. Topology : โครงสร้างในการต่อเน็ตเวิร์ค
+2. Reliability : ความน่าเชื่อถือ
+3. Speed : ความเร็ว
+4. Scalability : สามารถปรับขนาดได้
+5. Cost : ต้นทุน
+6. Availability : ความพร้อมในการใช้งาน
+7. Security : ความปลอดภัย
+
+**Why Routing**
+เป็นการตอบโต้ระหว่าง network ทั้งสอง และเปรียบเสมือนเป็นคอมพิวเตอร์เครื่องนึงที่มี CPU, OS, หน่วยเก็บความจำ
+
+| Memory |                | Stores                                                                               |
+|--------|----------------|--------------------------------------------------------------------------------------|
+| RAM    | Volatitile     | - Running IOS - Running configuration file - IP routing & ARP tables - Packet buffer |
+| ROM    | Non-Volatitile | - Bootup instructions - Basic diagnostic software - Limited IOS                      |
+| NVRAM  | Non-Volatitile | - Startup configuration file                                                         |
+| Flash  | Non-Volatitile | - IOS - Other system files                                                           |
+
+**Function of Router**
+1. เชื่อมต่อได้หลาย network ซึ่งจะมีหลาย interface แต่ละอันก็มี IP network ต่างกัน
+2. มีฟังก์ชัน Routing (ค้นหาเส้นทาง) : Router จะเลือกทางที่สุดอยู่ในส่วน Routing Table
+3. มีฟังก์ชัน Forwarding (รับ - ส่งข้อมูลต่อ) : การรับข้อมูลหรือ Packet เข้ามาทาง Port ใดๆ แล้วทำการส่งต่อข้อมูลนั้นออกไปยังอีก Port หนึ่ง
+4. remote network ด้วยการทำเป็น static/dynamic routes เพื่อเพิ่มเส้นทางโดยตรง
+
+**Packet Forwarding Methods**
+- Process switching : ให้ CPU Process เลือกว่าจะไปทางไหน
+- Fast switching : ไม่ต้องผ่าน CPU เผื่อประมวลผล
+- Cisco Express Forwarding (CEF) : ดู routing แล้วไปเลย
+
+**Connect Devices**
+มี Default Gateways ซึ่งจำเป็นต่อการติดต่อไป network อื่นๆ
+` จำเป็น! ` คือ ชื่ออุปกรณ์, interface, IP address/subnet mask, Default Gateways
+
+**แจก IP ให้เครื่อง**
+- static : ตั้งให้เอง
+- dynamic : แจก ip ให้อัตโนมัติ (DHCP) 
