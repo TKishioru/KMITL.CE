@@ -32,9 +32,26 @@ Static Routing & Dynamic Routing Protocol
 - Cisco Express Forwarding (CEF) : ดู routing แล้วไปเลย
 
 **Connect Devices**
+
 มี Default Gateways ซึ่งจำเป็นต่อการติดต่อไป network อื่นๆ
 ` จำเป็น! ` คือ ชื่ออุปกรณ์, interface, IP address/subnet mask, Default Gateways
 
 **แจก IP ให้เครื่อง**
 - static : ตั้งให้เอง
 - dynamic : แจก ip ให้อัตโนมัติ (DHCP) 
+> static ที่ดีกว่าเพราะว่าใช้ทรัพยากรน้อย ปลอดภัยมากกว่า แต่ config ยาก, หา Path ยาก + ใช้ยาก, สเปคน้อยกว่า Dynamic
+
+**Path Determination**
+- Best Path : มีค่าเส้นทาง (cost) ที่ต่ำสุด
+  - RIP >>> จำนวน Hop
+  - OSPF >> BW จากต้นทาง - ปลายทาง
+  - EIGRP > BW, delay, load, reliability
+- Load Balancing ในกรณีที่ cost เท่ากัน
+> แบ่งส่ง
+- AD : ระยะห่าง ยิ่งน้อย ยิ่งดี
+
+**Routing Table**
+| D   | 10.1.1.0/24 | [90/2170112] | via | 209.168.200.226 | 00:00:05 | Serial0/0/0      |
+|-----|-------------|--------------|-----|-----------------|----------|------------------|
+| ชนิด | remote ที่รู้จัก | AD/Cost      |     | hop ต่อไป        | เวลา     | interface ทางออก |
+
