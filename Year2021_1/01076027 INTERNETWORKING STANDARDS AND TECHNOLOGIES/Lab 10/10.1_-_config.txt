@@ -1,0 +1,119 @@
+remark!
+set Hostname every device
+change mode PC1-6 static -> dhcp
+set static ip on Server-PT
+
+=============== SwitchA ================
+enable
+config terminal
+hostname SwitchA
+enable secret cisco
+line console 0
+password cisco
+login
+exit
+line vty 0
+password cisco
+login
+exit
+interface vlan 1
+ip address 192.168.1.11 255.255.255.0
+no shutdown
+exit
+ip default-gateway 192.168.1.254
+interface range Fa0/23-24
+switchport mode trunk
+exit
+vtp domain ce
+vtp password cisco
+vtp version 2 
+vtp mode server
+vlan 10
+name NwLab
+exit
+vlan 20
+name IotLab
+exit
+interface range fa0/1-10
+switchport mode access
+switchport access vlan 10
+exit
+interface range fa0/11-20
+switchport mode access
+switchport access vlan 20
+exit
+
+=============== SwitchB ================
+enable
+config terminal
+hostname SwitchB
+enable secret cisco
+line console 0
+password cisco
+login
+exit
+line vty 0
+password cisco
+login
+exit
+interface vlan 1
+ip address 192.168.1.12 255.255.255.0
+no shutdown
+exit
+ip default-gateway 192.168.1.254
+interface range Fa0/23-24
+switchport mode trunk
+exit
+vtp domain ce
+vtp password cisco
+vtp version 2 
+vtp mode client
+interface range fa0/1-10
+switchport mode access
+switchport access vlan 10
+exit
+interface range fa0/11-20
+switchport mode access
+switchport access vlan 20
+exit
+
+
+=============== StubRouter ================
+enable
+config terminal
+hostname StubRouter
+enable secret cisco
+line console 0
+password cisco
+login
+exit
+line vty 0
+password cisco
+login
+exit
+interface fastEthernet 0/0
+ip address 192.168.1.254 255.255.255.0
+no shutdown 
+interface fastEthernet 0/0.10
+encapsulation dot1Q 10
+ip address 192.168.10.254 255.255.255.0
+no shutdown
+exit
+interface fastEthernet 0/0.20
+encapsulation dot1Q 20
+ip address 192.168.20.254 255.255.255.0
+no shutdown
+exit
+service dhcp
+ip dhcp pool vlan10
+network 192.168.10.0 255.255.255.0
+default-router 192.168.10.254
+exit
+ip dhcp excluded-address 192.168.10.1 192.168.10.10
+ip dhcp excluded-address 192.168.10.254
+ip dhcp pool vlan20
+network 192.168.20.0 255.255.255.0
+default-router 192.168.20.254
+exit
+ip dhcp excluded-address 192.168.20.1 192.168.20.10
+ip dhcp excluded-address 192.168.20.254

@@ -1,0 +1,23 @@
+@StubRouter
+int s0/0
+ip add 161.246.1.1 255.255.255.0	%18
+no shutdown			+%10 Later
+clock rate 56000			%27
+ip route 0.0.0.0 0.0.0.0 s0/0		%36
+---------------------------------------------------------------
+ip nat pool net 161.246.1.101 161.246.1.102 netmask 255.255.255.0			%45
+access-list 1 permit 192.168.10.0 0.0.0.255
+access-list 1 permit 192.168.20.0 0.0.0.255	%54
+ip nat inside source list 1 pool net	%63
+int f0/0
+ip nat inside
+exit
+int s0/0
+ip nat outside 			%72
+exit
+int f0/0.10
+ip nat inside			%81
+exit
+int f0/0.20				
+ip nat inside			%90
+exit

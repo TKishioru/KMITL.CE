@@ -1,0 +1,32 @@
+=============== StubRouter ================
+enable
+config terminal
+hostname StubRouter
+interface serial 0/0
+ip address 161.246.1.1 255.255.255.0
+clock rate 56000
+no shutdown
+exit
+ip nat inside source static 192.168.10.1 161.246.1.100
+ip nat inside source static 192.168.1.11 161.246.1.111
+ip nat inside source static 192.168.1.12 161.246.1.112
+
+ip nat pool net10 161.246.1.101 161.246.1.102 netmask 255.255.255.0
+access-list 10 permit 192.168.10.0 0.0.0.255
+ip nat pool net20 161.246.1.103 161.246.1.104 netmask 255.255.255.0
+access-list 20 permit 192.168.20.0 0.0.0.255 
+
+ip nat inside source list 10 pool net10 overload
+ip nat inside source list 20 pool net20 overload
+
+ip route 0.0.0.0 0.0.0.0 serial 0/0
+interface fastEthernet 0/0
+ip nat inside 
+interface fastEthernet 0/0.10
+ip nat inside
+interface fastEthernet 0/0.20
+ip nat inside
+exit
+interface serial 0/0
+ip nat outside 
+exit

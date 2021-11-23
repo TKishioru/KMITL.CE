@@ -1,0 +1,27 @@
+>>StubRouter
+
+en
+conf te
+interface serial 0/0
+ip address 161.246.1.1 255.255.255.0
+clock rate 56000
+no shutdown
+exit
+ip route 0.0.0.0 0.0.0.0 161.246.1.254
+access-list 1 permit 192.168.10.0 0.0.0.255
+access-list 1 permit 192.168.20.0 0.0.0.255
+ip nat pool net 161.246.1.101 161.246.1.102 netmask 255.255.255.0
+ip nat inside source list 1 pool net
+interface fastEthernet 0/0
+ip nat inside 
+exit
+interface serial 0/0
+ip nat outside 
+exit
+int fa0/0.10
+ip nat inside
+exit
+int fa0/0.20
+ip nat inside
+exit
+---------------------=*=------------

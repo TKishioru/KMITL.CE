@@ -1,0 +1,50 @@
+=============== StubRouter ================
+enable
+config terminal
+hostname StubRouter
+interface serial 0/0
+ip address 161.246.1.1 255.255.255.0
+clock rate 56000
+no shutdown
+exit
+ip route 0.0.0.0 0.0.0.0 serial 0/0
+interface fastEthernet 0/0
+ip nat inside
+interface fastEthernet 0/0.10
+ip nat inside
+interface fastEthernet 0/0.20
+ip nat inside
+exit
+interface serial 0/0
+ip nat outside 
+exit
+ip nat inside source static 192.168.10.11 161.246.1.101
+ip nat inside source static 192.168.10.12 161.246.1.102
+ip nat inside source static 192.168.20.11 161.246.1.103
+ip nat inside source static 192.168.20.12 161.246.1.104
+
+=============== ISPRouter ================
+enable
+config terminal
+hostname ISPRouter
+enable secret cisco
+line console 0
+password cisco
+login
+exit
+line vty 0
+password cisco
+login
+exit
+interface serial 0/0
+ip address 161.246.1.254 255.255.255.0
+no shutdown
+exit
+interface Fa 0/0
+ip address 161.246.5.254 255.255.255.0
+no shutdown
+exit
+interface Fa 0/1
+ip address 161.246.6.254 255.255.255.0
+no shutdown
+exit

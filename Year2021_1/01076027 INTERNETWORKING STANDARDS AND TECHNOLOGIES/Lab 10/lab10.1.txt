@@ -1,0 +1,137 @@
+0. ต่อสาย Console Port & กำหนด IP, Df-Gateway @PC1-6
+PC1 : 192.168.10.13/192.168.10.254
+PC2 : 192.168.10.14/192.168.10.254
+PC3 : 192.168.20.13/192.168.20.254
+PC4 : 192.168.10.15/192.168.10.254
+PC5 : 192.168.20.14/192.168.20.254
+PC6 : 192.168.20.15/192.168.20.254
+-----------------------  0% --------------------------
+hostname SwitchA
+enable password cisco
+enable secret cisco
+-----------------------  2% --------------------------
+hostname SwitchB
+enable password cisco
+enable secret cisco 
+-----------------------  3% --------------------------
+hostname StubRouter
+enable password cisco
+enable secret cisco
+-----------------------  4% ---------------------------
+1. กำหนด SVI & Df-Gateway @SwitchA,B 
+1.1 SwA @VLAN1
+vlan 1
+exit
+int vlan 1
+ip add 192.168.1.11 255.255.255.0
+no shutdown
+exit
+ip default-gateway 192.168.1.254
+// Telnet
+line vty 0 
+password cisco
+login
+exit
+--------------------- 7 % -----------------------
+1.2 SwB @VLAN1  	
+vlan 1
+ip add 192.168.1.12 255.255.255.0
+no shutdown
+exit
+ip default-gateway 192.168.1.254
+// Telnet
+line vty 0
+password cisco
+login
+exit
+=================== 10 % ======================
+2. Trunk & VTP Configuration @Switch A,B
+2.1 Trunk Mode ,native VLAN to VLAN1 and VTP Config @SwA Fa0/23
+int f0/23
+switchport mode trunk
+switchport trunk native vlan 1   		// % not increase
+// later # switchport trunk allowed vlan 10 
+exit
+int f0/24
+switchport mode trunk		// 12 %
+switchport trunk native vlan 1		// % not increase
+exit				
+vtp version 2
+vtp domain ce 
+vtp password cisco
+vtp mode server
+--------------------- 16 % -----------------------
+2.2 Trunk Mode, native VLAN to VLAN1 and VTP Config @SwB Fa0/24
+int f0/24
+switchport mode trunk
+switchport trunk native vlan 1
+// later# switchport trunk allowed vlan 10 
+exit
+vtp version 2 			// % not increase
+vtp domain ce 			// % not increase
+vtp password cisco			// 17%
+vtp mode client
+==================== 18% =======================
+3. VLAN @ Switch 
+3.1 VLAN10,20 Config @SwA
+vlan 10 
+name NwLab
+exit
+int vlan 10
+ip add 192.168.10.11 255.255.255.0
+no shutdown
+exit
+vlan 20
+name IotLab
+exit
+int vlan 20
+ip add 192.168.20.11 255.255.255.0
+no shutdown
+exit
+---------------------- 20 % ---------------------
+3.2 Int mode @Switch A,B
+a) Fa0/1-10 access VLAN10
+int rang f0/1-10
+switchport mode access 
+switchport access vlan 10
+b) Fa0/11-20 access VLAN 20
+int rang f0/11-20
+switchport mode access 
+switchport access vlan 20
+===================== 81% ======================
+4. Sub-Interface @StubRouter
+4.1 Fa0/0.10 for VLAN 10 & Fa0/0.20 for VLAN 20
+int f 0/0
+ip add 192.168.1.11 255.255.255.0
+no shutdown
+int f 0/0.10
+description vlan 10
+encapsulation dot1q 10
+ip add 192.168.10.254 255.255.255.0
+exit
+int f 0/0.20
+description vlan 20
+encapsulation dot1q 20
+ip add 192.168.20.254 255.255.255.0
+------------------- 86% -------------------------
+4.2 All PC Telnet to SVI @SwA,B
+=> ตั้งค่า Address ให้เหมือนข้อ 0 
+===============================================
+5. DHCP @StubRouter
+5.1 Name : vlan10 and vlan20 & Except First 10 IP Address and Last IP Addess in Subnet
+service dhcp
+ip dhcp excluded-address  192.168.10.254
+ip dhcp excluded-address  192.168.10.1 192.168.10.10
+ip dhcp pool vlan10
+network 192.168.10.0 255.255.255.0
+default-router 192.168.10.11
+exit
+ip dhcp excluded-address  192.168.20.254
+ip dhcp excluded-address  192.168.20.1 192.168.20.10
+ip dhcp pool vlan20
+network 192.168.20.0 255.255.255.0
+default-router 192.168.20.11
+end
+copy run start
+reload
+----------------------------- 96% ------------------------------
