@@ -44,8 +44,8 @@ Static Routing & Dynamic Routing Protocol
 **Path Determination**
 - Best Path : มีค่าเส้นทาง (cost) ที่ต่ำสุด
   - RIP >>> จำนวน Hop
-  - OSPF >> BW จากต้นทาง - ปลายทาง
-  - EIGRP > BW, delay, load, reliability
+  - OSPF >> cost ที่คำนวณ BW จากต้นทาง - ปลายทาง
+  - EIGRP > cost ที่คำนวณ BW, delay, load, reliability
 - Load Balancing ในกรณีที่ cost เท่ากัน
 > แบ่งส่ง
 - AD : ระยะห่าง ยิ่งน้อย ยิ่งดี
@@ -54,4 +54,11 @@ Static Routing & Dynamic Routing Protocol
 | D   | 10.1.1.0/24 | [90/2170112] | via | 209.168.200.226 | 00:00:05 | Serial0/0/0      |
 |-----|-------------|--------------|-----|-----------------|----------|------------------|
 | ชนิด | remote ที่รู้จัก | AD/Cost      |     | hop ต่อไป        | เวลา     | interface ทางออก |
+> ver.15 ขึ้นไป มีชนิด Link Local(L) แสดงด้วย
 
+**ชนิด Static Routic**
+- Standard SR. : อยากรู้ network ---> route เลย
+> Stub network คือ เครือข่ายทีมีการเชื่อมต่อเส้นทางเดียว
+- Default SR. :
+- Summary SR. : รวมใช้ IP เดียวกัน
+- Floating SR. : ทำ Backup-link สำรอง เผื่อ WAN ไม่ได้ + Private WAN เพิ่มความปลอดภัย
