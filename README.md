@@ -103,3 +103,19 @@ study about the basics of Web language. (HTML + CSS + Javascript + Other.)
 > 01076014 COMPUTER ENGINEERING PROJECT PREPARATION
 
 </details>
+
+<details>
+<summary><b>Year 2022</b></summary>
+
+```  
+  Term 1
+```  
+> Co-operative Education
+  
+```  
+  Term 2
+```  
+
+> 01076015 COMPUTER ENGINEERING PROFESSIONAL DEVELOPMENT
+
+</details>
