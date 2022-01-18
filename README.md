@@ -102,6 +102,11 @@ study about the basics of Web language. (HTML + CSS + Javascript + Other.)
 
 > 01076014 COMPUTER ENGINEERING PROJECT PREPARATION
 
+```  
+  Term 3
+```  
+> 01006004 Industrial Training
+  
 </details>
 
 <details>
