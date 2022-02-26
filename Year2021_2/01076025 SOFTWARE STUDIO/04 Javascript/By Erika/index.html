@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Today's Date</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+
+    <script src="code.js"></script>
+
+        <h2>My First JavaScript</h2>
+        <button id = "dateButton" onclick="ShowDate()">Click me to display Date and Time.</button>
+
+        <div class="member-div" id='showMemberDiv' onmousedown='return false;' onselectstart='return false;'>
+            <p class="pink-text" id="memberText" onmouseout="ShowMemberBackground(show = 0)" onmouseover="ShowMemberBackground(show = 1)"  onclick="ToggleMember()" >Member</p>
+            <ul id ="memberDetail" class="member">
+                <li>Krittikamas Sunophak, ID: 62010029</li>
+                <li>Khampeerada Poothong, ID: 62010090</li>
+                <li>Patcharapol Prompang, ID: 63015117</li>
+                <li>Sarayut Aree, ID: 63015166</li>
+                <li>Sarin Hongthong, ID: 63015183</li>
+            </ul>
+        </div>
+
+        <div class="snapshot-div" id="snapshotDiv" >
+            <h1>Snapshots</h1>
+            <ul id ="snapshotDetail" class="snapshot">
+                <li><p onMouseOver="this.style.cursor='pointer'" class="pink-text" onclick="ChangeImage(0)">Fireworks</p></li>
+                <li><p onMouseOver="this.style.cursor='pointer'" class="pink-text" onclick="ChangeImage(1)">Crest</p></li>
+                <li><p onMouseOver="this.style.cursor='pointer'" class="pink-text" onclick="ChangeImage(2)">Action</p></li>
+                <li><p onMouseOver="this.style.cursor='pointer'" class="pink-text" onclick="ChangeImage(3)">Buffalo</p></li>
+            </ul>
+            <img class="KImage" id="KImage" src="https://media-exp1.licdn.com/dms/image/C4D03AQFZgRML9kbCAw/profile-displayphoto-shrink_200_200/0/1640820367229?e=1646870400&v=beta&t=7ujt-k4TA6kqwgTLOW60mh8j9mONMWkd479wRRSZ6UU"/>
+        </div>
+
+</body>
+ 
+</html>

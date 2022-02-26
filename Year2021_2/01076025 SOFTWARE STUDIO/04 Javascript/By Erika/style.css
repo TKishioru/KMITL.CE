@@ -1,0 +1,12 @@
+ul.member{
+    display: none;
+}
+
+p.pink-text{
+    color: #bc6e7e;
+    font-weight: bold;
+}
+
+div.member-div{
+    max-width: fit-content;
+}
