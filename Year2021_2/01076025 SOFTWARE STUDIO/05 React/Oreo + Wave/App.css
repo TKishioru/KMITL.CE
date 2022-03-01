@@ -1,0 +1,76 @@
+.T1{
+  color: rgb(255, 217, 0);
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+
+body {
+  background-color: rgb(94, 93, 93);
+ 
+}
+
+img {
+  width: 100;
+  height: 200px;
+  position: absolute;
+  right: 50;
+  
+}
+.vote{
+  display: flex;
+  border-radius: 10px;
+  border: solid rgb(143, 6, 143);
+  height: 50px;
+  width: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: greenyellow;
+  color: rgb(122, 0, 221);
+  align-items: center;
+  justify-content: center;
+}
+.rectangle {
+  
+  height: 400px;
+  width: 800px;
+  color:rgb(0, 0, 0);
+  background-color: rgb(252, 236, 204);
+  border-radius:20px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  position: relative;
+  border-style: solid;
+  border-width: 3px;
+  
+}
+.flex-content{
+  height: 220px;
+  width: 590px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.rectangle > img{
+  right: 30px;
+  top: 30px;
+
+}
+.buttonZone{
+  display: flex;
+  justify-content: center;
+  
+}
+.flexbutton{
+  display: flex;
+}
+.buttons{
+  background-color: white;
+  color: black;
+  border: 2px solid Black;
+  border-radius: 8px;
+  height: 40px;
+  width: 120px;
+  margin-top: 10px;
+}
