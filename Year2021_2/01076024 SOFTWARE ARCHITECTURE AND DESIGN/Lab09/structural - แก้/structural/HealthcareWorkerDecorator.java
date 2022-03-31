@@ -11,12 +11,13 @@ public abstract class HealthcareWorkerDecorator extends HealthcareWorker {
         this.worker = worker;
     }
     
+    @Override
     public void service() {
         worker.service();
     }
 
+    @Override
     public double getPrice() {
         return worker.getPrice();
-    }
     
 }
