@@ -13,7 +13,7 @@ public class TimeLoggingHealthcareWorker extends HealthcareWorkerDecorator {
     @Override
     public void service() {
         LocalDateTime Dtime = LocalDateTime.now();  
-        DateTimeFormatter Ftime = DateTimeFormatter.ofPattern("E MMM dd HH:mm:ss" + " ICT " + "yyyy");  
+        DateTimeFormatter Ftime = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");  
         String formattedDate = Dtime.format(Ftime);  
         System.out.println(formattedDate); 
         

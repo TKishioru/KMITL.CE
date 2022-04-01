@@ -15,28 +15,33 @@
 <body>
     <fieldset>
         <legend>Basic Calculator</legend>
-        <input type="text" name="result" class="txtbox">
+        <input type="text" id="result" class="txtbox">
         <br><br>
-        <input type="button" name="1" value="1" class="btncal">
-        <input type="button" name="2" value="2" class="btncal">
-        <input type="button" name="3" value="3" class="btncal">
-        <input type="button" name="+" value="+" class="btncal">
+        <input type="button" name="1" value="1" class="btncal" onclick="calcutor()">
+        <input type="button" name="2" value="2" class="btncal" onclick="calcutor()">
+        <input type="button" name="3" value="3" class="btncal" onclick="calcutor()">
+        <input type="button" name="+" value="+" class="btncal" onclick="calcutor()">
         <br>
-        <input type="button" name="4" value="4" class="btncal">
-        <input type="button" name="5" value="5" class="btncal">
-        <input type="button" name="6" value="6" class="btncal">
-        <input type="button" name="-" value="-" class="btncal">
+        <input type="button" name="4" value="4" class="btncal" onclick="calcutor()">
+        <input type="button" name="5" value="5" class="btncal" onclick="calcutor()">
+        <input type="button" name="6" value="6" class="btncal" onclick="calcutor()">
+        <input type="button" name="-" value="-" class="btncal" onclick="calcutor()">
         <br>
-        <input type="button" name="7" value="7" class="btncal">
-        <input type="button" name="8" value="8" class="btncal">
-        <input type="button" name="9" value="9" class="btncal">
-        <input type="button" name="*" value="*" class="btncal">
+        <input type="button" name="7" value="7" class="btncal" onclick="calcutor()">
+        <input type="button" name="8" value="8" class="btncal" onclick="calcutor()">
+        <input type="button" name="9" value="9" class="btncal" onclick="calcutor()">
+        <input type="button" name="*" value="*" class="btncal" onclick="calcutor()">
         <br>
-        <input type="button" name="0" value="0" class="btncal">
-        <input type="button" name="." value="." class="btncal">
-        <input type="button" name="=" value="=" class="btncal">
-        <input type="button" name="/" value="/" class="btncal">
+        <input type="button" name="0" value="0" class="btncal" onclick="calcutor()">
+        <input type="button" name="." value="." class="btncal" onclick="calcutor()">
+        <input type="button" name="=" value="=" class="btncal" onclick="calcutor()">
+        <input type="button" name="/" value="/" class="btncal" onclick="calcutor()">
         <br><br>
-        <input type="button" name="CLEAR" value="CLEAR" class="btnclear">
+        <input type="button" name="CLEAR" value="CLEAR" class="btnclear" onclick="calcutor()">
     </fieldset>
 </body>
+<script>
+    function calcutor(){
+        document.getElementById("result").value
+    }
+</script>
