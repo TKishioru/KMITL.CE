@@ -15,7 +15,7 @@ public class TimeLoggingHealthcareWorker extends HealthcareWorkerDecorator {
         LocalDateTime Dtime = LocalDateTime.now();  
         DateTimeFormatter Ftime = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");  
         String formattedDate = Dtime.format(Ftime);  
-        System.out.println(formattedDate); 
+        System.out.print(formattedDate + " : "); 
         
         super.service();
     }
