@@ -1,0 +1,65 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+'class Main
+interface HealthcareServiceable {
+    + service() : void
+    + getPrice() : double
+}
+abstract HealthcareWorker {
+    - name : String
+    - price : double
+    + HealthcareWorker(name : String, price : double)
+    + {abstract} service() : void
+    + getPrice() : double
+}
+class HealthcareWorkerTeam {
+    - members : Set<HealthcareServiceable>
+    + addMember() : void
+    + removeMember() : void
+    + service() : void
+    + getPrice() : double
+}
+class Nurse {
+    + Nurse(name : String, price : double)
+    + service() : void
+}
+class Surgeon {
+    + Surgeon(name : String, price : double)
+    + service() : void
+}
+class Anesthesiologist {
+    + Anesthesiologist(name : String, price : double)
+    + service() : void
+}
+class Cardiologist {
+    + Cardiologist(name : String, price : double)
+    + service() : void
+}
+abstract HealthcareWorkerDecorator {
+    - worker : HealthcareWorker
+    + service() : void
+    + getPrice() : double
+}
+class TimeLoggingHealthcareWorker {
+    + service() : void
+}
+class TaxPayingHealthcareWorker {
+    + getPrice() : double
+}
+
+'Main  -l->    HealthcareServiceable
+HealthcareServiceable   ^.d.    HealthcareWorker
+HealthcareServiceable   ^.u.    HealthcareWorkerTeam
+HealthcareServiceable   <-u-o   HealthcareWorkerTeam
+HealthcareWorker    ^-d-    Anesthesiologist
+HealthcareWorker    ^-d-    Cardiologist
+HealthcareWorker    ^-l-    Nurse
+HealthcareWorker    ^-r-    Surgeon
+HealthcareWorker    ^-u-    HealthcareWorkerDecorator
+HealthcareWorker    <-u-o   HealthcareWorkerDecorator
+HealthcareWorkerDecorator   ^-u-    TimeLoggingHealthcareWorker
+HealthcareWorkerDecorator   ^-u-    TaxPayingHealthcareWorker
+
+hide empty members
+@enduml
