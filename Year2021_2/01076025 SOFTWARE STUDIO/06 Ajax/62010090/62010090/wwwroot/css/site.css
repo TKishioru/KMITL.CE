@@ -1,0 +1,59 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* ใช้ใน Index.cshtml */
+
+.btncal {
+    width: 75px;
+    height: 45px
+}
+
+.calbox {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: fit-content
+}
+
+.maintxt {
+    background-color: white;
+    margin-top: -20px;
+    width: max-content;
+}
+
+.btnclear {
+    width: 312px;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+
+.numbox {
+    width: 312px;
+    height: 30px;
+}
+
+.soltxt {
+    color: lightslategray;
+    font-size: small;
+}
+a a:link a:visited a:hover a:active{
+    color: white;
+    text-decoration: none;
+}

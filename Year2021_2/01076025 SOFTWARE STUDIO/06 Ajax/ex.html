@@ -1,47 +1,161 @@
-<!DOCTYPE html>
-<html>
-
-<head>
 <style>
     .btncal{
-        width: 50px;
+        width:75px;
+        height:45px
     }
-    .btnclear .txtbox{
-        width: 212px;
+    .calbox{
+        border: 1px solid black;
+        padding:10px;
+        margin:10px;
+        width:fit-content
     }
-</style>
-</head>
-
-<body>
-    <fieldset>
-        <legend>Basic Calculator</legend>
-        <input type="text" id="result" class="txtbox">
+    .maintxt{
+        background-color: white;
+        margin-top:-20px;
+        width:max-content;
+    }
+    .btnclear {
+        width:312px;
+        height:30px;
+        background-color: black;
+        color: white;
+    }
+    .numbox{
+        width:312px;
+        height:30px;
+    }
+    .soltxt{
+        color: lightslategray;
+        font-size: small;
+    }
+    </style>
+    <div class="calbox">
+        <p class="maintxt">Basic Calculator</p>
+        <p id="solve" class="soltxt">Solve.</p>
+        <!--<p id="result">Enter Number.</p>-->
+        <input type="text" id="result" value="Enter Number." class="numbox">
         <br><br>
-        <input type="button" name="1" value="1" class="btncal" onclick="calcutor()">
-        <input type="button" name="2" value="2" class="btncal" onclick="calcutor()">
-        <input type="button" name="3" value="3" class="btncal" onclick="calcutor()">
-        <input type="button" name="+" value="+" class="btncal" onclick="calcutor()">
+        <input type="button" class="btncal" onclick="calnum('1')" value="1">
+        <input type="button" class="btncal" onclick="calnum('2')" value="2">
+        <input type="button" class="btncal" onclick="calnum('3')" value="3">
+        <input type="button" class="btncal" onclick="calop('+')" value="+">
         <br>
-        <input type="button" name="4" value="4" class="btncal" onclick="calcutor()">
-        <input type="button" name="5" value="5" class="btncal" onclick="calcutor()">
-        <input type="button" name="6" value="6" class="btncal" onclick="calcutor()">
-        <input type="button" name="-" value="-" class="btncal" onclick="calcutor()">
+        <input type="button" class="btncal" onclick="calnum('4')" value="4">
+        <input type="button" class="btncal" onclick="calnum('5')" value="5">
+        <input type="button" class="btncal" onclick="calnum('6')" value="6">
+        <input type="button" class="btncal" onclick="calop('-')" value="-">
         <br>
-        <input type="button" name="7" value="7" class="btncal" onclick="calcutor()">
-        <input type="button" name="8" value="8" class="btncal" onclick="calcutor()">
-        <input type="button" name="9" value="9" class="btncal" onclick="calcutor()">
-        <input type="button" name="*" value="*" class="btncal" onclick="calcutor()">
+        <input type="button" class="btncal" onclick="calnum('7')" value="7">
+        <input type="button" class="btncal" onclick="calnum('8')" value="8">
+        <input type="button" class="btncal" onclick="calnum('9')" value="9">
+        <input type="button" class="btncal" onclick="calop('*')" value="*">
         <br>
-        <input type="button" name="0" value="0" class="btncal" onclick="calcutor()">
-        <input type="button" name="." value="." class="btncal" onclick="calcutor()">
-        <input type="button" name="=" value="=" class="btncal" onclick="calcutor()">
-        <input type="button" name="/" value="/" class="btncal" onclick="calcutor()">
+        <input type="button" class="btncal" onclick="calnum('0')" value="0">
+        <input type="button" class="btncal" onclick="calnum('.')" value=".">
+        <input type="button" class="btncal" onclick="calop('=')" value="=">
+        <input type="button" class="btncal" onclick="calop('/')" value="/">
         <br><br>
-        <input type="button" name="CLEAR" value="CLEAR" class="btnclear" onclick="calcutor()">
-    </fieldset>
-</body>
-<script>
-    function calcutor(){
-        document.getElementById("result").value
-    }
-</script>
+        <input type="button" onclick="calop('C')" value="CLEAR" class="btnclear">
+    
+    </div>
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        function MakeReq(serverpage, objID) {
+            let obj = document.getElementById(objID);
+            xmlhttp.open("GET", serverpage);
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    obj.value = xmlhttp.responseText;
+                    textInput = document.getElementById(objID).value;
+                }
+            }
+            xmlhttp.send(null);
+        }
+    
+        const arr_result = [];
+        var num = '0';
+        var check = false;
+        var dotn = 0;
+        function calnum(key){
+            if (num.length > 38) {
+                alert("Maximum Value Enter!");
+                boolVar = true;
+                //document.getElementById("result").innerHTML = 'Enter Number.';
+                document.getElementById("result").value = 'Enter Number.';
+                num = '0'
+                return;
+            }
+    
+            if(check == false || num == '0'){
+                num = key;
+                check = true;
+            }else{
+                if(key == '.' && dotn > 0){
+                    alert("Plase, Fill dot once.");
+                }
+                else if(key == '.' && dotn == 0){
+                    dotn++;
+                    num += '.'; 
+                }else{
+                    num += key; 
+                }
+                
+            }
+            document.getElementById("result").value = num;
+        }
+        
+        function calop(key){
+            if(key == '+' || key == '-' || key == '*' || key == '/'){
+                n = document.getElementById("result").value;
+                if(n != '' || n != '0' || n != 'Enter Number.'){
+                    arr_result.push(parseFloat(n));
+                    arr_result.push(key);
+                    num = '0';
+                    document.getElementById("result").value = 'Enter Number.';
+                }
+                else{
+                    alert("ERROR, Please Enter Number");
+                }
+                document.getElementById("solve").innerHTML = arr_result;
+            }else if(key == '='){
+                var x;
+                n = document.getElementById("result").value;
+                if(n != '' || n != '0' || n != 'Enter Number.'){
+                    arr_result.push(parseFloat(n));
+                }
+                document.getElementById("solve").innerHTML = arr_result;
+                arr_result.reverse();
+                while(arr_result.length > 1){
+                    var temp1 = arr_result.pop();
+                    var op = arr_result.pop();
+                    if(op == '+'){
+                        var temp2 = arr_result.pop();
+                        x = temp1 + temp2;
+                        arr_result.push(x);
+                    }else if(op == '-'){
+                        var temp2 = arr_result.pop();
+                        x = temp1 - temp2;
+                        arr_result.push(x);
+                    }else if(op == '*'){
+                        var temp2 = arr_result.pop();
+                        x = temp1 * temp2;
+                        arr_result.push(x);
+                    }else if(op == '/'){
+                        var temp2 = arr_result.pop();
+                        x = temp1 / temp2;
+                        arr_result.push(x);
+                    }
+                }
+                num = '0';
+                check = false;
+                document.getElementById("result").value = arr_result.pop();
+            }else if(key == 'C'){
+                alert("Clear");
+                arr_result.length = 0;
+                num = '0';
+                check = false;
+                document.getElementById("solve").innerHTML = 'Solve.';
+                document.getElementById("result").value = 'Enter Number.';
+            }
+        }
+    </script>

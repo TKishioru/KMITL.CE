@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Calculator";
+}
+<link rel="stylesheet" href="Index.cshtml.css" />
+    <div class="calbox">
+        <p class="maintxt">Basic Calculator</p>
+        <p id="solve" class="soltxt">Solve.</p>
+        <input type="text" id="result" value="Enter Number." class="numbox" readonly>
+        <br><br>
+        <input type="button" class="btncal" onclick="calnum('1')" value="1">
+        <input type="button" class="btncal" onclick="calnum('2')" value="2">
+        <input type="button" class="btncal" onclick="calnum('3')" value="3">
+        <input type="button" class="btncal" onclick="calop('+')" value="+">
+        <br>
+        <input type="button" class="btncal" onclick="calnum('4')" value="4">
+        <input type="button" class="btncal" onclick="calnum('5')" value="5">
+        <input type="button" class="btncal" onclick="calnum('6')" value="6">
+        <input type="button" class="btncal" onclick="calop('-')" value="-">
+        <br>
+        <input type="button" class="btncal" onclick="calnum('7')" value="7">
+        <input type="button" class="btncal" onclick="calnum('8')" value="8">
+        <input type="button" class="btncal" onclick="calnum('9')" value="9">
+        <input type="button" class="btncal" onclick="calop('*')" value="*">
+        <br>
+        <input type="button" class="btncal" onclick="calnum('0')" value="0">
+        <input type="button" class="btncal" onclick="calnum('.')" value=".">
+        <input type="button" class="btncal" onclick="calop('=')" value="=">
+        <input type="button" class="btncal" onclick="calop('/')" value="/">
+        <br><br>
+        <button class="btnclear"><a style="color: white; text-decoration: none;" href="" onclick="MakeReq('http://localhost:7238'), 'test'); return false;" >CLEAR</a></button>
+        <!--<input type="button" onclick="calop('C')" value="CLEAR" class="btnclear">-->
+        
+    </div>
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        function MakeReq(serverpage, objID) {
+            let obj = document.getElementById(objID);
+            xmlhttp.open("GET", serverpage);
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    obj.value = xmlhttp.responseText;
+                    textInput = document.getElementById(objID).value;
+                }
+            }
+            xmlhttp.send(null);
+        }
+    </script>

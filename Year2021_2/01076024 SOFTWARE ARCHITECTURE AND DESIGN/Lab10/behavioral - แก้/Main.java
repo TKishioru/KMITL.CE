@@ -1,3 +1,5 @@
+//NOT BE MODIFIED
+
 package edu.parinya.softarchdesign.behavioral;
 
 public class Main {
@@ -6,6 +8,7 @@ public class Main {
         NewsPublisher brandInside = new NewsPublisher();
         NewsPublisher prachatai = new NewsPublisher();
 
+        //สามารถเปลี่ยนจาก NewsReader -> NewsSubscriber ได้ ในกรณีที่ตัดไฟล์ NewsReader.js ออก
         NewsReader parinya = new NewsReader("Parinya");
         blognone.subscribe(parinya);
         prachatai.subscribe(parinya);
