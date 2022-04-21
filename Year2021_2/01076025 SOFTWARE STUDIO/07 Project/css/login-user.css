@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400&display=swap');
+* {
+    margin: 0;
+    /*ระยะขอบ ผลักอัตโนมัติ*/
+    padding: 0;
+    /*ขยายขอบด้านใน*/
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+
+/* login & register */
+
+section {
+    position: relative;
+    min-height: 100vh;
+    background: #ffc4ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+section.active {
+    background: #ffcfb0;
+}
+
+section .container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+section .container .user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+section .container .user .imgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+section .container .user .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .container .user .formBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5s;
+}
+
+section .container .user .formBx h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #FAB23D;
+}
+
+section .container .user .formBx input {
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+    color: #FAB23D;
+    border: none;
+    /*outline: none;*/
+    box-shadow: none;
+    font-size: 14px;
+    margin: 8px 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: 2px solid rgb(238, 238, 238);
+    box-shadow: 0 4px 8px 0 rgba(230, 230, 230, 0.2), 0 6px 20px 0 rgba(230, 230, 230, 0.19);
+}
+
+section .container .user .formBx input[type="submit"] {
+    max-width: 100px;
+    background: #FAB23D;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+input[type=submit]:hover {
+    border: 2px solid rgb(202, 202, 202);
+    box-shadow: 0 4px 8px 0 rgba(230, 230, 230, 0.2), 0 6px 20px 0 rgba(230, 230, 230, 0.19);
+}
+
+
+/*
+section .container .user .singupBx .formBx input[type="submit"]
+{
+    background: #e73e49;
+}*/
+
+section .container .user .formBx .singup {
+    position: relative;
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #6B5C44;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+section .container .user .formBx .singup a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #FAB23D;
+}
+
+section .container .singupBx {
+    pointer-events: none;
+}
+
+section .container.active .singupBx {
+    pointer-events: initial;
+}
+
+section .container .singupBx .formBx {
+    top: 100%;
+}
+
+section .container.active .singupBx .formBx {
+    top: 0;
+}
+
+section .container .singupBx .imgBx {
+    top: -100%;
+    transition: 0.5s;
+}
+
+section .container.active .singupBx .imgBx {
+    top: 0;
+}
+
+section .container .singinBx .formBx {
+    top: 0;
+}
+
+section .container.active .singinBx .formBx {
+    top: 100%;
+}
+
+section .container .singinBx .imgBx {
+    top: 0;
+    transition: 0.5s;
+}
+
+section .container.active .singinBx .imgBx {
+    top: -100%;
+}
+
+
+/* checkbox - checkmark */
+
+section .container .singupBx .formBx .I_status {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0px;
+    color: #6B5C44;
+}
+
+section .container .student {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    color: #FAB23D;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+section .container .teacher {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    color: #FAB23D;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+section .container .student input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+section .container .teacher input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+section .container .student .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+}
+
+section .container .teacher .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+}
+
+section .container:hover .student input~.checkmark {
+    background-color: #fadaa7;
+}
+
+section .container:hover .teacher input~.checkmark {
+    background-color: #fadaa7;
+}
+
+section .container .student input:checked~.checkmark {
+    background-color: #FAB23D;
+}
+
+section .container .teacher input:checked~.checkmark {
+    background-color: #FAB23D;
+}
+
+section .container .student input:checked~.checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: 240s;
+}
+
+section .container .teacher input:checked~.checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: 240s;
+}
+
+
+/* picture */
+
+@media (max-width: 991px) {
+    section .container {
+        max-width: 400px;
+    }
+    section .container .imgBx {
+        display: none;
+    }
+    section .container .user .formBx {
+        width: 100%;
+    }
+    section .container.active .singinBx .formBx {
+        top: -100%;
+    }
+}
+
+.I_status {
+    margin-left: 10px;
+}
+
+a.forget,
+a.forget:visited {
+    text-decoration: none;
+    margin-left: 67%;
+    font-size: small;
+    color: rgb(202, 202, 202);
+}
+
+a.forget:hover {
+    color: #FAB23D;
+}

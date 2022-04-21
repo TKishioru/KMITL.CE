@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TITLE | Profile</title>
+      <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+
+      <!-- add css -->
+      <link rel="stylesheet" type="text/css" href="css/profile.css">
+      <link rel="stylesheet" type="text/css" href="css/header.css">
+      <!-- add icon link -->
+      <link rel="icon" href="images/icon.jpg" type="image/x-icon">
+      <!-- specifying a webpage icon for web clip -->
+      <link rel="apple-touch-icon" href="images/icon.jpg" />
+
+      <style>
+        body{
+            background-image: url('BG.png'); 
+            background-size:100%; 
+            background-repeat:no-repeat ; 
+            background-attachment: fixed;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div style="height: 10px; background-color: #FAB23D;"></div>
+    <nav>
+      <a href="#" class="logo">Logoname</a>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+        <li>
+          <label for="btn-1" class="show">USERNAME +</label>
+          <a href="#">USERNAME</a>
+          <input type="checkbox" id="btn-1">
+          <ul>
+            <li><a href="#">Edit Profile</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="inf">
+      <div id="about" class="container tab-pane active">
+        <div class="Acard-container">
+            <div class="Acard u-clearfix">
+                <div class="Acard-body">
+                    <span class="Acard-author subtle">name-website</span>
+                    <h2 class="Acard-title">USERNAME</h2>
+                    <div class="Acard-read"></div>
+                    <span class="Acard-description subtle">
+                        Username : name<br>
+                        Password : <a href="#" class="change">Change Password</a><br>
+                        <label for="img">Picture for Profile:</label><br>
+                        <input type="file" id="filUpload" name="filUpload" class="upload-picture"><br>
+                        <br>
+                        <br>
+                        <br>
+                        <p class="detail-txt">Membership Details</p>
+                        <p>status : Subscribe<br>
+                          Date : เป็นสมาชิกวันที่เท่าไร</p>
+                        <br>
+                    </span>
+                    <div class="CVbtn_wrap" style="margin-left: 5%;">
+                        <span class="CT_span">Want unsubscribe?</span>
+                        <div class="Cocontainer">
+                            <a href="#" target="_self"
+                                title="unsubscribe" class="change">unsubscribe click!</a>
+                        </div>
+                    </div>
+                </div>
+                <img src="bg.jpg" class="Acard-media" />
+            </div>
+            <div class="Acard-shadow"></div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>

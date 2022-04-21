@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TITLE | Home</title>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+
+        <!-- add css -->
+        <link rel="stylesheet" type="text/css" href="css/home_index.css">
+        <link rel="stylesheet" type="text/css" href="css/comment.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <!-- add icon link -->
+        <link rel="icon" href="images/icon.jpg" type="image/x-icon">
+        <!-- specifying a webpage icon for web clip -->
+        <link rel="apple-touch-icon" href="images/icon.jpg" />
+
+        <style>
+            body{
+                background-image: url('BG.png'); 
+                background-size:100%; 
+                background-repeat:no-repeat ; 
+                background-attachment: fixed;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div style="height: 10px; background-color: #FAB23D;"></div>
+        <nav>
+            <a href="#" class="logo">Logoname</a>
+            <label for="btn" class="icon">
+              <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox" id="btn">
+            <ul>
+              <li>
+                <label for="btn-1" class="show">USERNAME +</label>
+                <a href="#">USERNAME</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                  <li><a href="#">Edit Profile</a></li>
+                  <li><a href="#">Log Out</a></li>
+                </ul>
+              </li>
+            </ul>
+        </nav>
+        
+        <!-- Post -->
+        <div class="inf">
+            <div class="posttext">
+                <!-- หัวข้อโพส -->
+                <i class="fa-solid fa-pencil"></i>
+                <p class="mainC">Create Your Post.</p>
+            </div>
+            <!-- Create -->
+            <div class="post_upload">
+                <img src="icon.jpg" class="myavatar">
+                <h6 class="myname" name="Post">username</h6>
+                <textarea rows="4" placeholder="Write a Post." style="margin-top: 10px;"></textarea>
+                <br>
+                <div class="A_left">
+                    <label style="color: #BF9724;">[ OPTINAL ] </label>
+                    <label for="img">Select image:</label>
+                    <input type="file" id="filUpload" name="filUpload" class="upload-picture"><br>
+                </div>
+                <div class="A_right">
+                    <button class="btn-mypost">Post</button>
+                </div>
+                
+            </div>
+            <div class="linediv"></div>
+            <!-- -ข้อมูล (ใช้ซ้ำได้) -->
+            <div class="post_btn">
+                <div class="A_left">
+                    <img src="icon.jpg" class="img-avatarpost">
+                    <a class="textC" name="Post">username</a>
+                    <h5 class="Timestamp">[Time]</h5>
+                </div>
+                <div class="A_right">
+                    <i class="iconmore fa-solid fa-ellipsis" onclick="popshow()"></i>
+                    <div class="popup-post">
+                        <a href="" class="popup-li"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                        <a href="" class="popup-li"><i class="fa-solid fa-trash-can"></i> Delete</a>
+                    </div>
+                </div>
+                <p class="textS" name="subject">details.txt || Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <img src="" alt="Picture for Post" height="auto" width="100%">
+                <hr>
+                <div class="">
+                    <div class="heart-btn A_bottom">
+                        <div class="like-content">
+                        <span class="like-heart"></span>
+                        <span class="like-text">Like</span>
+                        <span class="like-numb"></span>
+                        </div>
+                    </div>
+                    <button class="accordion A_bottom"><i class="fa-solid fa-comment"></i> Comment</button>
+                    <div class="panel">
+                        <div class="panel-comment">
+                            <textarea rows="2" placeholder="Write a Comment."></textarea>
+                        <button class="btn-sent"><i class="fa-solid fa-location-arrow" style="font-size:large;"></i></button>
+                        </div>
+                        <div>
+                            <!-- -ข้อมูล (ใช้ซ้ำได้) -->
+                            <!-- https://codepen.io/Creaticode/pen/yLWqXo -->
+                            <div class="comments-container">
+                                <ul id="comments-list" class="comments-list">
+                                    <li>
+                                        <div class="comment-main-level">
+                                            <div class="comment-box">
+                                                <div class="comment-head">
+                                                    <img src="icon.jpg" class="comment-avatar">
+                                                    <a class="comment-name" name="Post">username</a>
+                                                    <span>hace 20 minutos</span>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                    <i class="fa fa-heart"></i>
+                                                </div>
+                                                <div class="comment-content">
+                                                    Lorem ipsum dolor sit amet, consectetur ad4565465132sgdb56drz4hipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </body>
+    <script type="text/javascript" src="javascript/Jquery.js"></script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        });
+        }
+        $(document).ready(function(){
+            $('.like-content').click(function(){
+                $('.like-content').toggleClass("heart-active")
+                $('.like-text').toggleClass("heart-active")
+                $('.like-numb').toggleClass("heart-active")
+                $('.like-heart').toggleClass("heart-active")
+            });
+        });
+    </script>
+
+</html>

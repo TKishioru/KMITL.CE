@@ -1,0 +1,335 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+.inf{
+  padding: 0 10vw; /*ปรับระยะจากขอบได้ ทั้งหมด*/
+  margin-bottom: 20px;   
+  padding-top: 20px;
+  width: 100%;
+}
+body .posttext {
+    position: relative;
+    margin-right: 5px;
+    display: table;
+}
+body{
+  background-color: #FDF2D6;
+}
+.posttext {
+    color: #2d2d2d;
+    font-size: 30px;
+    margin: 8px 8px;
+    display: inline;
+}
+
+.posttext p.mainC {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: start;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  display: inline;
+}
+
+/*margin: [top][right][bottom][left]*/
+.post_btn{
+  margin: 10px 10px 0px 10px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 15px;
+  width: auto;
+  height: fit-content;
+  box-shadow: 5px 5px 2px rgb(213, 213, 213);
+  border-left: 20px solid #FAB23D;
+}
+
+.icon_next{
+  font-size: 20px;
+  color: white;
+}
+.textC{
+  color: #FAB23D;
+  font-size: 24px;
+  font-weight: normal;
+  display: inline;
+  margin-left: 5px;
+}
+a.textC:hover{
+  color: #d38200;
+}
+.textS, .Timestamp{
+  color: #2d2d2d;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.Timestamp{
+  display: inline;
+  font-size: 16px;
+}
+.iconmore{
+  font-size: 20px;
+  color: #FAB23D;
+  padding: 5px;
+  cursor: pointer;
+}
+.A_left{
+width: auto;
+display: inline-block;
+}
+.A_right{
+  float: right;
+  display: block;
+}
+
+.align_icon{
+  margin-left: 30px; 
+  font-size:20px; 
+  margin-top:15px; 
+  position: absolute; 
+  color: #6e6e6e;
+}
+
+hr{
+  border-top: 2px solid white;
+}
+/**/
+.accordion {
+  background-color: rgb(255, 255, 255);
+  color: #444;
+  padding: 5px 8px;
+  width: auto;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  display: block;
+  border: 1px solid #eae2e1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active, .accordion:hover {
+  background-color: rgb(51, 51, 51);
+  color: #ffffff;
+}
+
+.accordion:after {
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.panel {
+  margin-top: 10px;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/**/
+.popup-post {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+.A_right:hover .popup-post {
+  display: block;
+}
+.popup-post a.popup-li {
+  color: #2d2d2d;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+a.popup-li:hover{
+  background-color: #FCE4AE;
+  cursor: pointer;
+}
+/**/
+.heart-btn{
+  width: fit-content;
+}
+.like-content{
+  padding: 5px 8px;
+  border: 1px solid #eae2e1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.like-content.heart-active{
+  border-color: #f9b9c4;
+  background: #fbd0d8;
+}
+.like-heart{
+  position: absolute;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+  background-position: left;
+  background-size: 2900%;
+  height: 60px;
+  width: 60px;
+  margin: -17px 0 0 -20px;
+}
+.like-text{
+  font-size: 15px;
+  margin-left: 30px;
+  color: grey;
+}
+.like-numb:before{
+  content: '12';
+  font-size: 15px;
+  margin-left: 7px;
+  font-weight: 600;
+  color: #9C9496;
+}
+.like-numb.heart-active:before{
+  content: '13';
+  color: #000;
+}
+.like-text.heart-active{
+  color: #000;
+}
+.like-heart.heart-active{
+  animation: animate .8s steps(28) 1;
+  background-position: right;
+}
+@keyframes animate {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+img.img-avatarpost{
+  height: 50px;
+  width: 50px;
+  margin-left: 5px;
+}
+textarea{
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 14px;
+  resize: none;
+}
+textarea::-webkit-scrollbar {
+  width: 5px;
+}
+textarea::-webkit-scrollbar-track {
+  background-color: #ccc;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+body::-webkit-scrollbar{
+  width: 10px;
+}
+body::-webkit-scrollbar-track{
+  background-color: #ccc;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: rgb(121, 121, 121);
+}
+.A_bottom{
+  display: inline-block; 
+}
+.btn-sent{
+  width: 50px;
+  color: #000;
+  float: right;
+  margin-top: -42px;
+  margin-right: 10px;
+  position:relative;
+  background-color: transparent;
+  border: none;
+  -webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+.btn-sent:hover{
+  color: #FAB23D;
+}
+.panel-comment{
+  margin-top: 10px;
+}
+.upload-picture{
+  background-color: rgb(255, 255, 255);
+  color: #444;
+  width: auto;
+  outline: none;
+  font-size: 15px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline;
+}
+.post_upload{
+  margin: 10px 10px 0px 10px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 15px;
+  width: auto;
+  height: fit-content;
+  box-shadow: 5px 5px 2px rgb(213, 213, 213);
+  border-left: 20px solid #BF9724;
+}
+.btn-mypost{
+  background-color: rgb(255, 255, 255);
+  color: #444;
+  width: auto;
+  outline: none;
+  font-size: 15px;
+  padding: 5px 8px;
+  border: 1px solid #eae2e1;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+.btn-mypost:hover{
+  color: rgb(255, 255, 255);
+  background-color: #444;
+}
+.myavatar{
+  width: 30px;
+	height: 30px;
+  display: inline;
+}
+.myname{
+  display: inline;
+  color: #2d2d2d;
+}
+.linediv {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  margin: 5px 0 10px;
+  position: relative;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.linediv:after {
+  background-color: #2d2d2d;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+}
