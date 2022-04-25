@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TITLE | Home</title>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+        
+        <!-- add css -->
+        <link rel="stylesheet" type="text/css" href="css/home_index.css">
+        <link rel="stylesheet" type="text/css" href="css/adminban.css">
+        <!-- add icon link -->
+        <link rel="icon" href="images/icon.jpg" type="image/x-icon">
+        <!-- specifying a webpage icon for web clip -->
+        <link rel="apple-touch-icon" href="images/icon.jpg" />
+        
+    </head>
+    <body>
+      <div class="inf">
+        <table id="statusAlluser">
+          <tr>
+            <th>Username</th>
+            <th>Status</th>
+            <th>Edit</th>
+          </tr>
+          <tr>
+            <td>Name*** Last***</td>
+            <td><div id="Status">Active</div></td>
+            <td>
+              <div style="display: inline;">
+                <input class="tgl tgl-flip" id="ban-btn" type="checkbox" onclick="myFunction()"/>
+                <label class="tgl-btn" for="ban-btn" data-tg-off="Active" data-tg-on="Ban"></label>
+
+                <button class="del-btn"><i class="fa-solid fa-trash-can"></i> Delete</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Name*** Last***</td>
+            <td><div id="Status">Active</div></td>
+            <td>
+              <div style="display: inline;">
+                <input class="tgl tgl-flip" id="ban-btn" type="checkbox" onclick="myFunction()"/>
+                <label class="tgl-btn" for="ban-btn" data-tg-off="Active" data-tg-on="Ban"></label>
+
+                <button class="del-btn"><i class="fa-solid fa-trash-can"></i> Delete</button>
+              </div>
+            </td>
+          </tr>
+        </table>
+        
+      </div>
+      
+    </body>
+    <script>
+      function myFunction(){
+        var cb = document.getElementById('ban-btn');
+        if(cb.checked == true){
+          document.getElementById('Status').innerHTML = 'Ban';
+        }
+        else{
+          document.getElementById('Status').innerHTML = 'Active';
+        }
+      }
+    </script>
+</html>

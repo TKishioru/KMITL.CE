@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TITLE | Home</title>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+
+        <!-- add css -->
+        <link rel="stylesheet" type="text/css" href="css/home_index.css">
+        <link rel="stylesheet" type="text/css" href="css/comment.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <!-- add icon link -->
+        <link rel="icon" href="images/icon.jpg" type="image/x-icon">
+        <!-- specifying a webpage icon for web clip -->
+        <link rel="apple-touch-icon" href="images/icon.jpg" />
+
+        <style>
+            body{
+                background-image: url('BG.png'); 
+                background-size:100%; 
+                background-repeat:no-repeat ; 
+                background-attachment: fixed;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar 
+        เอาออกไปก่อน
+        -->
+        
+        <!-- Post -->
+        <div class="inf">
+            <div class="posttext">
+                <!-- หัวข้อโพส -->
+                <i class="fa-solid fa-pencil"></i>
+                <p class="mainC">Create Your Post.</p>
+            </div>
+            <!-- Create -->
+            <div class="post_upload">
+                <!-- user ที่กำลังโพส -->
+                <img src="icon.jpg" class="myavatar">
+                <h6 class="myname" name="Post">username</h6>
+
+                <!-- เนื้อหาโพส -->
+                <textarea rows="4" placeholder="Write a Post." style="margin-top: 10px;"></textarea>
+                <br>
+
+                <!-- เพิ่มรูป -->
+                <div class="A_left">
+                    <label style="color: #BF9724;">[ OPTINAL ] </label>
+                    <label for="img">Select image:</label>
+                    <input type="file" id="filUpload" name="filUpload" class="upload-picture"><br>
+                </div>
+
+                <!-- ปุ่มเพิ่มโพส -->
+                <div class="A_right">
+                    <button class="btn-mypost">Post</button>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
