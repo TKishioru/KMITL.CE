@@ -25,7 +25,7 @@
 | ผศ.ธนา หงษ์สุวรรณ           | ECC 911     | 02-7392400~2 ต่อ 121       | khthana@kmitl.ac.th, khthana@hotmail.com            |
 | ผศ.บัณฑิต พัสยา              | ECC 913     | 02-3298341-2, 0815517235  | bundit.pa@kmitl.ac.th,bunditpp98@gmail.com          |
 | ผศ.อัครเดช วัชระภูพงษ์        | ECC 701     | -                         | kwakkrad@kmitl.ac.th                                |
-| ดร.ชมพูนุท จินจาคาม          | ECC 909,504 | 02-7392400~2 ต่อ 167       | kjchompo@gmail.com, chompoonuch.ji@kmitl.ac.th      |
+| ดร.ชมพูนุท จินจาคาม          | ECC 909,504 | 02-7392400~2 ต่อ 167, 0922516655       | kjchompo@gmail.com, chompoonuch.ji@kmitl.ac.th      |
 | ดร.วัชระ ฉัตรวิริยะ           | ECC 908     | 02-7392400~2 ต่อ 111       | kcwatcha@kmitl.ac.th                                |
 | ดร.อรทัย สังข์เพ็ชร           | ECC 901     | -                         | kuoratha@kmitl.ac.th                                |
 | ดร.อักฤทธิ์ สังข์เพ็ชร          | ECC 901     | -                         | akkarit.sa@kmitl.ac.th, akkarit@soup.ce.kmitl.ac.th |
