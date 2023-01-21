@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="center">RFM - Model</h1>
+    <div style="text-align: center; margin: 0 0 10px 0;"><span style="font-weight: 600; margin-right: 10px;">Select
+            Excel File</span><input type="file" id="excel_file" />
+    </div>
+    <div id="result_rfm" style="display: none; height: auto;">
+        <div id="chartdiv"></div>
+        <button class="btn_primary" onclick="download_csv_file()"> Download CSV </button>
+        <div id="rfm_data"></div>
+    </div>
+    <button class="accordion"><i class="fa-solid fa-file-excel"></i> Data Import (.xlsx)</button>
+    <div class="panel">
+        <div id="excel_data"></div>
+    </div>
+    <button class="accordion"><i class="fa-solid fa-gear"></i> Setting</button>
+    <div class="panel">
+        <form action="test02.html" method="post" id="form_setting">
+            <button class="btn_primary" type="submit" id="form_save">บันทึก</button>
+            <table class="table table-striped table-bordered" id="table_time">
+                <tr>
+                    <th colspan="4">Display Graph</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Select</p>
+                    </td>
+                    <td colspan="3" style="padding: 10px;">
+                        <input type="radio" id="type1" name="typeshow" value="only">
+                        <label for="data1">กลุ่มที่อยู่ในช่วงเวลา</label><br><br>
+                        <input type="radio" id="type2" name="typeshow" value="all" checked>
+                        <label for="data2">ข้อมูลทั้งหมด</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="4">Time</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Start Date</p>
+                    </td>
+                    <td colspan="3" style="padding: 0 10px;"><input type="date" id="start_select" name="start_select">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>End Date</p>
+                    </td>
+                    <td colspan="3" style="padding: 0 10px;"><input type="date" id="end_select" name="end_select"></td>
+                </tr>
+            </table>
+        </form>
+        <form action="test02.html" method="post" id="form">
+            <table class="table table-striped table-bordered" id="table_setrmf">
+                <tr>
+                    <th rowspan="2">Segment</th>
+                    <th colspan="2">Recency (R)</th>
+                    <th colspan="2">Frequency (F)</th>
+                    <th colspan="2">Monetary (M)</th>
+                    <th rowspan="2"></th>
+                </tr>
+                <tr>
+                    <th>Min</th>
+                    <th>Max</th>
+                    <th>Min</th>
+                    <th>Max</th>
+                    <th>Min</th>
+                    <th>Max</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="segment" required></td>
+                    <td class="center"><input type="number" min="1" max="5" class="input_rfm" id="Rmin" required></td>
+                    <td class="center"><input type="number" min="1" max="5" class="input_rfm" id="Rmax" required></td>
+                    <td class="center"><input type="number" min="1" max="5" class="input_rfm" id="Fmin" required></td>
+                    <td class="center"><input type="number" min="1" max="5" class="input_rfm" id="Fmax" required></td>
+                    <td class="center"><input type="number" min="1" max="5" class="input_rfm" id="Mmin" required></td>
+                    <td class="center"><input type="number" min="1" max="5" class="input_rfm" id="Mmax" required></td>
+                    <td class="center"><input class="btn_secondary" type="submit" value="Add Segment"
+                            class="record-submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<script>
+    var csvFileData = new Array();
+    var model = new Array();
+    var form = document.getElementById("form");
+    var table = document.getElementById("table_setrmf");
+    var acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+
+    const one_day = 1000 * 60 * 60 * 24;
+    let start = new Date();
+    start.setFullYear(start.getFullYear() - 1);
+    document.getElementById('start_select').value = start.toISOString().substring(0, 10);
+    let end = new Date();
+    document.getElementById('end_select').value = end.toISOString().substring(0, 10);
+    //console.log("INPUT: ", start, " - ", end);
+    var dataofuser = new Array();
+
+    function RFM_show() {
+        var dataFields = new Array();
+        csvFileData = new Array();
+        let rfm_output = '';
+        rfm_output += '<table id="rfm_output" class="table table-striped table-bordered">';
+        rfm_output += '<tr><th rowspan="2">Username</th><th colspan="3">RFM - model</th><th rowspan="2">Result</th></tr>';
+        rfm_output += '<tr><th>R</th><th>F</th><th>M</th></tr>';
+
+        //summary
+        let allData = { allRecency: [], allFrequency: [], allMonetary: [] }
+        for (let i = 0; i < dataofuser.length; i++) {
+            var a = PRIMARYanalysis(dataofuser[i].name, dataofuser[i].transactions);
+            if (a.Lastdate != -1) {
+                allData.allRecency.push(a.Lastdate);
+                allData.allFrequency.push(a.Freq);
+                allData.allMonetary.push(a.Total);
+            }
+            dataFields.push(a);
+        }
+        let rank = { R_rank: PERCENTRANK(allData.allRecency), F_rank: PERCENTRANK(allData.allFrequency), M_rank: PERCENTRANK(allData.allMonetary) };
+        //select type show
+        let typeshow = document.getElementsByName('typeshow');
+        let selectshow = '';
+        for (i = 0; i < typeshow.length; i++) {
+            if (typeshow[i].checked)
+                selectshow = typeshow[i].value;
+        }
+
+        //display
+        //return { Name: name, Lastdate: -1.0, Total: -1.0, Freq: -1.0 };
+        for (let i = 0; i < dataFields.length; i++) {
+            if (dataFields[i].Lastdate == -1 && selectshow == "all") {
+                rfm_output += '<tr>';
+                rfm_output += "<td>" + dataFields[i].Name + "</td>";
+                rfm_output += "<td>0 %</td>";
+                rfm_output += "<td>0 %</td>";
+                rfm_output += "<td>0 %</td>";
+                rfm_output += "<td>ไม่ได้อยู่ในช่วงเวลาที่เลือก</td>";
+                rfm_output += '</tr>';
+
+                csvFileData.push([dataFields[i].Name, "ไม่ได้อยู่ในช่วงเวลาที่เลือก"]);
+            }
+            else if (dataFields[i].Lastdate == -1 && selectshow == "only") {
+                continue;
+            }
+            else {
+                var tempUser = rankRFM(dataFields[i], rank, dataFields.length);
+                rfm_output += '<tr>';
+                rfm_output += "<td>" + dataFields[i].Name + "</td>";
+                rfm_output += "<td>" + tempUser.Recency + " %</td>";
+                rfm_output += "<td>" + tempUser.Frequency + " %</td>";
+                rfm_output += "<td>" + tempUser.Monetary + " %</td>";
+                var tempRFM = convertRFM(Math.ceil(tempUser.Recency / 20), Math.ceil(tempUser.Frequency / 20), Math.ceil(tempUser.Monetary / 20));
+                rfm_output += "<td>" + tempRFM + "</td>";
+                rfm_output += '</tr>';
+                console.log(dataofuser[i].name, " : ", tempUser, " >> ", tempRFM);
+                csvFileData.push([dataFields[i].Name, tempRFM]);
+            }
+
+        }
+        //console.log("csvFile",csvFileData);
+        rfm_output += '</table>';
+        document.getElementById("rfm_data").innerHTML = rfm_output;
+        chart_show();
+    }
+
+    function PRIMARYanalysis(name, data) {
+        var Result = { Name: name, Lastdate: 0.0, Total: 0.0, Freq: 0.0 };
+
+        //Time
+        data.sort(function (a, b) { return new Date(a[0]) - new Date(b[0]); });
+        var start_select = new Date(document.getElementById('start_select').value);
+        start_select.setHours(0, 0, 0, 0);
+        var end_select = new Date(document.getElementById('end_select').value);
+        end_select.setHours(0, 0, 0, 0);
+        let start_datareal = data[0][0];
+        let end_datareal = data[data.length - 1][0];
+
+        if (((start_datareal < start_select) && (end_datareal < start_select)) || ((start_datareal > end_select) && (end_datareal > end_select))) {
+            return { Name: name, Lastdate: -1.0, Total: -1.0, Freq: -1.0 };
+        }
+
+        //Recency_percent + Frequency_percent + Monetary_percent
+        for (let i = 0; i < data.length; i++) {
+            if (start_select <= data[i][0] && data[i][0] <= end_select) {
+                Result.Lastdate = data[i][0];
+                Result.Total += data[i][1];
+                Result.Freq++;
+            }
+        }
+        Result.Total = Result.Total.toFixed(2);
+        return Result;
+    }
+
+    function rankRFM(datafields, rank, len) {
+        console.log("datafields", datafields, "rank", rank, "len", len)
+        return {
+            Recency: PERCENTRANK_INC(datafields.Lastdate, rank.R_rank, len),
+            Frequency: PERCENTRANK_INC(datafields.Freq, rank.F_rank, len),
+            Monetary: PERCENTRANK_INC(datafields.Total, rank.M_rank, len)
+        };
+    }
+
+    function sendvalue(r, c) {
+        return table.rows[r].cells[c].innerHTML;
+        //return document.getElementById(input).value;
+    }
+    function segment_findnumof() {
+        var result = document.getElementById("rfm_output");
+        var chart_data = new Array();
+        var segment_name = new Array();
+
+        for (let i = 2; i < result.rows.length; i++) {
+            if (segment_name.indexOf(result.rows[i].cells[4].innerHTML) == -1) {
+                //chart_data.findIndex(x => x.segment === tempRFM) == -1
+                segment_name.push(result.rows[i].cells[4].innerHTML);
+                chart_data.push({ segment: result.rows[i].cells[4].innerHTML, numberof: 1 });
+            }
+            else {
+                for (let j = 0; j < segment_name.length; j++) {
+                    if (chart_data[j].segment == result.rows[i].cells[4].innerHTML) {
+                        chart_data[j].numberof++;
+                    }
+                }
+            }
+        }
+        return chart_data;
+    }
+    function convertRFM(R, F, M) {
+        R = R == 0 ? 1 : R;
+        F = F == 0 ? 1 : F;
+        M = M == 0 ? 1 : M;
+
+        console.log("RFM:", R, F, M);
+        for (let i = 3; i < table.rows.length; i++) {
+            //console.log(table.rows[i].cells[1].innerHTML);
+            if ((R >= sendvalue(i, 1) && R <= sendvalue(i, 2)) && (F >= sendvalue(i, 3) && F <= sendvalue(i, 4)) && (M >= sendvalue(i, 5) && M <= sendvalue(i, 6))) {
+                return table.rows[i].cells[0].innerHTML;
+            }
+        }
+        return 'ไม่จัดอยู่ในกลุ่มใด';
+    }
+
+    //Statistics
+    function PERCENTRANK(data) {
+        var Setrank = {};
+        data.sort(function (a, b) { return a - b });
+
+        for (let i = 0; i < data.length; i++) {
+            const item = data[i];
+
+            if (!Setrank[item]) {
+                Setrank[item] = i;
+            }
+        }
+        return Setrank;
+    }
+    function PERCENTRANK_INC(val, Setrank, len) {
+        return (Setrank[val] / (len - 1) * 100).toFixed(2);
+    }
+    function chart_show() {
+        am4core.ready(function () {
+
+            // Themes begin
+            am4core.useTheme(am4themes_animated);
+            // Themes end
+
+            // Create chart instance
+            var chart = am4core.create("chartdiv", am4charts.PieChart);
+
+            // Add data
+            chart.data = segment_findnumof();
+            console.log("CHART : ", chart.data);
+
+            // Add and configure Series
+            var pieSeries = chart.series.push(new am4charts.PieSeries());
+            pieSeries.dataFields.value = "numberof";
+            pieSeries.dataFields.category = "segment";
+            pieSeries.slices.template.stroke = am4core.color("#fff");
+            pieSeries.slices.template.strokeWidth = 2;
+            pieSeries.slices.template.strokeOpacity = 1;
+
+            // This creates initial animation
+            pieSeries.hiddenState.properties.opacity = 1;
+            pieSeries.hiddenState.properties.endAngle = -90;
+            pieSeries.hiddenState.properties.startAngle = -90;
+
+        }); // end am4core.ready()
+    }
+
+    //add event listener to form 
+    form.addEventListener("submit", addItem);
+    function addItem(e) {
+        e.preventDefault();
+
+        var segment = document.getElementById("segment").value;
+        var Rmin = document.getElementById("Rmin").value;
+        var Rmax = document.getElementById("Rmax").value;
+        var Fmin = document.getElementById("Fmin").value;
+        var Fmax = document.getElementById("Fmax").value;
+        var Mmin = document.getElementById("Mmin").value;
+        var Mmax = document.getElementById("Mmax").value;
+
+        let m = Rmin + "," + Rmax + "," + Fmin + "," + Fmax + "," + Mmin + "," + Mmax;
+
+        if ((Rmin > Rmax) || (Fmin > Fmax) || (Mmin > Mmax)) {
+            alert("อาจมีข้อผิดพลาด โปรดตรวจสอบการจัดระดับ RFM อีกครั้ง");
+        }
+        else if (model.indexOf(m) != -1) {
+            alert("อาจมีข้อผิดพลาด โปรดตรวจสอบการจัดระดับ RFM อีกครั้ง");
+        }
+        else {
+            //create rows
+            var row = table.insertRow(3);
+            //create row cells
+            var segmentCell = row.insertCell(0);
+            segmentCell.innerHTML = segment;
+
+            var RminCell = row.insertCell(1);
+            RminCell.innerHTML = Rmin;
+
+            var RmaxCell = row.insertCell(2);
+            RmaxCell.innerHTML = Rmax;
+
+            var FminCell = row.insertCell(3);
+            FminCell.innerHTML = Fmin;
+
+            var FmaxCell = row.insertCell(4);
+            FmaxCell.innerHTML = Fmax;
+
+            var MminCell = row.insertCell(5);
+            MminCell.innerHTML = Mmin;
+
+            var MmaxCell = row.insertCell(6);
+            MmaxCell.innerHTML = Mmax;
+
+            model.push(m);
+            //console.log("ADD", model);
+            var DeleteCell = row.insertCell(7);
+            DeleteCell.innerHTML = "<button class='btn_secondary' onclick='removeRow(this)'>Remove</button>";
+            DeleteCell.style.textAlign = "center";
+        }
+    }
+    function removeRow(e) {
+        table.deleteRow(e.parentNode.parentNode.rowIndex);
+        model.splice((e.parentNode.parentNode.rowIndex - 3), 1);
+        //console.log("REMOVE", model);
+        // button -> td -> tr.
+    }
+
+
+    const excel_file = document.getElementById('excel_file');
+    excel_file.addEventListener('change', (event) => {
+        if (!['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.ms-excel'].includes(event.target.files[0].type)) {
+            document.getElementById('excel_data').innerHTML = '<div class="alert alert-danger">Only .xlsx or .xls file format are allowed</div>';
+            excel_file.value = '';
+            return false;
+        }
+
+
+        var reader = new FileReader();
+        reader.readAsArrayBuffer(event.target.files[0]);
+        reader.onload = function (event) {
+            var data = new Uint8Array(reader.result);
+            var work_book = XLSX.read(data, { type: 'array' });
+            var sheet_name = work_book.SheetNames;
+            var sheet_data = XLSX.utils.sheet_to_json(work_book.Sheets[sheet_name[0]], { header: 1 });
+            if (sheet_data.length > 0) {
+                var table_output = '<table class="table table-striped table-bordered">';
+                let user = new Array();
+                dataofuser = new Array();
+                for (var row = 0; row < sheet_data.length; row++) {
+                    table_output += '<tr>';
+                    for (var cell = 0; cell < sheet_data[row].length; cell++) {
+                        if (row == 0) {
+                            table_output += '<th>' + sheet_data[row][cell] + '</th>';
+                        }
+                        else {
+                            if (cell == 1) {
+                                var date = new Date(Math.round((sheet_data[row][cell] - (25568 + 1)) * 86400 * 1000));
+                                date.setHours(0, 0, 0, 0);  //ไม่ใส่จะต่างกัน 25,200,000
+                                table_output += '<td>' + date + '</td>';
+                            }
+                            else {
+                                table_output += '<td>' + sheet_data[row][cell] + '</td>';
+                            }
+                        }
+                    }
+
+                    if (row != 0 && typeof sheet_data[row][0] !== 'undefined') {
+                        if (user.indexOf(sheet_data[row][0]) == -1) {
+                            user.push(sheet_data[row][0]);
+                            dataofuser.push({ name: sheet_data[row][0], transactions: [[date, sheet_data[row][2]]] });
+                        }
+                        else {
+                            for (let i = 0; i < user.length; i++) {
+                                if (dataofuser[i].name == sheet_data[row][0]) {
+                                    dataofuser[i].transactions.push([date, sheet_data[row][2]]);
+                                }
+                            }
+                        }
+                    }
+                    table_output += '</tr>';
+                }
+                table_output += '</table>';
+                document.getElementById('excel_data').innerHTML = table_output;
+            }
+            excel_file.value = '';
+
+            document.getElementById('result_rfm').style.display = "initial";
+
+            //dataofuser.sort(function (a, b) { return new Date(a.transactions) - new Date(b.transactions); });
+            console.log(dataofuser);
+
+            RFM_show();
+        }
+    });
+
+    //https://www.encodedna.com/javascript/dynamically-add-remove-rows-to-html-table-using-javascript-and-save-data.htm
+
+
+    const formset = document.querySelector("#form_setting");
+    formset.addEventListener("submit", function (event) {
+        alert("Setting Change!");
+        // stop form submission
+        event.preventDefault();
+
+        RFM_show();
+    });
+
+    function download_csv_file() {
+        //REF.: https://www.javatpoint.com/javascript-create-and-download-csv-file
+
+        //define the heading for each row of the data  
+        var csv = 'Userame, Segmentresult\n';
+        //merge the data with CSV  
+        if (csvFileData != null) {
+            csvFileData.forEach(function (row) {
+                csv += row.join(',');
+                csv += "\n";
+            });
+        }
+
+        var hiddenElement = document.createElement('a');
+        hiddenElement.href = 'data:text/csv;charset=utf-8,%EF%BB%BF' + encodeURIComponent(csv);
+        hiddenElement.click();
+    }
+
+</script>
+
+</html>

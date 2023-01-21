@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+body {
+    font-family: 'Sarabun';
+}
+
+table {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+th {
+    background-color: #8daf74;
+    color: #fff;
+    padding: 10px 0;
+    font-size: medium;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr td {
+    padding: 10px;
+    height: auto;
+}
+
+td {
+    word-wrap: break-word
+}
+
+.center {
+    text-align: center;
+}
+
+.btn_primary {
+    background-color: #64804f;
+    color: #fff;
+    border: none;
+    width: 150px;
+    padding: 10px;
+    margin: 5px 0;
+    float: right;
+}
+
+.btn_primary:hover {
+    background-color: #465a37;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_secondary {
+    background-color: #fff;
+    color: #64804f;
+    border: 2px solid #64804f;
+    width: 150px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.btn_secondary:hover {
+    background-color: #e4ffcf;
+    color: #64804f;
+    border: 2px solid #64804f;
+    cursor: pointer;
+}
+
+.description {
+    font-size: small;
+}
+
+.input_rfm {
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    background-color: white;
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 0.2s ease-out;
+}
+
+#chartdiv {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+}
