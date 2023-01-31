@@ -66,32 +66,42 @@ https://itexamanswers.net/itn-version-7-00-final-pt-skills-assessment-ptsa-exam-
 ```fix
 CCNA 2 v7.0 Introduction to Networks Exam Answers
 ```
-**Module 1 - 4:** https://www.ccna6.com/ccna-2-v7-modules-1-4-exam-answers/
+**Module 1 - 4:** 
+
+https://www.ccna6.com/ccna-2-v7-modules-1-4-exam-answers/
 https://www.ccna6rs.com/ccna2-v7/ccna2-v7-srwe-v7-modules-1-4-switching-concepts-vlans-and-inter-vlan-routing-exam-answers/
 > Basic Device Configuration
 > Switching Concepts
 > VLANs
 > Inter-VLAN Routing
 
-**Module 5 - 6:** https://www.ccna6.com/ccna-2-v7-modules-5-6-exam-answers/
+**Module 5 - 6:** 
+
+https://www.ccna6.com/ccna-2-v7-modules-5-6-exam-answers/
 https://infraexam.com/ccna2-v7/ccna-2-srwe-switching-routing-and-wireless-essentials-version-7-00-modules-5-6-redundant-networks-exam-answers/
 > STP
 > EtherChannel
 
-**Module 7 - 9:** https://www.ccna6.com/ccna-2-v7-modules-7-9-exam-answers/
+**Module 7 - 9:** 
+
+https://www.ccna6.com/ccna-2-v7-modules-7-9-exam-answers/
 https://itexam24.com/ccna2-v7/modules-7-9-available-and-reliable-networks-exam-answers/
 > DHCPv4 Configuration
 > SLAAC and DHCPv6
 > FHRP Concepts
 
-**Module 10 - 13:** https://www.ccna6.com/ccna-2-v7-modules-10-13-exam-answers/
+**Module 10 - 13:** 
+
+https://www.ccna6.com/ccna-2-v7-modules-10-13-exam-answers/
 https://itexamanswers.net/ccna-2-v7-modules-10-13-l2-security-and-wlans-exam-answers.html
 > LAN Security Concepts
 > Switch Security Configuration
 > WLAN Concepts
 > WLAN Configuration
 
-**Module 14 - 16:** https://www.ccna6.com/ccna-2-v7-modules-14-16-exam-answers/
+**Module 14 - 16:** 
+
+https://www.ccna6.com/ccna-2-v7-modules-14-16-exam-answers/
 https://itexamanswers.net/ccna-2-v7-modules-14-16-routing-concepts-and-configuration-exam-answers.html
 > Routing Concepts
 > Ip Stating Routing
@@ -109,23 +119,33 @@ Part 2 : https://itexamanswers.net/ccna-2-srwe-practice-pt-skills-assessment-pts
 ```fix
 CCNA 3 v7.0 Introduction to Networks Exam Answers
 ```
-**Modules 1 – 2:** https://www.ccna6.com/ccna-3-v7-0-modules-1-2-exam-answers/
+**Modules 1 – 2:** 
+
+https://www.ccna6.com/ccna-3-v7-0-modules-1-2-exam-answers/
 https://itexamanswers.net/ccna-3-v7-modules-1-2-ospf-concepts-and-configuration-exam-answers.html
 > OSPF Concepts and Configuration 
 
-**Modules 3 – 5:** https://www.ccna6.com/ccna-3-v7-0-modules-3-5-exam-answers/
+**Modules 3 – 5:** 
+
+https://www.ccna6.com/ccna-3-v7-0-modules-3-5-exam-answers/
 https://itexamanswers.net/ccna-3-v7-modules-3-5-network-security-exam-answers.html
 > Network Security
 
-**Modules 6 – 8:** https://www.ccna6.com/ccna-3-v7-0-modules-6-8-exam-answers/
+**Modules 6 – 8:** 
+
+https://www.ccna6.com/ccna-3-v7-0-modules-6-8-exam-answers/
 https://itexamanswers.net/ccna-3-v7-modules-6-8-wan-concepts-exam-answers.html
 > WAN Concepts 
 
-**Modules 9 – 12:** https://www.ccna6.com/ccna-3-v7-0-modules-9-12-exam-answers/
+**Modules 9 – 12:** 
+
+https://www.ccna6.com/ccna-3-v7-0-modules-9-12-exam-answers/
 https://itexamanswers.net/ccna-3-v7-modules-9-12-optimize-monitor-and-troubleshoot-networks-exam-answers.html
 > Optimize, Monitor, and Troubleshoot Networks 
 
-**Modules 13 – 14:** https://www.ccna6.com/ccna-3-v7-0-modules-13-14-exam-answers/
+**Modules 13 – 14:** 
+
+https://www.ccna6.com/ccna-3-v7-0-modules-13-14-exam-answers/
 https://itexamanswers.net/ccna-3-v7-modules-13-14-emerging-network-technologies-exam-answers.html
 > Emerging Network Technologies
 
