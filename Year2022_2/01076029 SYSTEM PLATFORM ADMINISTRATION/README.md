@@ -1,3 +1,7 @@
+# SPA
+เอกสารหลัก [คลิก](https://github.com/TKishioru/KMITL/blob/main/Year2022_2/01076029%20SYSTEM%20PLATFORM%20ADMINISTRATION/An%20Introduction%20to%20UNIX.pdf), เอกสารสคริป [คลิก](https://github.com/TKishioru/KMITL/blob/main/Year2022_2/01076029%20SYSTEM%20PLATFORM%20ADMINISTRATION/An%20Introduction%20to%20Unix%20Shell%20Script.pdf)
+
+## 23 Feb 2023
 ```cmd
 # cat /etc/issue
 ```
@@ -22,7 +26,7 @@
 https://saixiii.com/unix-linux-command/
 
 
-## 2 March 2023
+## 2 Mar 2023
 
 **การอบรมยูนิกซ์เชิงปฏิบัติการ**
 
