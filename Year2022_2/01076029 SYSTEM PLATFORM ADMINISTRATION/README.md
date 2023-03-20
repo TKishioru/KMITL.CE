@@ -1,5 +1,5 @@
 # SPA
-เอกสารหลัก [คลิก](https://github.com/TKishioru/KMITL/blob/main/Year2022_2/01076029%20SYSTEM%20PLATFORM%20ADMINISTRATION/An%20Introduction%20to%20UNIX.pdf), เอกสารสคริป [คลิก](https://github.com/TKishioru/KMITL/blob/main/Year2022_2/01076029%20SYSTEM%20PLATFORM%20ADMINISTRATION/An%20Introduction%20to%20Unix%20Shell%20Script.pdf)
+เอกสารหลัก [คลิก](https://github.com/TKishioru/KMITL/blob/main/Year2022_2/01076029%20SYSTEM%20PLATFORM%20ADMINISTRATION/An%20Introduction%20to%20UNIX.pdf) และ เอกสารสคริป [คลิก](https://github.com/TKishioru/KMITL/blob/main/Year2022_2/01076029%20SYSTEM%20PLATFORM%20ADMINISTRATION/An%20Introduction%20to%20Unix%20Shell%20Script.pdf)
 
 ## 23 Feb 2023
 ```cmd
@@ -57,3 +57,32 @@ rwx ออกสอบ?
 การ backup ข้อมูล ต้องเก็บทุก bit ทุก ไบต์ จะใช้พื้นที่เยอะมาก แนะนำ! ให้ reuse ใช้พื้นที่ให้คุ้ม
 
 เทคนิคการซ่อนไฟล์
+
+## 16 Mar 2023
+SPA 
+
+เมื่อก่อน เครื่องพิวเตอร์มีขนาดใหญ่และมีผู้ใช้งานหลายคน แต่มันไม่ตอบโจทย์ในการขยายการผู้ใช้งาน ภายหลังจึงได้จัดทำขนาดเล็กและเป็น single user 
+OS จะมีการกำหนดสิทธิ และสิทธิจะมีทรัพยากรในส่วนที่แบ่งไป
+
+Permission มีไว้ความปลอดภัย? (จุดประสงค์แฝง)
+มีโอกาสโดนกำจัด หากแยู่ในระดับต่ำๆ (มีสิ่งที่ผ่อนแรง)
+
+ทบทวนเครื่องหมาย
+
+แนวคิดที่เป็นการขึ้นบรรทัดใหม่ (New Line) ได้มาจาก “หนังสือ” ซึ่ง item อะไรที่เป็นสิ่งเดียวกันก็ควรอยู่บรรทัดเดียวกัน โดยแสดงไม่เกินหน้าต่าง
+ซึ่งระบบยูนิกซ์ การที่จะตั้งค่าแก้ไขไฟล์นั้น ต้องเข้าถึง path ของไฟล์นั้น และแก้ใน text file (ต้องรู้ความหมาย) //ดูที่ ssh 
+
+เว็บที่เราบันทึกในเบาวเซอร์ จะถูกบันทึกใน resgisty
+
+แป้นพิมพ์สมัยก่อน ไม่มีปุ่มลูกศร //มีความหลากหลายของแป้นพิมพ์มากเกินไป เลยต้องออกแบบให้กลางๆ
+
+มี 2 โหมด คือ text (แก้ไข)/ command (บันทึกเข้าที่ storest)  //ปุ่ม esc สลับโหมด
+
+Backup ข้อมูลก่อน (ไม่มีระบบย้อนกลับ) // concept clipboard มาก่อน
+ตัวอักษรใหญ่เล็กก็ความหมายต่างกัน
+
+
+
+การบ้าน
+1. เข้าไปทดลองโปรแกรม vi ดูว่าทำงานยังไง
+2. ไป config ของ ssh & mysql sever ยังไง ไฟล์ไหนของ apache
