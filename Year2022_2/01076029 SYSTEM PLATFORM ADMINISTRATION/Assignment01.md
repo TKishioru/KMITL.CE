@@ -42,6 +42,8 @@
     
     - Confirm your password : admin
     
+  **อย่าลืม** Install SSH ด้วยนะ กดเลือก
+  
   1.12 ตกลงแล้ว Reboot Now
   
   1.13 เมื่อโหลดถึง [OK] Reached target Cloud-init target. กด Enter!
