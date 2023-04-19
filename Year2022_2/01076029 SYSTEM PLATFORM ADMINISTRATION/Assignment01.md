@@ -111,6 +111,20 @@
   4.5 เหลือ "กำกับดูแลที่ดีให้ปลอดภัย"
   
 5. เปิดให้เข้าถึงได้จากระยะไกลด้วย ssh หรือ remote desktop หรือเทียบเท่า
+
+  5.0 คำสั่งที่น่าสนใจ
+  
+  ```
+  $ ssh -v ดูว่ามีการติดตั้ง ssh ไหม
+  
+  $ sudo apt-get install openssh-server ติดตั้ง ssh
+  
+  $ sudo systemctl status ssh เช็คว่าทำงานไหม
+  
+  $ ip a เช็คว่า เครื่องนี้เป็น ip อะไร
+  
+  $ ssh ชื่อ username@เลข ip ของเครื่อง
+  ```
   
   5.1 ใส่คำสั่ง ifconfig ใช้ในการแสดงข้อมูลและเปลี่ยนค่า interface server
   
