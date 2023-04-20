@@ -87,9 +87,9 @@
   ```
   $ sudo adduser ชื่อที่จะเพิ่ม
   ```
-    - webadmin ใช้รหัสผ่าน webadmin
+    - webadmin ใช้รหัสผ่าน pswebadmin
     
-    - dbadmin ใช้รหัสผ่าน dbadmin
+    - dbadmin ใช้รหัสผ่าน psdbadmin
     
   4.2 กด Enter ข้ามการกรอก value ไปเลย "แล้วกด Y"
   
