@@ -85,11 +85,11 @@
   4.1 เพิ่ม user คือ webadmin และ dbadmin > ตั้งรหัสเฉพาะแต่ละ user
   
   ```
-  $ sudo adduser ชื่อที่จะเพิ่ม
+  $ sudo adduser ชื่อที่จะเพิ่ม (ยืนยันด้วยรหัส user)
   ```
-    - webadmin ใช้รหัสผ่าน pswebadmin
+    - webadmin ใช้รหัสผ่าน webadmin
     
-    - dbadmin ใช้รหัสผ่าน psdbadmin
+    - dbadmin ใช้รหัสผ่าน dbadmin
     
   4.2 กด Enter ข้ามการกรอก value ไปเลย "แล้วกด Y"
   
